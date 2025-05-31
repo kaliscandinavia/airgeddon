@@ -45,6 +45,9 @@ function initialize_language_strings() {
 	unknown_chipset["TURKISH"]="Bilinmeyen"
 	unknown_chipset["ARABIC"]="مجهول"
 	unknown_chipset["CHINESE"]="未知的"
+	unknown_chipset["NORSK"]="UKJENT"
+	unknown_chipset["SVENSKA"]="OKÄND"
+	unknown_chipset["DANSK"]="UKENDT"
 	unknown_chipsetvar="${unknown_chipset[${language}]}"
 
 	declare -A hintprefix
@@ -61,6 +64,9 @@ function initialize_language_strings() {
 	hintprefix["TURKISH"]="İpucu"
 	hintprefix["ARABIC"]="تلميح"
 	hintprefix["CHINESE"]="提示"
+	hintprefix["NORSK"]="HINT"
+	hintprefix["SVENSKA"]="ANTYDAN"
+	hintprefix["DANSK"]="ANTYDNING"
 	hintvar="${hintprefix[${language}]}"
 
 	declare -A optionaltool_needed
@@ -77,6 +83,9 @@ function initialize_language_strings() {
 	optionaltool_needed["TURKISH"]="Engellenen seçenek şunları gerektirir: "
 	optionaltool_needed["ARABIC"]=":خيار مغلق يتطلب"
 	optionaltool_needed["CHINESE"]="锁定选项，它需要:"
+	optionaltool_needed["NORSK"]="LÅST MULIGHET, TRENGER: "
+	optionaltool_needed["SVENSKA"]="LÅST MÖJLIGHET, BEHÖVS: "
+	optionaltool_needed["DANSK"]="LÅST MULIGHED, NØDVENDIG: "
 
 	declare -gA under_construction
 	under_construction["ENGLISH"]="under construction"
@@ -92,6 +101,9 @@ function initialize_language_strings() {
 	under_construction["TURKISH"]="yapım aşamasında"
 	under_construction["ARABIC"]="في طور الإنشاء"
 	under_construction["CHINESE"]="正在准备"
+	under_construction["NORSK"]="under konstruksjon"
+	under_construction["SVENSKA"]="under uppbyggnad"
+	under_construction["DANSK"]="under opførelse"
 
 	declare -gA possible_package_names_text
 	possible_package_names_text["ENGLISH"]="Possible package name"
@@ -107,6 +119,9 @@ function initialize_language_strings() {
 	possible_package_names_text["TURKISH"]="Olası paket adı"
 	possible_package_names_text["ARABIC"]="اسم الحزمة المحتمل"
 	possible_package_names_text["CHINESE"]="可能的软件包名称"
+        possible_package_names_text["NORSK"]="mulig pakke navn"
+	possible_package_names_text["SVENSKA"]="möjligt paketnamn"
+	possible_package_names_text["DANSK"]="muligt pakkenavn"
 
 	declare -gA disabled_text
 	disabled_text["ENGLISH"]="Disabled"
@@ -122,6 +137,9 @@ function initialize_language_strings() {
 	disabled_text["TURKISH"]="Aktif Değil"
 	disabled_text["ARABIC"]="معطل"
 	disabled_text["CHINESE"]="禁用"
+	disabled_text["NORSK"]="Deaktivert"
+	disabled_text["SVENSKA"]="Inaktiverad"
+	disabled_text["DANSK"]="Handicappet"
 
 	declare -gA reboot_required
 	reboot_required["ENGLISH"]="${red_color_slim} (reboot required)${normal_color}"
@@ -137,6 +155,9 @@ function initialize_language_strings() {
 	reboot_required["TURKISH"]="${red_color_slim} (yeniden başlatma gerekli)${normal_color}"
 	reboot_required["ARABIC"]="${red_color_slim} (المطلوب إعادة التشغيل) ${normal_color}"
 	reboot_required["CHINESE"]="${red_color_slim} (需要重启) ${normal_color}"
+	reboot_required["NORSK"]="${red_color_slim} (omstart nødvendig)${normal_color}"
+	reboot_required["SVENSKA"]="${red_color_slim} (omstart krävs)${normal_color}"
+	reboot_required["DANSK"]="${red_color_slim} (genstart påkrævet)${normal_color}"
 
 	declare -gA docker_image
 	docker_image["ENGLISH"]="${docker_based_distro} Docker image based"
@@ -152,6 +173,9 @@ function initialize_language_strings() {
 	docker_image["TURKISH"]="${docker_based_distro} Docker image tabanlı"
 	docker_image["ARABIC"]="Docker ${docker_based_distro} الصورة مبنية على"
 	docker_image["CHINESE"]="${docker_based_distro} 基于 Docker 镜像"
+	docker_image["NORSK"]=" Docker bilde basert${docker_based_distro}"
+	docker_image["SVENSKA"]="Docker bildbaserad ${docker_based_distro}"
+	docker_image["DANSK"]="Docker billedbaseret ${docker_based_distro}"
 
 	declare -gA et_misc_texts
 	et_misc_texts["ENGLISH",0]="Evil Twin AP Info"
@@ -167,6 +191,9 @@ function initialize_language_strings() {
 	et_misc_texts["TURKISH",0]="Şeytani İkiz"
 	et_misc_texts["ARABIC",0]="Evil Twin AP معلومات"
 	et_misc_texts["CHINESE",0]="邪恶双胞胎 AP 信息"
+	et_misc_texts["NORSK",0]="Info Evil Twin AP"
+	et_misc_texts["SVENSKA",0]="Info Evil Twin AP"
+	et_misc_texts["DANSK",0]="Info AP Evil Twin"
 
 	et_misc_texts["ENGLISH",1]="Channel"
 	et_misc_texts["SPANISH",1]="Canal"
@@ -181,6 +208,9 @@ function initialize_language_strings() {
 	et_misc_texts["TURKISH",1]="Kanal"
 	et_misc_texts["ARABIC",1]="قناة"
 	et_misc_texts["CHINESE",1]="信道"
+	et_misc_texts["NORSK",1]="Kanal"
+	et_misc_texts["SVENSKA",1]="Kanal"
+	et_misc_texts["DANSK",1]="Kanal"
 
 	et_misc_texts["ENGLISH",2]="Online time"
 	et_misc_texts["SPANISH",2]="Tiempo online"
@@ -195,6 +225,9 @@ function initialize_language_strings() {
 	et_misc_texts["TURKISH",2]="Çevrimiçi zaman"
 	et_misc_texts["ARABIC",2]="الوقت على الانترنت"
 	et_misc_texts["CHINESE",2]="在线时间"
+	et_misc_texts["NORSK",2]="Online tid"
+	et_misc_texts["SVENSKA",2]="Online tid"
+	et_misc_texts["DANSK",2]="Online tid"
 
 	et_misc_texts["ENGLISH",3]="DHCP ips given to possible connected clients"
 	et_misc_texts["SPANISH",3]="Ips entregadas por DHCP a posibles clientes conectados"
@@ -209,6 +242,9 @@ function initialize_language_strings() {
 	et_misc_texts["TURKISH",3]="Olası bağlanmış istemcilere verilen DHCP IPler"
 	et_misc_texts["ARABIC",3]="المحتملين DHCP مخصصة لزبناء Ips"
 	et_misc_texts["CHINESE",3]="DHCP 服务器分配 IP 地址给可能连接的设备"
+	et_misc_texts["NORSK",3]="DHCP ips gitt til mulige tilkoblede klienter"
+	et_misc_texts["SVENSKA",3]="DHCP ips ges till möjliga anslutna klienter"
+	et_misc_texts["DANSK",3]="DHCP ips givet til mulige tilsluttede klienter"
 
 	et_misc_texts["ENGLISH",4]="On this attack you have to use an external sniffer to try to obtain client passwords connected to the network"
 	et_misc_texts["SPANISH",4]="Con este ataque has de usar un sniffer externo para intentar obtener contraseñas de los clientes conectados a la red"
@@ -223,7 +259,10 @@ function initialize_language_strings() {
 	et_misc_texts["TURKISH",4]="Bu saldırı sonucunda ağa bağlı client şifrelerini edinmek için harici bir algılayıcı kullanmanız gerekir"
 	et_misc_texts["ARABIC",4]="مع هذا الهجوم ، يجب عليك استخدام المتشمم لمحاولة الحصول على كلمات مرور الزبناء المتصلين بالشبكة"
 	et_misc_texts["CHINESE",4]="在这种攻击中，您必须使用外部嗅探器来尝试获取连接到网络的客户端密码"
-
+    et_misc_texts["NORSK",4]="Ved dette angrepet må du bruke en ekstern sniffer for å prøve å få klient passord koblet til nettverket"
+	et_misc_texts["SVENSKA",4]="Vid denna attack måste du använda en fjärrsniffer för att försöka få klientlösenord anslutna till nätverket"
+	et_misc_texts["DANSK",4]="Ved dette angreb skal du bruge en ekstern sniffer for at forsøge at få klientadgangskoder forbundet til netværket"
+	
 	et_misc_texts["ENGLISH",5]="On this attack, watch the sniffer's screen to see if a password appears"
 	et_misc_texts["SPANISH",5]="Con este ataque, estate atento a la pantalla del sniffer para ver si aparece alguna contraseña"
 	et_misc_texts["FRENCH",5]="Vérifiez pendant l'attaque dans la console du sniffeur si un mot de passe a été capturé"
@@ -237,6 +276,9 @@ function initialize_language_strings() {
 	et_misc_texts["TURKISH",5]="Bu saldırı ile algılayıcının ekranını görebilir ve şifre çıktığında şifreyi görebilirsiniz"
 	et_misc_texts["ARABIC",5]="تحقق أثناء الهجوم في شاشة المتشمم إذا تم التقاط كلمة مرور"
 	et_misc_texts["CHINESE",5]="在这次攻击中，观察嗅探器的屏幕以查看是否出现密码"
+	et_misc_texts["NORSK",5]="Ved dette angrepet, se snifferens skjerm for å se om et passord vises"
+	et_misc_texts["SVENSKA",5]="Vid denna attack, titta på snifferns skärm för att se om åtkomstkoden visas"
+	et_misc_texts["DANSK",5]="Ved dette angreb se snifferens skærm for at se, om der vises en adgangskode "
 
 	et_misc_texts["ENGLISH",6]="On this attack, we'll wait for a network client to provide us the password for the wifi network in our captive portal"
 	et_misc_texts["SPANISH",6]="Con este ataque, esperaremos a que un cliente de la red nos provea de la contraseña de la red wifi en nuestro portal cautivo"
@@ -251,6 +293,9 @@ function initialize_language_strings() {
 	et_misc_texts["TURKISH",6]="Bu saldırı ile, şifrenin doğru bir şekilde esaret portalımıza giriş yapılmasını bekleyeceğiz"
 	et_misc_texts["ARABIC",6]="مع هذا الهجوم، سننتظر حتى يقوم الزبون بإدخال كلمة مرور الشبكة المستهدفة في بوابتنا الأسيرة"
 	et_misc_texts["CHINESE",6]="在这次攻击中，我们将等待用户在我们的强制门户中为我们提供 wifi 网络的密码"
+	et_misc_texts["NORSK",6]="Ved dette angrepet venter vi på at en nettverksklient gir oss passordet for wifi nettverket i vår captive portal"
+	et_misc_texts["SVENSKA",6]="Vid den här attacken väntar vi på att en nätverksklient ger oss lösenordet för wifi nätverket i vår captive-portal"
+	et_misc_texts["DANSK",6]="Ved dette angreb venter vi på, at en netværksklient giver os adgangskoden til wifi netværket i vores captive portal"
 
 	et_misc_texts["ENGLISH",7]="No clients connected yet"
 	et_misc_texts["SPANISH",7]="No hay clientes conectados aún"
@@ -265,6 +310,9 @@ function initialize_language_strings() {
 	et_misc_texts["TURKISH",7]="Henüz hiçbir alıcı bağlanmadı"
 	et_misc_texts["ARABIC",7]="لا يزال لا يوجد زبناء متصلون"
 	et_misc_texts["CHINESE",7]="还没有客户端连接"
+	et_misc_texts["NORSK",7]="Ingen klienter tilkoblet ennå"
+	et_misc_texts["SVENSKA",7]="Inga klienter anslutna ännu"
+	et_misc_texts["DANSK",7]="Ingen klienter tilsluttet endnu"
 
 	et_misc_texts["ENGLISH",8]="airgeddon. Evil Twin attack captured passwords"
 	et_misc_texts["SPANISH",8]="airgeddon. Contraseñas capturadas en ataque Evil Twin"
@@ -279,6 +327,9 @@ function initialize_language_strings() {
 	et_misc_texts["TURKISH",8]="airgeddon. Şeytani İkiz şifreleri yakaladı"
 	et_misc_texts["ARABIC",8]="Evil Twin كلمات المرور التي تم التقاطها بواسطة هجوم .airgeddon"
 	et_misc_texts["CHINESE",8]="airgeddon 邪恶双胞胎攻击捕获的密码"
+	et_misc_texts["NORSK",8]="airgeddon. Evil Twin-angrep fanget passord"
+	et_misc_texts["SVENSKA",8]="airgeddon. Evil Twin attack fångade lösenord"
+	et_misc_texts["DANSK",8]="airgeddon. Evil Twin-angreb fangede adgangskode"
 
 	et_misc_texts["ENGLISH",9]="Wireless network, ESSID:"
 	et_misc_texts["SPANISH",9]="Red inalámbrica, ESSID:"
@@ -293,6 +344,9 @@ function initialize_language_strings() {
 	et_misc_texts["TURKISH",9]="Kablosuz ağ, ESSID:"
 	et_misc_texts["ARABIC",9]=":الشبكه اللاسلكية"
 	et_misc_texts["CHINESE",9]="无线网络，ESSID:"
+	et_misc_texts["NORSK",9]="Trådløst nettverk, ESSID:"
+	et_misc_texts["SVENSKA",9]="Trådlöst nätverk, ESSID:"
+	et_misc_texts["DANSK",9]="Trådløst netværk, ESSID:"
 
 	et_misc_texts["ENGLISH",10]="Enter your wireless network password to get internet access"
 	et_misc_texts["SPANISH",10]="Introduzca su contraseña de acceso a la red inalámbrica para poder acceder a internet"
@@ -307,6 +361,9 @@ function initialize_language_strings() {
 	et_misc_texts["TURKISH",10]="İnternete bağlanabilmek için kablosuz ağ şifrenizi girmelisiniz"
 	et_misc_texts["ARABIC",10]="أدخل كلمة مرور الشبكة اللاسلكية للوصول إلى الإنترنت"
 	et_misc_texts["CHINESE",10]="请输入您的无线网络密码以访问互联网"
+	et_misc_texts["NORSK",10]="Skriv inn passordet for det trådløse nettverket for å få internettilgang"
+	et_misc_texts["SVENSKA",10]="Ange ditt trådlösa nätverks lösenord för att få tillgång till internet"
+	et_misc_texts["DANSK",10]="Indtast adgangskoden til dit trådløse netværk for at få internetadgang"
 
 	et_misc_texts["ENGLISH",11]="Password"
 	et_misc_texts["SPANISH",11]="Contraseña"
@@ -321,6 +378,9 @@ function initialize_language_strings() {
 	et_misc_texts["TURKISH",11]="Şifre"
 	et_misc_texts["ARABIC",11]="كلمه السر"
 	et_misc_texts["CHINESE",11]="密码"
+	et_misc_texts["NORSK",11]="Passord"
+	et_misc_texts["SVENSKA",11]="Lösenord"
+	et_misc_texts["DANSK",11]="Adgangskode"
 
 	et_misc_texts["ENGLISH",12]="Show password"
 	et_misc_texts["SPANISH",12]="Mostrar contraseña"
@@ -335,6 +395,9 @@ function initialize_language_strings() {
 	et_misc_texts["TURKISH",12]="Şifreyi göster"
 	et_misc_texts["ARABIC",12]="إظهار كلمة المرور"
 	et_misc_texts["CHINESE",12]="显示密码"
+	et_misc_texts["NORSK",12]="Vis passord"
+	et_misc_texts["SVENSKA",12]="Visa lösenord"
+	et_misc_texts["DANSK",12]="Vis adgangskode"
 
 	et_misc_texts["ENGLISH",13]="Submit"
 	et_misc_texts["SPANISH",13]="Enviar"
@@ -349,6 +412,9 @@ function initialize_language_strings() {
 	et_misc_texts["TURKISH",13]="Gönder"
 	et_misc_texts["ARABIC",13]="إرسال"
 	et_misc_texts["CHINESE",13]="提交"
+	et_misc_texts["NORSK",13]="Logg på"
+	et_misc_texts["SVENSKA",13]="Logga in"
+	et_misc_texts["DANSK",13]="Log ind"
 
 	et_misc_texts["ENGLISH",14]="An unexpected error occurred, redirecting to the main screen"
 	et_misc_texts["SPANISH",14]="Ha ocurrido un error inesperado, redirigiendo a la pantalla principal"
@@ -363,6 +429,9 @@ function initialize_language_strings() {
 	et_misc_texts["TURKISH",14]="Beklenmeyen bir hata oluştu, anasayfaya yönlendiriliyorsunuz"
 	et_misc_texts["ARABIC",14]="حدث خطأ غير متوقع، سيتم إعادة التوجيه إلى الشاشة الرئيسية"
 	et_misc_texts["CHINESE",14]="出现意外错误，正在重定向到主屏幕"
+	et_misc_texts["NORSK",14]="Det oppstod en uventet feil, omdirigerer til hovedskjermen"
+	et_misc_texts["SVENSKA",14]="Ett oväntat fel inträffade, omdirigerar till huvudskärmen"
+	et_misc_texts["DANSK",14]="Der opstod en uventet fejl, omdirigerer til hovedskærmen"
 
 	et_misc_texts["ENGLISH",15]="Internet Portal"
 	et_misc_texts["SPANISH",15]="Portal de Internet"
@@ -377,6 +446,9 @@ function initialize_language_strings() {
 	et_misc_texts["TURKISH",15]="İnternet Portalı"
 	et_misc_texts["ARABIC",15]="بوابة الإنترنت"
 	et_misc_texts["CHINESE",15]="门户网站"
+	et_misc_texts["NORSK",15]="Internettportal"
+	et_misc_texts["SVENSKA",15]="Internetportal"
+	et_misc_texts["DANSK",15]="Internetportal"
 
 	et_misc_texts["ENGLISH",16]="The password must be at least 8 characters"
 	et_misc_texts["SPANISH",16]="La contraseña debe tener al menos 8 caracteres"
@@ -391,6 +463,9 @@ function initialize_language_strings() {
 	et_misc_texts["TURKISH",16]="Şifre en az 8 karakter olmalıdır"
 	et_misc_texts["ARABIC",16]="يجب أن تكون كلمة السر على الأقل 8 أحرف"
 	et_misc_texts["CHINESE",16]="密码必须至少为 8 个字符"
+	et_misc_texts["NORSK",16]="Passordet må være på minst 8 tegn"
+	et_misc_texts["SVENSKA",16]="Lösenordet måste vara minst 8 tecken"
+	et_misc_texts["DANSK",16]="Adgangskoden skal være på mindst 8 tegn"
 
 	et_misc_texts["ENGLISH",17]="The password is incorrect, redirecting to the main screen"
 	et_misc_texts["SPANISH",17]="La contraseña introducida es incorrecta, redirigiendo a la pantalla principal"
@@ -405,6 +480,9 @@ function initialize_language_strings() {
 	et_misc_texts["TURKISH",17]="Şifre yanlış, anasayfaya yönlendiriliyorsunuz"
 	et_misc_texts["ARABIC",17]="كلمة السر غير صحيحة، سيتم إعادة التوجيه إلى الشاشة الرئيسية"
 	et_misc_texts["CHINESE",17]="密码错误，正在跳转到主界面"
+	et_misc_texts["NORSK",17]="Passordet er feil, omdirigerer til hovedskjermen"
+	et_misc_texts["SVENSKA",17]="Lösenordet är felaktigt, omdirigerar till huvudskärmen"
+	et_misc_texts["DANSK",17]="Adgangskoden er forkert, omdirigerer til hovedskærme"
 
 	et_misc_texts["ENGLISH",18]="The password is correct, the connection will be restablished in a few moments"
 	et_misc_texts["SPANISH",18]="La contraseña es correcta, la conexión se restablecerá en unos momentos"
@@ -419,6 +497,9 @@ function initialize_language_strings() {
 	et_misc_texts["TURKISH",18]="Şifre doğru, bağlantınız bir kaç dakika içerisinde yeniden gerçekleşecektir"
 	et_misc_texts["ARABIC",18]="كلمة السر صحيحة، سيتم إعادة الاتصال خلال لحظات قليلة"
 	et_misc_texts["CHINESE",18]="密码正确，稍后将重新建立连接"
+	et_misc_texts["NORSK",18]="Passordet er riktig, tilkoblingen vil bli gjenopprettet om få øyeblikk"
+	et_misc_texts["SVENSKA",18]="Lösenord är korrekt, anslutningen kommer att återupprättas inom några ögonblick"
+	et_misc_texts["DANSK",18]="Adgangskoden er korrekt, forbindelsen vil blive genoprettet om få øjeblikke"
 
 	et_misc_texts["ENGLISH",19]="airgeddon. Captive portal Evil Twin attack captured password"
 	et_misc_texts["SPANISH",19]="airgeddon. Contraseña capturada en el portal cautivo del ataque Evil Twin"
@@ -433,6 +514,9 @@ function initialize_language_strings() {
 	et_misc_texts["TURKISH",19]="airgeddon. Esaret Portalı Şeytani ikizi şifreyi yakaladı"
 	et_misc_texts["ARABIC",19]="Evil Twin تم التقاط كلمة السر بواسطة البوابة الأسيرة لهجوم .airgeddon"
 	et_misc_texts["CHINESE",19]="airgeddon 邪恶双胞胎强制门户攻击捕获的密码"
+	et_misc_texts["NORSK",19]="airgeddon. Captive portal Evil Twin angrep fanget passord"
+	et_misc_texts["SVENSKA",19]="airgeddon. Captive portal Evil Twin attack fångade lösenord"
+	et_misc_texts["DANSK",19]="airgeddon. Captive portal Evil Twin angreb fanget adgangskode"
 
 	et_misc_texts["ENGLISH",20]="Attempts"
 	et_misc_texts["SPANISH",20]="Intentos"
@@ -447,6 +531,9 @@ function initialize_language_strings() {
 	et_misc_texts["TURKISH",20]="Denemeler"
 	et_misc_texts["ARABIC",20]="محاولات"
 	et_misc_texts["CHINESE",20]="尝试"
+	et_misc_texts["NORSK",20]="Forsøk"
+	et_misc_texts["SVENSKA",20]="Försök"
+	et_misc_texts["DANSK",20]="Forsøg"
 
 	et_misc_texts["ENGLISH",21]="last password:"
 	et_misc_texts["SPANISH",21]="última contraseña:"
@@ -461,6 +548,9 @@ function initialize_language_strings() {
 	et_misc_texts["TURKISH",21]="son şifre:"
 	et_misc_texts["ARABIC",21]="كلمة المرور الأخيرة:"
 	et_misc_texts["CHINESE",21]="最后密码:"
+	et_misc_texts["NORSK",21]="siste passord:"
+	et_misc_texts["SVENSKA",21]="senaste lösenord:"
+	et_misc_texts["DANSK",21]="sidste adgangskode:"
 
 	et_misc_texts["ENGLISH",22]="Captured passwords on failed attempts"
 	et_misc_texts["SPANISH",22]="Contraseñas capturadas en intentos fallidos"
@@ -475,6 +565,9 @@ function initialize_language_strings() {
 	et_misc_texts["TURKISH",22]="Başarısız girişimlerde yakalanan şifreler"
 	et_misc_texts["ARABIC",22]="تم التقاط كلمات السر في المحاولات الفاشلة"
 	et_misc_texts["CHINESE",22]="尝试失败时捕获的密码"
+        et_misc_texts["NORSK",22]="Fanget passord ved mislykkede forsøk"
+	et_misc_texts["SVENSKA",22]="Fångade lösenord vid misslyckade försök"
+	et_misc_texts["DANSK",22]="Indfangede adgangskode ved mislykkede forsøg"
 
 	et_misc_texts["ENGLISH",23]="Password captured successfully"
 	et_misc_texts["SPANISH",23]="Contraseña capturada con éxito"
@@ -489,6 +582,9 @@ function initialize_language_strings() {
 	et_misc_texts["TURKISH",23]="Şifre başarıyla yakalandı"
 	et_misc_texts["ARABIC",23]="تم التقاط كلمة السر بنجاح"
 	et_misc_texts["CHINESE",23]="密码获取成功"
+	et_misc_texts["NORSK",23]="Fanget passordet med sucsess"
+	et_misc_texts["SVENSKA",23]="Fångat lösenord framgångsrikt"
+	et_misc_texts["DANSK",23]="Indfanget adgangskode med succes"
 
 	et_misc_texts["ENGLISH",24]="The password was saved on file"
 	et_misc_texts["SPANISH",24]="La contraseña se ha guardado en el fichero"
@@ -503,6 +599,9 @@ function initialize_language_strings() {
 	et_misc_texts["TURKISH",24]="Şifre dosyaya kaydedildi"
 	et_misc_texts["ARABIC",24]="تم حفظ كلمة السر في الملف"
 	et_misc_texts["CHINESE",24]="密码已保存至文件"
+	et_misc_texts["NORSK",24]="Passordet ble lagret på fil"
+	et_misc_texts["SVENSKA",24]="Lösenordet sparades i filen"
+	et_misc_texts["DANSK",24]="Adgangskoden blev gemt i filen"
 
 	et_misc_texts["ENGLISH",25]="Press [Enter] on the main script window to continue, this window will be closed"
 	et_misc_texts["SPANISH",25]="Pulsa [Enter] en la ventana principal del script para continuar, esta ventana se cerrará"
@@ -517,6 +616,9 @@ function initialize_language_strings() {
 	et_misc_texts["TURKISH",25]="Devam etmek için [Enter] tuşuna basınız, bu sayfa kapatılacaktır"
 	et_misc_texts["ARABIC",25]="في نافذة البرنامج الرئيسية للمتابعة، سيتم إغلاق هذه النافذة [Enter] اضغط على"
 	et_misc_texts["CHINESE",25]="在脚本主窗口按 [Enter] 键继续，该窗口将关闭"
+	et_misc_texts["NORSK",25]="Trykk [Enter] i hovedskriptvinduet for å fortsette, dette vinduet vil bli lukket"
+	et_misc_texts["SVENSKA",25]="Tryck på [Enter] i huvudskriptfönstret för att fortsätta, detta fönster stängs"
+	et_misc_texts["DANSK",25]="Tryk på [Enter] i hovedscriptvinduet for at fortsætte, dette vindue lukkes"
 
 	et_misc_texts["ENGLISH",26]="Error. The password must be at least 8 characters. Redirecting to the main screen"
 	et_misc_texts["SPANISH",26]="Error. La contraseña debe tener al menos 8 caracteres. Redirigiendo a la pantalla principal"
@@ -531,6 +633,9 @@ function initialize_language_strings() {
 	et_misc_texts["TURKISH",26]="Hata. Şifre en az 8 karakter olmalıdır. Anasayfaya yönlendiriliyorsunuz"
 	et_misc_texts["ARABIC",26]="خطأ. يجب أن تتكون كلمة المرور من 8 أحرف على الأقل.حة، سيتم إعادة التوجيه إلى الشاشة الرئيسية"
 	et_misc_texts["CHINESE",26]="错误。密码必须至少为 8 个字符。重定向到主屏幕"
+	et_misc_texts["NORSK",26]="Feil. Passordet må være på minst 8 tegn. Omdirigerer til hovedskjermen"
+	et_misc_texts["SVENSKA",26]="Fel. Lösenordet måste vara minst 8 tecken. Omdirigerar till huvudskärmen"
+	et_misc_texts["DANSK",26]="Fejl. Adgangskoden skal være på mindst 8 tegn. Omdirigerer til hovedskærmen"
 
 	et_misc_texts["ENGLISH",27]="This attack has two parts. Watch the sniffer's screen to see if a password appears. You can also open BeEF control panel at ${white_color}${beef_control_panel_url}${pink_color} , log in (user: ${white_color}beef${pink_color} / pass: ${white_color}${beef_pass}${pink_color}) and try to control the clients browser"
 	et_misc_texts["SPANISH",27]="Este ataque tiene dos partes. Estate atento a la pantalla del sniffer para ver si aparece alguna contraseña. También puedes abrir el panel de control de BeEF en ${white_color}${beef_control_panel_url}${pink_color} , hacer login (user: ${white_color}beef${pink_color} / pass: ${white_color}${beef_pass}${pink_color}) e intentar controlar el navegador de los clientes"
@@ -545,6 +650,9 @@ function initialize_language_strings() {
 	et_misc_texts["TURKISH",27]="Bu saldırı iki parçadan oluşur. Sniffer ekranını şifre görünene kadar izleyin. Ayrıca BeEF kontrol panelini açabilir ${white_color}${beef_control_panel_url}${pink_color} , log in (user: ${white_color}beef${pink_color} / pass: ${white_color}${beef_pass}${pink_color}) ve kontrol edebilirsiniz"
 	et_misc_texts["ARABIC",27]="هذا الهجوم من جزئين. تحقق أثناء الهجوم في وحدة تحكم المتشمم إذا تم التقاط كلمة سر. يمكنك أيضًا فتحوحاول التحكم في متصفح الزبون (${white_color}${beef_pass}${pink_color}:كلمة السر ${white_color}beef${pink_color}:المستخدم) ${white_color}${beef_control_panel_url}${pink_color} في BeEF هذا الهجوم من جزئين. تحقق أثناء الهجوم في وحدة تحكم المتشمم إذا تم التقاط كلمة سر. يمكنك أيضًا فتح"
 	et_misc_texts["CHINESE",27]="这次攻击有两个部分。观察嗅探器的屏幕以查看是否出现密码。您还可以在 ${white_color}${beef_control_panel_url}${pink_color} 打开 BeEF 控制面板，登录 (用户: ${white_color}beef${pink_color} / 密码: ${white_color}${beef_pass}${pink_color}) 并尝试控制客户端浏览器"
+	et_misc_texts["NORSK",27]="Dette angrepet hans har to deler. Se snifferens skjerm for å se om et passord vises. Du kan også åpne BeEF kontrollpanel på ${white_color}${beef_control_panel_url}${pink_color} , logg inn (user: ${white_color}beef${pink_color} / pass: ${white_color}${beef_pass}${pink_color}) og prøve å kontrollere klientens nettleser"
+	et_misc_texts["SVENSKA",27]="Denna attack har två delar. Titta på snifferns skärm för att se om ett lösenord visas. Du kan också öppna BeEF kontrollpanel på ${white_color}${beef_control_panel_url}${pink_color} , logga in (user: ${white_color}beef${pink_color} / pass: ${white_color}${beef_pass}${pink_color}) och försök kontrollera klientens webbläsare"
+	et_misc_texts["DANSK",27]="Dette angreb har to dele. Se snifferens skærm for at se, om der vises en adgangskode. Du kan også åbne BeEF kontrolpanel på ${white_color}${beef_control_panel_url}${pink_color} , log ind (user: ${white_color}beef${pink_color} / pass: ${white_color}${beef_pass}${pink_color}) og prøv at styre klientens browser"
 
 	et_misc_texts["ENGLISH",28]="Portal accessed"
 	et_misc_texts["SPANISH",28]="Accedió al portal"
@@ -559,6 +667,9 @@ function initialize_language_strings() {
 	et_misc_texts["TURKISH",28]="Portala erişildi"
 	et_misc_texts["ARABIC",28]="تم الوصول إلى البوابة"
 	et_misc_texts["CHINESE",28]="门户访问成功"
+	et_misc_texts["NORSK",28]="Portalen ble åpnet"
+	et_misc_texts["SVENSKA",28]="Portalen nås"
+	et_misc_texts["DANSK",28]="Portal tilgået"
 
 	et_misc_texts["ENGLISH",29]="Is alive"
 	et_misc_texts["SPANISH",29]="Está activo"
@@ -573,6 +684,9 @@ function initialize_language_strings() {
 	et_misc_texts["TURKISH",29]="Aktif"
 	et_misc_texts["ARABIC",29]="نشط"
 	et_misc_texts["CHINESE",29]="处于活动状态"
+	et_misc_texts["NORSK",29]="Er aktiv"
+	et_misc_texts["SVENSKA",29]="Är aktiv"
+	et_misc_texts["DANSK",29]="Er aktiv"
 
 	declare -gA wps_texts
 	wps_texts["ENGLISH",0]="The password was saved on file"
@@ -588,6 +702,9 @@ function initialize_language_strings() {
 	wps_texts["TURKISH",0]="Şifre dosyaya kaydedildi"
 	wps_texts["ARABIC",0]="تم حفظ كلمة السر في ملف"
 	wps_texts["CHINESE",0]="密码已保存至文件"
+	wps_texts["NORSK",0]="Passordet ble lagret på fil"
+	wps_texts["SVENSKA",0]="Lösenordet sparades i filen"
+	wps_texts["DANSK",0]="Adgangskoden blev gemt i filen"
 
 	wps_texts["ENGLISH",1]="airgeddon. Decrypted password during WPS attack"
 	wps_texts["SPANISH",1]="airgeddon. Contraseña descifrada en ataque WPS"
@@ -602,6 +719,9 @@ function initialize_language_strings() {
 	wps_texts["TURKISH",1]="airgeddon. WPS saldırısı sırasında çözülen şifre"
 	wps_texts["ARABIC",1]="WPS فك تشفير كلمة السر أثناء هجوم .airgeddon"
 	wps_texts["CHINESE",1]="airgeddon WPS 攻击期间解密的密码"
+	wps_texts["NORSK",1]="airgeddon. Dekryptert passord under WPS-angrep"
+	wps_texts["SVENSKA",1]="airgeddon. Dekrypterat lösenord under WPS-attack"
+	wps_texts["DANSK",1]="airgeddon. Dekrypteret adgangskode under WPS-angreb"
 
 	wps_texts["ENGLISH",2]="Channel"
 	wps_texts["SPANISH",2]="Canal"
@@ -616,6 +736,9 @@ function initialize_language_strings() {
 	wps_texts["TURKISH",2]="Kanal"
 	wps_texts["ARABIC",2]="قناة"
 	wps_texts["CHINESE",2]="信道"
+	wps_texts["NORSK",2]="Kanal"
+	wps_texts["SVENSKA",2]="Kanal"
+	wps_texts["DANSK",2]="Kanal"
 
 	declare -gA wep_texts
 	wep_texts["ENGLISH",0]="Press [Enter] on the main script window to continue, this window will be closed"
@@ -631,6 +754,9 @@ function initialize_language_strings() {
 	wep_texts["TURKISH",0]="Yazılımın ana penceresinde [Enter] tuşlayarak devam ediniz. Bu pencere kapatılacak"
 	wep_texts["ARABIC",0]="في النافذة الرئيسية للبرنامج للمتابعة ، وستغلق هذه النافذة [Enter] اضغط على"
 	wep_texts["CHINESE",0]="在脚本主窗口按 [Enter] 键继续，该窗口将关闭"
+	wep_texts["NORSK",0]="Trykk [Enter] i hovedskriptvinduet for å fortsette, dette vinduet vil bli lukket"
+	wep_texts["SVENSKA",0]="Tryck på [Enter] i huvudskriptfönstret för att fortsätta, det här fönstret kommer att stängas"
+	wep_texts["DANSK",0]="Tryk på [Enter] i hovedscriptvinduet for at fortsætte, dette vindue vil blive lukket"
 
 	wep_texts["ENGLISH",1]="airgeddon. Decrypted password during WEP attack"
 	wep_texts["SPANISH",1]="airgeddon. Contraseña descifrada en ataque WEP"
@@ -645,6 +771,9 @@ function initialize_language_strings() {
 	wep_texts["TURKISH",1]="airgeddon. WEP saldırısı sırasında çözülen şifre"
 	wep_texts["ARABIC",1]="WEP تم فك تشفير كلمة المرور أثناء هجوم .airgeddon"
 	wep_texts["CHINESE",1]="airgeddon WEP 攻击期间解密的密码"
+	wep_texts["NORSK",1]="airgeddon. Derypterte passord under WEP-angrep"
+	wep_texts["SVENSKA",1]="airgeddon. Dekrypterat lösenord under WEP-attack"
+	wep_texts["DANSK",1]="airgeddon. Dekrypteret adgangskode under WEP-angreb"
 
 	wep_texts["ENGLISH",2]="Channel"
 	wep_texts["SPANISH",2]="Canal"
@@ -659,6 +788,9 @@ function initialize_language_strings() {
 	wep_texts["TURKISH",2]="Kanal"
 	wep_texts["ARABIC",2]="قناة"
 	wep_texts["CHINESE",2]="信道"
+	wep_texts["NORSK",2]="Kanal"
+	wep_texts["SVENSKA",2]="Kanal"
+	wep_texts["DANSK",2]="Kanal"
 
 	wep_texts["ENGLISH",3]="Hexadecimal"
 	wep_texts["SPANISH",3]="Hexadecimal"
@@ -673,6 +805,9 @@ function initialize_language_strings() {
 	wep_texts["TURKISH",3]="Hexadecimal"
 	wep_texts["ARABIC",3]="السداسي عشري"
 	wep_texts["CHINESE",3]="十六进制"
+	wep_texts["NORSK",3]="Hexadecimal"
+	wep_texts["SVENSKA",3]="Hexadecimal"
+	wep_texts["DANSK",3]="Hexadecimal"
 
 	wep_texts["ENGLISH",4]="WEP key decrypted successfully:"
 	wep_texts["SPANISH",4]="Clave WEP descifrada con éxito:"
@@ -687,6 +822,9 @@ function initialize_language_strings() {
 	wep_texts["TURKISH",4]="WEP anahtarı başarıyla çözüldü:"
 	wep_texts["ARABIC",4]=":بنجاح WEP تم فك تشفير مفتاح"
 	wep_texts["CHINESE",4]="WEP 密钥解密成功:"
+	wep_texts["NORSK",4]="WEP nøkklen ble dekrypteret med suksess:"
+	wep_texts["SVENSKA",4]="WEP nyckeln dekrypterades framgångsrikt:"
+	wep_texts["DANSK",4]="WEP nøglen blev dekrypteret med succes:"
 
 	wep_texts["ENGLISH",5]="WEP AP Info"
 	wep_texts["SPANISH",5]="Info WEP AP"
@@ -701,6 +839,9 @@ function initialize_language_strings() {
 	wep_texts["TURKISH",5]="WEP AP Bilgisi"
 	wep_texts["ARABIC",5]="WEP AP معلومات"
 	wep_texts["CHINESE",5]="WEP AP 信息"
+	wep_texts["NORSK",5]="WEP AP Info"
+	wep_texts["SVENSKA",5]="WEP AP Info"
+	wep_texts["DANSK",5]="WEP AP Info"
 
 	wep_texts["ENGLISH",6]="The password was saved on file"
 	wep_texts["SPANISH",6]="La contraseña se ha guardado en el fichero"
@@ -715,7 +856,10 @@ function initialize_language_strings() {
 	wep_texts["TURKISH",6]="Şifre dosyaya kaydedildi"
 	wep_texts["ARABIC",6]="تم حفظ كلمة المرور في الملف"
 	wep_texts["CHINESE",6]="密码已保存至文件"
-
+	wep_texts["NORSK",6]="Passordet ble lagret i fil"
+	wep_texts["SVENSKA",6]="Lösenordet sparades i filen"
+	wep_texts["DANSK",6]="Adgangskoden blev gemt i filen"
+	
 	declare -gA asleap_texts
 	asleap_texts["ENGLISH",0]="Response"
 	asleap_texts["SPANISH",0]="Response"
@@ -730,6 +874,9 @@ function initialize_language_strings() {
 	asleap_texts["TURKISH",0]="Yanıt"
 	asleap_texts["ARABIC",0]="جواب"
 	asleap_texts["CHINESE",0]="响应"
+	asleap_texts["NORSK",0]="Svar"
+	asleap_texts["SVENSKA",0]="Svar"
+	asleap_texts["DANSK",0]="Svar"
 
 	asleap_texts["ENGLISH",1]="airgeddon. Decrypted password using asleap"
 	asleap_texts["SPANISH",1]="airgeddon. Contraseña descifrada con asleap"
@@ -744,6 +891,9 @@ function initialize_language_strings() {
 	asleap_texts["TURKISH",1]="airgeddon. asleap kullanarak şifreyi çözdü"
 	asleap_texts["ARABIC",1]="asleap فك تشفير كلمة السر باستخدام .airgeddon"
 	asleap_texts["CHINESE",1]="airgeddon 使用 asleap 破解密码"
+	asleap_texts["NORSK",1]="airgeddon. Decryptert passord med asleap"
+	asleap_texts["SVENSKA",1]="airgeddon. Dekrypterat lösenord med asleap"
+	asleap_texts["DANSK",1]="airgeddon. Dekrypteret adgangskode ved asleap"
 
 	asleap_texts["ENGLISH",2]="Challenge"
 	asleap_texts["SPANISH",2]="Challenge"
@@ -758,6 +908,9 @@ function initialize_language_strings() {
 	asleap_texts["TURKISH",2]="Challenge"
 	asleap_texts["ARABIC",2]="التحدي"
 	asleap_texts["CHINESE",2]="挑战"
+	asleap_texts["NORSK",2]="Udfordring"
+	asleap_texts["SVENSKA",2]="Utmaning"
+	asleap_texts["DANSK",2]="Udfordring"
 
 	declare -gA jtr_texts
 	jtr_texts["ENGLISH",0]="Enterprise users and passwords"
@@ -773,6 +926,9 @@ function initialize_language_strings() {
 	jtr_texts["TURKISH",0]="Enterprise kullanıcılar ve şifreler"
 	jtr_texts["ARABIC",0]="Enterprise مستخدمي وكلمات السر"
 	jtr_texts["CHINESE",0]="企业用户和密码"
+	jtr_texts["NORSK",0]="Enterprise brugernavn og adgangskode"
+	jtr_texts["SVENSKA",0]="Enterprise användare och lösenord"
+	jtr_texts["DANSK",0]="Enterprise brugernavn og adgangskode"
 
 	jtr_texts["ENGLISH",1]="airgeddon. Decrypted password using john the ripper"
 	jtr_texts["SPANISH",1]="airgeddon. Contraseña descifrada con john the ripper"
@@ -787,6 +943,9 @@ function initialize_language_strings() {
 	jtr_texts["TURKISH",1]="airgeddon. John the ripper kullanarak şifreyi çözdü"
 	jtr_texts["ARABIC",1]="john the ripper فك تشفير كلمة السر باستخدام .airgeddon"
 	jtr_texts["CHINESE",1]="airgeddon 使用 john the ripper 破解密码"
+	jtr_texts["NORSK",1]="airgeddon. Dekrypyrert passord med john the ripper"
+	jtr_texts["SVENSKA",1]="airgeddon. Dekrypterat lösenord med john the ripper"
+	jtr_texts["DANSK",1]="airgeddon. Dekrypteret adgangskode ved john the ripper"
 
 	jtr_texts["ENGLISH",2]="Enterprise user"
 	jtr_texts["SPANISH",2]="Usuario enterprise"
@@ -801,6 +960,9 @@ function initialize_language_strings() {
 	jtr_texts["TURKISH",2]="Enterprise kullanıcı"
 	jtr_texts["ARABIC",2]="Enterprise مستخدم"
 	jtr_texts["CHINESE",2]="企业用户"
+	jtr_texts["NORSK",2]="Enterprise bruker"
+	jtr_texts["SVENSKA",2]="Enterprise användare"
+	jtr_texts["DANSK",2]="Enterprise bruger"
 
 	declare -gA hashcat_texts
 	hashcat_texts["ENGLISH",0]="PMKID password"
@@ -816,6 +978,9 @@ function initialize_language_strings() {
 	hashcat_texts["TURKISH",0]="PMKID şifresi"
 	hashcat_texts["ARABIC",0]="PMKID كلمة سر"
 	hashcat_texts["CHINESE",0]="PMKID 密码"
+	hashcat_texts["NORSK",0]="PMKID passord"
+	hashcat_texts["SVENSKA",0]="PMKID lösenord"
+	hashcat_texts["DANSK",0]="PMKID adgangskode"
 
 	hashcat_texts["ENGLISH",1]="airgeddon. Decrypted password using hashcat"
 	hashcat_texts["SPANISH",1]="airgeddon. Contraseña descifrada con hashcat"
@@ -830,6 +995,9 @@ function initialize_language_strings() {
 	hashcat_texts["TURKISH",1]="airgeddon. Hashcat kullanarak şifreyi çözdü"
 	hashcat_texts["ARABIC",1]="hashcat فك تشفير كلمة السر باستخدام .airgeddon"
 	hashcat_texts["CHINESE",1]="airgeddon 使用 hashcat 解密密码"
+	hashcat_texts["NORSK",1]="airgeddon. Dekrypyrert passord med hashcat"
+	hashcat_texts["SVENSKA",1]="airgeddon. Dekrypterat lösenord med hashcat"
+	hashcat_texts["DANSK",1]="airgeddon. Dekrypteret adgangskode ved hashcat"
 
 	hashcat_texts["ENGLISH",2]="Enterprise user"
 	hashcat_texts["SPANISH",2]="Usuario enterprise"
@@ -844,6 +1012,9 @@ function initialize_language_strings() {
 	hashcat_texts["TURKISH",2]="Enterprise kullanıcı"
 	hashcat_texts["ARABIC",2]="Enterprise مستخدم"
 	hashcat_texts["CHINESE",2]="企业用户"
+	hashcat_texts["NORSK",2]="Enterprise bruker"
+	hashcat_texts["SVENSKA",2]="Enterprise användare"
+	hashcat_texts["DANSK",2]="Enterprise bruger"
 
 	hashcat_texts["ENGLISH",3]="Enterprise users and passwords"
 	hashcat_texts["SPANISH",3]="Usuarios y contraseñas enterprise"
@@ -858,6 +1029,9 @@ function initialize_language_strings() {
 	hashcat_texts["TURKISH",3]="Enterprise kullanıcılar ve şifreler"
 	hashcat_texts["ARABIC",3]="Enterprise مستخدمي وكلمات السر"
 	hashcat_texts["CHINESE",3]="企业用户和密码"
+	hashcat_texts["NORSK",3]="Enterprise brugernavn og adgangskode"
+	hashcat_texts["SVENSKA",3]="Enterprise användare och lösenord"
+	hashcat_texts["DANSK",3]="Enterprise brugernavn og adgangskode"
 
 	declare -gA aircrack_texts
 	aircrack_texts["ENGLISH",0]="airgeddon. Decrypted password using aircrack"
@@ -873,7 +1047,10 @@ function initialize_language_strings() {
 	aircrack_texts["TURKISH",0]="airgeddon. Aircrack kullanarak şifreyi çözdü"
 	aircrack_texts["ARABIC",0]="aircrack فك تشفير كلمة السر باستخدام .airgeddon"
 	aircrack_texts["CHINESE",0]="airgeddon 使用 aircrack 解密密码"
-
+	aircrack_texts["NORSK",0]="airgeddon. Dekrypyrert passord med aircrack"
+	aircrack_texts["SVENSKA",0]="airgeddon. Dekrypterat lösenord med aircrack"
+	aircrack_texts["DANSK",0]="airgeddon. Dekrypteret adgangskode ved  aircrack"
+ 
 	declare -gA enterprise_texts
 	enterprise_texts["ENGLISH",0]="Enterprise Evil Twin AP Info"
 	enterprise_texts["SPANISH",0]="Info Evil Twin Enterprise AP"
@@ -888,7 +1065,11 @@ function initialize_language_strings() {
 	enterprise_texts["TURKISH",0]="Enterprise Şeytani İkiz AP Bilgisi"
 	enterprise_texts["ARABIC",0]="Enterprise Evil Twin AP معلومات"
 	enterprise_texts["CHINESE",0]="企业级加密 邪恶双胞胎 AP 信息"
+        enterprise_texts["NORSK",2]="Enterprise Evil Twin AP Info"
+	enterprise_texts["SVENSKAA",2]="Enterprise Evil Twin AP Info"
+	enterprise_texts["DANSK",2]="Enterprise Evil Twin AP Info"
 
+       
 	enterprise_texts["ENGLISH",1]="Channel"
 	enterprise_texts["SPANISH",1]="Canal"
 	enterprise_texts["FRENCH",1]="Canal"
@@ -902,6 +1083,9 @@ function initialize_language_strings() {
 	enterprise_texts["TURKISH",1]="Kanal"
 	enterprise_texts["ARABIC",1]="قناة"
 	enterprise_texts["CHINESE",1]="信道"
+	enterprise_texts["NORSK",1]="Kanal"
+	enterprise_texts["SVENSKAA",1]="Kanal"
+	enterprise_texts["DANSK",1]="Kanal"
 
 	enterprise_texts["ENGLISH",2]="Online time"
 	enterprise_texts["SPANISH",2]="Tiempo online"
@@ -916,6 +1100,9 @@ function initialize_language_strings() {
 	enterprise_texts["TURKISH",2]="Çevrimiçi zaman"
 	enterprise_texts["ARABIC",2]="المدة على الانترنت"
 	enterprise_texts["CHINESE",2]="在线时间"
+	enterprise_texts["NORSK",2]="Online tid"
+	enterprise_texts["SVENSKAA",2]="Online tid"
+	enterprise_texts["DANSK",2]="Online tid"
 
 	enterprise_texts["ENGLISH",3]="On this attack, we'll wait for a network client to provide us a hash or a password for the Enterprise wifi network in our fake AP. You selected \"smooth\" mode, so as soon as one password or hash is captured, the attack will be dismantled. You can also stop it pressing [Enter] key on the main window"
 	enterprise_texts["SPANISH",3]="Con este ataque, esperaremos a que algún cliente nos de un hash o su contraseña de la red wifi Enterprise en nuestro AP falso. Has seleccionado el modo \"smooth\", por lo que tan pronto se capture un hash o contraseña, el ataque se parará. También puedes parar el ataque pulsando la tecla [Enter] en la pantalla principal"
@@ -930,7 +1117,10 @@ function initialize_language_strings() {
 	enterprise_texts["TURKISH",3]="Bu saldırı ile, bir clientin sahte AP'deki Enterprise wifi ağı için bize bir hash veya şifre vermesini bekleyeceğiz. \"smooth\" modunu seçtiniz, böylece bir hash veya şifre yakalanır yakalanmaz saldırı duracaktır. Ana ekranda [Enter] tuşuna basarak da saldırıyı durdurabilirsiniz"
 	enterprise_texts["ARABIC",3]="[Enter] وبمجرد التقاط كلمة مرور أو تجزئة واحدة ، سيتم تفكيك الهجوم. يمكنك أيضًا إيقافه بالضغط على مفتاح \"smooth\" في نقطة الوصول المزيفة. لقد حددت الوضع Enterprise wifi في هذا الهجوم ، سننتظر حتى يقوم عميل الشبكة بتزويدنا بتجزئة أو كلمة مرور لشبكة"
 	enterprise_texts["CHINESE",3]="在这次攻击中，我们将等待网络客户端在我们的假 AP 中为我们提供企业级加密 wifi 网络的哈希值或密码。您选择了“平滑”模式，因此一旦捕获到某个密码或哈希值，攻击就会被解除。您也可以在主窗口按 [Enter] 键停止它"
-
+	enterprise_texts["NORSK",3]="Ved dette angrepet venter vi på at en nettverksklient gir oss en hash eller et passord for Enterprise wifi-nettverket i vår falske AP. Du valgte \"smooth\" modus, så så snart ett passord eller hash er fanget opp, vil angrepet bli demontert. Du kan også stoppe det ved å trykke på [Enter] tasten i hovedvinduet"
+    enterprise_texts["SVENSKAA",3]="Vid den här attacken väntar vi på att en nätverksklient ger oss en hash eller ett lösenord för Enterprise wifi-nätverk i vår falska AP. Du valde \"smooth\" läge, så så snart ett lösenord eller hash har registrerats kommer attacken att avvecklas. Du kan också stoppa det genom att trycka på [Enter] tangenten i huvudfönstret"
+	enterprise_texts["DANSK",3]="Ved dette angreb venter vi på, at en netværksklient giver os en hash eller en adgangskode til Enterprise wifi-netværket i vores falske AP. Du valgte tilstanden \"smooth\", mode så så snart én adgangskode eller hash er fanget vil angrebet blive afmonteret. Du kan også stoppe det ved at trykke på [Enter] tasten i hovedvinduet"
+	
 	enterprise_texts["ENGLISH",4]="On this attack, we'll wait for a network client to provide us a hash or a password for the Enterprise wifi network in our fake AP. You selected \"noisy\" mode, so the attack won't stop until you press [Enter] key on the main window"
 	enterprise_texts["SPANISH",4]="Con este ataque, esperaremos a que algún cliente nos de un hash o su contraseña de la red wifi Enterprise en nuestro AP falso. Has seleccionado el modo \"noisy\", por lo que el ataque no parará hasta que pulses la tecla [Enter] en la pantalla principal"
 	enterprise_texts["FRENCH",4]="Avec cette attaque, nous attendrons qu'un client nous donne un hash ou son mot de passe pour le réseau de wifi entreprise dans notre faux point d'accès. Vous avez sélectionné le mode \"bruyant\", donc l'attaque ne s'arrêtera pas tant que vous n'appuyez pas sur la touche [Enter] de l'écran principal"
@@ -944,6 +1134,9 @@ function initialize_language_strings() {
 	enterprise_texts["TURKISH",4]="Bu saldırı ile, bir clientin sahte AP'deki Enterprise wifi ağı için bize bir hash veya şifresini vermesini bekleyeceğiz. \"noisy\" modunu seçtiniz, bu yüzden ana ekranda [Enter] tuşuna basana kadar saldırı durmayacak"
 	enterprise_texts["ARABIC",4]="[Enter] وبمجرد التقاط كلمة مرور أو تجزئة واحدة ، سيتم تفكيك الهجوم. يمكنك أيضًا إيقافه بالضغط على مفتاح \"noisy\" في نقطة الوصول المزيفة. لقد حددت الوضع Enterprise wifi في هذا الهجوم ، سننتظر حتى يقوم عميل الشبكة بتزويدنا بتجزئة أو كلمة مرور لشبكة"
 	enterprise_texts["CHINESE",4]="在这次攻击中，我们将等待网络客户端在我们的假 AP 中为我们提供企业 wifi 网络的哈希值或密码。您选择了“嘈杂”模式，因此在您按下主窗口上的 [Enter] 键之前攻击都不会停止"
+	enterprise_texts["NORSK",4]="Ved dette angrepet venter vi på at en nettverksklient gir oss en hash eller et passord for Enterprise wifi nettverket i vår falske AP. Du valgte \"noisy\" modus, så angrepet stopper ikke før du trykker på [Enter] tasten i hovedvinduet"
+    enterprise_texts["SVENSKAA",4]="Vid den här attacken väntar vi på att en nätverksklient ger oss en hash eller ett lösenord för Enterprise wifi nätverk i vår falska AP. Du valde \"noisy\" läge, så attacken kommer inte att sluta förrän du trycker på [Enter] tangenten i huvudfönstret"
+    enterprise_texts["DANSK",4]="Ved dette angreb venter vi på at en netværksklient giver os en hash eller en adgangskode til Enterprise wifi netværket i vores falske AP. Du valgte \"noisy\" mode, så angrebet stopper ikke før du trykker på [Enter] tasten i hovedvinduet"
 
 	enterprise_texts["ENGLISH",5]="Last captured user"
 	enterprise_texts["SPANISH",5]="Último usuario capturado"
@@ -958,6 +1151,9 @@ function initialize_language_strings() {
 	enterprise_texts["TURKISH",5]="Son yakalanan kullanıcı"
 	enterprise_texts["ARABIC",5]="آخرمستخدم تم القبض عليه"
 	enterprise_texts["CHINESE",5]="最后捕获的用户"
+	enterprise_texts["NORSK",5]="Siste fangede bruker"
+	enterprise_texts["SVENSKAA",5]="Sista fangede användare"
+	enterprise_texts["DANSK",5]="Siste fangede bruger"
 
 	enterprise_texts["ENGLISH",6]="Nothing captured yet"
 	enterprise_texts["SPANISH",6]="Aún no se ha capturado nada"
@@ -972,6 +1168,9 @@ function initialize_language_strings() {
 	enterprise_texts["TURKISH",6]="Henüz yakalanan bir şey yok"
 	enterprise_texts["ARABIC",6]="لم يتم التقاط أي شيء حتى الآن"
 	enterprise_texts["CHINESE",6]="尚未捕获任何内容"
+	enterprise_texts["NORSK",6]="Intet fanget ennå"
+	enterprise_texts["SVENSKAA",6]="Inget fångat ännu"
+	enterprise_texts["DANSK",6]="Intet fanget endnu"
 
 	enterprise_texts["ENGLISH",7]="Captured hashes"
 	enterprise_texts["SPANISH",7]="Hashes capturados"
@@ -986,6 +1185,9 @@ function initialize_language_strings() {
 	enterprise_texts["TURKISH",7]="Yakalanan hashler"
 	enterprise_texts["ARABIC",7]="التجزئات الملتقطة"
 	enterprise_texts["CHINESE",7]="捕获的哈希值"
+	enterprise_texts["NORSK",7]="Hashes fanget"
+	enterprise_texts["SVENSKAA",7]="Hashes fångad"
+	enterprise_texts["DANSK",7]="Hashes fanget"
 
 	enterprise_texts["ENGLISH",8]="Captured plain text passwords"
 	enterprise_texts["SPANISH",8]="Contraseñas en texto plano capturadas"
@@ -1000,6 +1202,9 @@ function initialize_language_strings() {
 	enterprise_texts["TURKISH",8]="Yakalanan text şifreler"
 	enterprise_texts["ARABIC",8]="كلمات السر الملتقطة"
 	enterprise_texts["CHINESE",8]="捕获的明文密码"
+	enterprise_texts["NORSK",8]="Fanget ren tekst passord"
+	enterprise_texts["SVENSKAA",8]="Fångade lösenord i vanlig text"
+	enterprise_texts["DANSK",8]="Indfangede almindelige tekst adgangskoder"
 
 	enterprise_texts["ENGLISH",9]="Press [Enter] on the main script window to continue, this window will be closed and the files will be generated"
 	enterprise_texts["SPANISH",9]="Pulsa [Enter] en la ventana principal del script para continuar, esta ventana se cerrará y los ficheros serán generados"
@@ -1014,6 +1219,9 @@ function initialize_language_strings() {
 	enterprise_texts["TURKISH",9]="Devam etmek için [Enter] tuşuna basınız, bu sayfa kapatılacaktır ve dosyalar oluşturulacak"
 	enterprise_texts["ARABIC",9]="في نافذة البرنامج الرئيسية للمتابعة ، سيتم إغلاق هذه النافذة وسيتم إنشاء الملفات  [Enter]  اضغط على"
 	enterprise_texts["CHINESE",9]="在脚本主窗口按 [Enter] 键继续，该窗口将关闭并生成文件"
+	enterprise_texts["NORSK",9]="Trykk [Enter] i hovedskriptvinduet for å fortsette, dette vinduet vil bli lukket og filene vil bli generert"
+	enterprise_texts["SVENSKAA",9]="Tryck på [Enter] i huvudskriptfönstret för att fortsätta, detta fönster stängs och filerna kommer att genereras"
+	enterprise_texts["DANSK",9]="Tryk på [Enter] i hovedscriptvinduet for at fortsætte, dette vindue vil blive lukket, og filerne vil blive genereret"
 
 	enterprise_texts["ENGLISH",10]="The captured files will be saved on directory"
 	enterprise_texts["SPANISH",10]="Los ficheros capturados se guardarán en el directorio"
@@ -1028,6 +1236,9 @@ function initialize_language_strings() {
 	enterprise_texts["TURKISH",10]="Yakalanan dosyalar dizine kaydedilecek"
 	enterprise_texts["ARABIC",10]="سيتم حفظ الملفات الملتقطة في المجلد"
 	enterprise_texts["CHINESE",10]="捕获的文件将保存在文件夹中"
+	enterprise_texts["NORSK",10]="De fangede filene vil bli lagret i katalogen"
+	enterprise_texts["SVENSKAA",10]="De fångade filerna kommer att sparas i katalogen"
+	enterprise_texts["DANSK",10]="De optagne filer vil blive gemt i mappen"
 
 	enterprise_texts["ENGLISH",11]="airgeddon. Captured passwords during Enterprise Evil Twin"
 	enterprise_texts["SPANISH",11]="airgeddon. Contraseñas capturadas en Evil Twin Enterprise"
@@ -1042,6 +1253,9 @@ function initialize_language_strings() {
 	enterprise_texts["TURKISH",11]="airgeddon. Evil Twin Enterprise'da yakalanan şifreler"
 	enterprise_texts["ARABIC",11]="Enterprise Evil Twin تم التقاط كلمات السرأثناء .airgeddon"
 	enterprise_texts["CHINESE",11]="airgeddon 在企业级加密的邪恶双胞胎攻击期间捕获的密码"
+	enterprise_texts["NORSK",11]="airgeddon. Fanget passord under Enterprise Evil Twin"
+	enterprise_texts["SVENSKAA",11]="airgeddon. Fångade lösenord under Enterprise Evil Twin"
+	enterprise_texts["DANSK",11]="airgeddon. Fangede adgangskoder under Enterprise Evil Twin"
 
 	declare -gA footer_texts
 	footer_texts["ENGLISH",0]="If you enjoyed the script and found it useful, you can support the project by making a donation. Through PayPal (${mail}) or sending a fraction of cryptocurrency (Bitcoin, Ethereum, Litecoin...). Any amount, no matter how small (1, 2, 5 $/€) is welcome. More information and direct links to do it at: ${urlgithub_wiki}/Contributing"
@@ -1057,6 +1271,9 @@ function initialize_language_strings() {
 	footer_texts["TURKISH",0]="Eğer bu yazılımı kullanışlı ve eğlenceli bulduysanız, bize bağış yaparak destekte bulunabilirsiniz. PayPal üzerinden (${mail}) ya da herhangi bir kripto para birimi ile (Bitcoin, Ethereum, Litecoin...) Yolladığınız miktarın küçüklüğü fark etmez (1, 2, 5 $/€). Daha fazla fazla bilgi için linkler: ${urlgithub_wiki}/Contributing"
 	footer_texts["ARABIC",0]="${urlgithub_wiki}/Contributing :نرحب بأي مبلغ مهما كان صغيرا (1 ، 2 ، 5 دولارات / يورو). مزيد من المعلومات والروابط المباشرة للقيام بذلك على  .(Bitcoin, Ethereum, Litecoin...) أو إرسال جزء بسيط من العملة المشفرة  PayPal (${mail})  إذا كنت قد استمتعت بالبرنامج ووجدته مفيدًا ، فيمكنك دعم المشروع من خلال التبرع. من خلال"
 	footer_texts["CHINESE",0]="如果您喜欢该脚本并发现它很有用，您可以通过捐赠来支持该项目。通过 PayPal (${mail}) 或一点加密货币来付款 (比特币、以太币、莱特币...) 。欢迎任何金额，无论金额多少 (1、2、5 ￥/$/€) 。更多信息和直接链接: ${urlgithub_wiki}/Contributing"
+	footer_texts["NORSK",0]="Hvis du likte manuset og fant det nyttig, kan du støtte prosjektet ved å gi en donasjon. Gjennom PayPal (${mail}) eller sende en brøkdel av kryptovaluta (Bitcoin, Ethereum, Litecoin...). Ethvert beløp, uansett hvor lite (1, 2, 5 $/€) er velkommen. Mer informasjon og direkte lenker for å gjøre det på: ${urlgithub_wiki}/Contributing"
+	footer_texts["SVENSKAA",0]="Om du gillade manuset och tyckte att det var användbart kan du stödja projektet genom att göra en donation. Genom PayPal (${mail}) eller skicka en bråkdel av kryptovalutan (Bitcoin, Ethereum, Litecoin...). Alla belopp, oavsett hur små (1, 2, 5 $/€) är välkomna. Mer information och direktlänkar för att göra det på: ${urlgithub_wiki}/Contributing"
+	footer_texts["DANSK",0]="Hvis du kunne lide manuskriptet og fandt det nyttigt, kan du støtte projektet ved at give en donation. Gennem PayPal (${mail}) eller ved at sende en brøkdel af kryptovaluta (Bitcoin, Ethereum, Litecoin...). Ethvert beløb, uanset hvor lille (1, 2, 5 $/€) er velkomne. Flere oplysninger og direkte links til at gøre det på: ${urlgithub_wiki}/Contributing"
 
 	declare -gA arr
 	arr["ENGLISH",0]="This interface \${current_iface_on_messages} is already in managed mode"
@@ -1072,6 +1289,9 @@ function initialize_language_strings() {
 	arr["TURKISH",0]="Bu arayüz \${current_iface_on_messages} zaten yönetici modunda"
 	arr["ARABIC",0]="Managed mode  في الوضع  \${current_iface_on_messages} هذه الواجهة"
 	arr["CHINESE",0]="此接口 \${current_iface_on_messages} 已处于管理模式"
+	arr["NORSK",0]="Dette grensesnittet \${current_iface_on_messages} er allerede i managed mode"
+	arr["SVENSKAA",0]="Det här gränssnittet \${current_iface_on_messages} är redan i managed mode"
+	arr["DANSK",0]="Denne grænseflade \${current_iface_on_messages} er allerede i managed mode"
 
 	arr["ENGLISH",1]="This interface \${current_iface_on_messages} is not a wifi card. It doesn't support managed mode"
 	arr["SPANISH",1]="Esta interfaz \${current_iface_on_messages} no es una tarjeta wifi. No soporta modo managed"
@@ -1086,7 +1306,10 @@ function initialize_language_strings() {
 	arr["TURKISH",1]="Bu arayüz \${current_iface_on_messages} wifi kart değildir. Yönetici modunu desteklemiyor"
 	arr["ARABIC",1]="Managed mode  لذلك فهي لا تتحمل الوضع  .wifi  ليست بطاقة  \${current_iface_on_messages} هذه الواجهة"
 	arr["CHINESE",1]="这个接口 \${current_iface_on_messages} 不是 wifi 网卡。它不支持管理模式"
-
+	arr["NORSK",1]="Dette grensesnittet \${current_iface_on_messages} er ikke et wifi-kort. Det støtter ikke managed mode"
+	arr["SVENSKAA",1]="Det här gränssnittet \${current_iface_on_messages} är inte ett wifi-kort. Det stöder inte managed mode"
+	arr["DANSK",1]="Denne grænseflade \${current_iface_on_messages} er ikke et wifi-kort. Det understøtter ikke managed mode"
+	
 	arr["ENGLISH",2]="English O.S. language detected. Supported by script. Automatically changed"
 	arr["SPANISH",2]="Idioma Español del S.O. detectado. Soportado por el script. Se cambió automáticamente"
 	arr["FRENCH",2]="S.E. en Français détecté. Langue prise en charge par le script et changée automatiquement"
@@ -1100,6 +1323,9 @@ function initialize_language_strings() {
 	arr["TURKISH",2]="Türkçe İşletim Sistemi tespit edildi. Yazılım tarafından otomatik olarak değiştirildi"
 	arr["ARABIC",2]="تم الكشف أن اللغة العربية هي لغة نظام التشغيل. وهي متحملة من البرنامج. تغيرت اللغة تلقائيا"
 	arr["CHINESE",2]="检测到您的操作系统语言是中文。由脚本支持。自动更改"
+	arr["NORSK",2]="Norsk O.S. språk oppdaget. Støttes av script. Automatisk endret"
+	arr["SVENSKAA",2]="Svenska O.S. språk upptäckt. Stöds av script. Automatiskt ändrat"
+	arr["DANSK",2]="Dansk O.S. sprog opdaget. Understøttet af script. Automatisk ændret"
 
 	arr["ENGLISH",3]="Select target network:"
 	arr["SPANISH",3]="Selecciona la red objetivo:"
@@ -1114,6 +1340,9 @@ function initialize_language_strings() {
 	arr["TURKISH",3]="Hedef ağı seçiniz:"
 	arr["ARABIC",3]=":حدد الشبكة المستهدفة"
 	arr["CHINESE",3]="请选择目标网络:"
+	arr["NORSK",3]="Velg målnettverk:"
+	arr["SVENSKAA",3]="Välj målnätverk:"
+	arr["DANSK",3]="Vælg målnetværk:"
 
 	arr["ENGLISH",4]="Press [Enter] key to start attack..."
 	arr["SPANISH",4]="Pulse la tecla [Enter] para comenzar el ataque..."
@@ -1128,6 +1357,9 @@ function initialize_language_strings() {
 	arr["TURKISH",4]="Saldırıya başlamak için [Enter] tuşuna basınız..."
 	arr["ARABIC",4]="...لبدء الهجوم  [Enter]  اضغط على مفتاح"
 	arr["CHINESE",4]="按 [Enter] 键开始攻击..."
+    arr["NORSK",4]="Trykk på [Enter] for å starte angrepet..."
+	arr["SVENSKAA",4]="Tryck på [Enter] för att starta attacken..."
+	arr["DANSK",4]="Tryk på [Enter] for at starte angrebet..."
 
 	arr["ENGLISH",5]="It looks like your internet connection is unstable. The script can't connect to repository. It will continue without updating..."
 	arr["SPANISH",5]="Parece que tu conexión a internet no es estable. El script no puede conectar al repositorio. Continuará sin actualizarse..."
@@ -1142,6 +1374,9 @@ function initialize_language_strings() {
 	arr["TURKISH",5]="Görünüşe göre internet bağlantınız dengesiz. Yazılım depoya bağlanamadı. Güncelleme olmadan devam edilecek..."
 	arr["ARABIC",5]="...يبدو أن اتصالك بالإنترنت غير مستقر. البرنامج لا يمكنه الاتصال بالمستودع. سيستمر دون تحديث"
 	arr["CHINESE",5]="您的互联网连接似乎不稳定。该脚本无法连接到 GitHub 远程仓库。它会继续运行而不更新..."
+    arr["NORSK",5]="Det ser ut til at internettforbindelsen din er ustabil. Skriptet kan ikke koble til repository. Det vil fortsette uten oppdatering..."
+	arr["SVENSKAA",5]="Det verkar som om din internetanslutning är instabil. Skriptet kan inte ansluta till arkivet. Det kommer att fortsätta utan uppdatering..."
+	arr["DANSK",5]="Det ser ud til at din internetforbindelse er ustabil. Scriptet kan ikke oprette forbindelse til lageret. Det fortsætter uden opdatering.."
 
 	arr["ENGLISH",6]="Welcome to airgeddon script \${normal_color}v\${airgeddon_version}"
 	arr["SPANISH",6]="Bienvenid@ a airgeddon script \${normal_color}v\${airgeddon_version}"
@@ -1156,6 +1391,9 @@ function initialize_language_strings() {
 	arr["TURKISH",6]="airgeddon yazılımına hoşgeldiniz \${normal_color}v\${airgeddon_version}"
 	arr["ARABIC",6]="\${normal_color}v\${airgeddon_version}\${blue_color} airgeddon مرحبا بكم في"
 	arr["CHINESE",6]="欢迎使用 airgeddon 脚本 \${normal_color}v\${airgeddon_version}"
+    arr["NORSK",6]="Velkommen til airgeddon script \${normal_color}v\${airgeddon_version}"
+	arr["SVENSKAA",6]="Välkommen till airgeddon script \${normal_color}v\${airgeddon_version}"
+	arr["DANSK",6]="Velkommen til airgeddon script \${normal_color}v\${airgeddon_version}"
 
 	arr["ENGLISH",7]="This script is only for educational purposes. Be good boyz&girlz!"
 	arr["SPANISH",7]="Este script se ha hecho sólo con fines educativos. Sed buen@s chic@s!"
@@ -1170,6 +1408,9 @@ function initialize_language_strings() {
 	arr["TURKISH",7]="Bu yazılım sadece eğitim amaçlıdır. Akıllı olun çocuklar!"
 	arr["ARABIC",7]="!هذا البرنامج هو فقط لأغراض تعليمية. كونوا أولاد وبنات جيدين"
 	arr["CHINESE",7]="此脚本仅用于教育目的。请做个好孩子！"
+	arr["NORSK",7]="Dette skriptet er kun for pedagogiske formål.Vær gode gutter & jenter!"
+	arr["SVENSKAA",7]="Detta skript är endast för utbildningsändamål.Vær god drenge & piger!"
+	arr["DANSK",7]="Dette script er kun til undervisningsformål.Var snell pojke & tjej!"
 
 	arr["ENGLISH",8]="Known compatible distros with this script:"
 	arr["SPANISH",8]="Distros conocidas compatibles con este script:"
@@ -1184,6 +1425,9 @@ function initialize_language_strings() {
 	arr["TURKISH",8]="Bu komut dosyasıyla bilinen uyumlu dağıtımlar:"
 	arr["ARABIC",8]=":التوزيعات المتوافقة المعروفة مع هذا البرنامج"
 	arr["CHINESE",8]="与此脚本兼容的已知的 Linux 发行版:"
+	arr["NORSK",8]="Kjente kompatible distroer med dette skriptet:"
+	arr["SVENSKAA",8]="Kända kompatibla distroer med detta skript:"
+	arr["DANSK",8]="Kendte kompatible distros med dette script:"
 
 	arr["ENGLISH",9]="Detecting system..."
 	arr["SPANISH",9]="Detectando sistema..."
@@ -1198,6 +1442,9 @@ function initialize_language_strings() {
 	arr["TURKISH",9]="Sistem tespit ediliyor..."
 	arr["ARABIC",9]="...الكشف عن النظام"
 	arr["CHINESE",9]="检测到当前系统..."
+	arr["NORSK",9]="Registrer system..."
+	arr["SVENSKAA",9]="Detektering system..."
+	arr["DANSK",9]="Registrer system..."
 
 	arr["ENGLISH",10]="This interface \${current_iface_on_messages} is already in monitor mode"
 	arr["SPANISH",10]="Esta interfaz \${current_iface_on_messages} ya está en modo monitor"
@@ -1212,6 +1459,9 @@ function initialize_language_strings() {
 	arr["TURKISH",10]="Bu arayüz \${current_iface_on_messages} zaten izleme modunda"
 	arr["ARABIC",10]="Monitor mode  في وضع  \${current_iface_on_messages} هذه الواجهة"
 	arr["CHINESE",10]="此接口 \${current_iface_on_messages} 已处于监控模式"
+	arr["NORSK",10]="Dette grensesnittet \${current_iface_on_messages} er allerede i monitor mode"
+	arr["SVENSKAA",10]="Det här gränssnittet \${current_iface_on_messages} är redan i monitor mode"
+	arr["DANSK",10]="Denne grænseflade \${current_iface_on_messages} er allerede i monitor mode"
 
 	arr["ENGLISH",11]="Exiting airgeddon script \${normal_color}v\${airgeddon_version}\${blue_color} - See you soon! :)"
 	arr["SPANISH",11]="Saliendo de airgeddon script \${normal_color}v\${airgeddon_version}\${blue_color} - Nos vemos pronto! :)"
@@ -1226,6 +1476,9 @@ function initialize_language_strings() {
 	arr["TURKISH",11]="airgeddon yazılımından çıkış yapılıyor \${normal_color}v\${airgeddon_version}\${blue_color} - Tekrar görüşürüz! :)"
 	arr["ARABIC",11]="اراك قريبا! :) - \${normal_color}v\${airgeddon_version}\${blue_color} الخروج من البرنامج"
 	arr["CHINESE",11]="退出 airgeddon 脚本 \${normal_color}v\${airgeddon_version}\${blue_color} - 待会见！:)"
+	arr["NORSK",11]="Avslutter airgeddon skriptet \${normal_color}v\${airgeddon_version}\${blue_color} - Vi sees snart! :)"
+	arr["SVENSKAA",11]="Afslutter airgeddon script \${normal_color}v\${airgeddon_version}\${blue_color} - Vi ses snart! :)"
+	arr["DANSK",11]="Avslutar airgeddon skriptet \${normal_color}v\${airgeddon_version}\${blue_color} - Vi ses snart! :)"
 
 	arr["ENGLISH",12]="\${blue_color}Interruption detected. \${green_color}Do you really want to exit? \${normal_color}\${visual_choice}"
 	arr["SPANISH",12]="\${blue_color}Detectada interrupción. \${green_color}¿Quieres realmente salir del script? \${normal_color}\${visual_choice}"
@@ -1240,6 +1493,9 @@ function initialize_language_strings() {
 	arr["TURKISH",12]="\${blue_color}Kesinti algılandı. \${green_color}Gerçekten çıkış yapmak istiyor musunuz? \${normal_color}\${visual_choice}"
 	arr["ARABIC",12]="\${normal_color}\${visual_choice} \${green_color}هل تريد حقًا الخروج؟ \${blue_color}.تم اكتشاف مقاطعة\${normal_color}"
 	arr["CHINESE",12]="\${blue_color}检测到中断信号。\${green_color}您真的要退出吗？\${normal_color}\${visual_choice}"
+	arr["NORSK",12]="\${blue_color}Avbrydelse registreret. \${green_color}Vil du virkelig avslutte? \${normal_color}\${visual_choice}"
+	arr["SVENSKAA",12]="\${blue_color}Avbrott upptäckt. \${green_color}Vill du verkligen avsluta? \${normal_color}\${visual_choice}"
+	arr["DANSK",12]="\${blue_color}Afbrydelse registreret. \${green_color}Vil du virkelig afslutte? \${normal_color}\${visual_choice}"
 
 	arr["ENGLISH",13]="This interface \${current_iface_on_messages} is not a wifi card. It doesn't support monitor mode"
 	arr["SPANISH",13]="Esta interfaz \${current_iface_on_messages} no es una tarjeta wifi. No soporta modo monitor"
@@ -1254,6 +1510,9 @@ function initialize_language_strings() {
 	arr["TURKISH",13]="Bu arayüz \${current_iface_on_messages} bir wifi kartı değildir. İzleme modunu desteklemiyor"
 	arr["ARABIC",13]="monitor mode لذلك فهي لا تتحمل الوضع .wifi  ليست بطاقة \${current_iface_on_messages} هذه الواجهة"
 	arr["CHINESE",13]="接口\${current_iface_on_messages}不是 wifi 网卡。不支持监听模式"
+	arr["NORSK",13]="Dette grensesnittet \${current_iface_on_messages} er ikke et wifi kort. Den støtter ikke monitor mode"
+	arr["SVENSKAA",13]="Det här gränssnittet \${current_iface_on_messages} är inte ett wifi kort. Det stöder inte monitor mode"
+	arr["DANSK",13]="Denne grænseflade \${current_iface_on_messages} er ikke et wifi kort. Det understøtter ikke monitor mode"
 
 	arr["ENGLISH",14]="This interface \${current_iface_on_messages} is not in monitor mode"
 	arr["SPANISH",14]="Esta interfaz \${current_iface_on_messages} no está en modo monitor"
@@ -1268,6 +1527,9 @@ function initialize_language_strings() {
 	arr["TURKISH",14]="Bu arayüz \${current_iface_on_messages} izleme modunda değildir"
 	arr["ARABIC",14]="monitor mode ليست في وضع \${current_iface_on_messages} هذه الواجهة"
 	arr["CHINESE",14]="此接口 \${current_iface_on_messages} 未处于监听模式"
+	arr["NORSK",14]="Dette grensesnittet \${current_iface_on_messages} er ikke i monitor mode"
+	arr["SVENSKAA",14]="Det här gränssnittet \${current_iface_on_messages} är inte i monitor mode"
+	arr["DANSK",14]="Denne grænseflade \${current_iface_on_messages} er ikke i monitor mode"
 
 	arr["ENGLISH",15]="The interface changed its name while setting in managed mode. Autoselected"
 	arr["SPANISH",15]="Esta interfaz ha cambiado su nombre al ponerse en modo managed. Se ha seleccionado automáticamente"
@@ -1282,6 +1544,9 @@ function initialize_language_strings() {
 	arr["TURKISH",15]="Arayüz ismi yönetici moduna alınırken değiştirildi. Otomatik olarak seçildi"
 	arr["ARABIC",15]="تلقائيًا managed mode غيرت الواجهة اسمها أثناء الإعداد في الوضع"
 	arr["CHINESE",15]="在管理模式下，接口名称已变更。自动重新选择"
+	arr["NORSK",15]="Grensesnittet endret navn mens det var i managed mode. Autovalgt"
+	arr["SVENSKAA",15]="Gränssnittet bytte namn när det var i managed mode. Autovald"
+	arr["DANSK",15]="Grænsefladen ændrede sit navn, mens den var i managed mode. Autovalgt"
 
 	arr["ENGLISH",16]="Managed mode now is set on \${current_iface_on_messages}"
 	arr["SPANISH",16]="Se ha puesto el modo managed en \${current_iface_on_messages}"
@@ -1296,6 +1561,9 @@ function initialize_language_strings() {
 	arr["TURKISH",16]="Yönetici modu açıldı \${current_iface_on_messages}"
 	arr["ARABIC",16]="managed mode  على \${current_iface_on_messages} الآن"
 	arr["CHINESE",16]="管理接口现在设置为 \${current_iface_on_messages}"
+	arr["NORSK",16]="Managed mode er nå aktivert på \${current_iface_on_messages}"
+	arr["SVENSKAA",16]="Managed mode är nu aktiverat på \${current_iface_on_messages}"
+	arr["DANSK",16]="Managed mode er nu aktiveret på \${current_iface_on_messages}"
 
 	arr["ENGLISH",17]="Setting your interface in managed mode..."
 	arr["SPANISH",17]="Poniendo la interfaz en modo managed..."
@@ -1310,6 +1578,9 @@ function initialize_language_strings() {
 	arr["TURKISH",17]="Arayüzünüz yönetici moduna çeviriliyor..."
 	arr["ARABIC",17]="...managed mode جارٍ ضبط واجهتك في الوضع"
 	arr["CHINESE",17]="正在将您的接口设置为管理模式..."
+	arr["NORSK",17]="Setter grensesnittet ditt i managed mode..."
+	arr["SVENSKAA",17]="Ställer in ditt gränssnitt i managed mode..."
+	arr["DANSK",17]="Indstiller din grænseflade i managed mode..."
 
 	arr["ENGLISH",18]="Setting your interface in monitor mode..."
 	arr["SPANISH",18]="Poniendo la interfaz en modo monitor..."
@@ -1324,6 +1595,10 @@ function initialize_language_strings() {
 	arr["TURKISH",18]="Arayüzünüz izleme moduna çeviriliyor..."
 	arr["ARABIC",18]="...monitor mode جارٍ ضبط واجهتك في الوضع"
 	arr["CHINESE",18]="正在将您的接口设置为监听模式..."
+	arr["NORSK",18]="Setter grensesnittet ditt i monitor mode..."
+	arr["SVENSKAA",18]="Ställer in ditt gränssnitt i monitor mode..."
+	arr["DANSK",18]="Indstiller din grænseflade i monitor mode..."
+
 
 	arr["ENGLISH",19]="Please be patient. Maybe killing some conflicting processes..."
 	arr["SPANISH",19]="Por favor ten paciencia. Puede que esté matando algunos procesos que podrían causar conflicto..."
@@ -1338,6 +1613,9 @@ function initialize_language_strings() {
 	arr["TURKISH",19]="Lütfen sabırlı olun. Bazı çelişkili süreçler sonlandırılıyor..."
 	arr["ARABIC",19]="...يرجى التحلي بالصبر. ربما  يجب قتل بعض العمليات المتضاربة"
 	arr["CHINESE",19]="请耐心等待。也许会杀死一些有冲突的进程..."
+	arr["NORSK",19]="Vær tålmodig. Dreper kanskje noen motstridende prosesser..."
+	arr["SVENSKAA",19]="Ha tålamod. Dödar kanskje några motstridiga processer..."
+	arr["DANSK",19]="Vær venligst tålmodig. Dræber måske nogle modstridende processer..."
 
 	arr["ENGLISH",20]="This interface \${current_iface_on_messages} doesn't support monitor mode"
 	arr["SPANISH",20]="Esta interfaz \${current_iface_on_messages} no soporta modo monitor"
@@ -1352,6 +1630,9 @@ function initialize_language_strings() {
 	arr["TURKISH",20]="Bu arayüz \${current_iface_on_messages} izleme modunu desteklemiyor"
 	arr["ARABIC",20]="monitor mode لا تتحمل \${current_iface_on_messages} هذه الواجهة"
 	arr["CHINESE",20]="此接口\${current_iface_on_messages}不支持监听模式"
+	arr["NORSK",20]="Dette grensesnittet \${current_iface_on_messages}støtter ikke monitor mode"
+	arr["SVENSKAA",20]="Det här gränssnittet \${current_iface_on_messages} stöder inte monitor mode"
+	arr["DANSK",20]="Denne grænseflade \${current_iface_on_messages} understøtter ikke monitor mode"
 
 	arr["ENGLISH",21]="The interface changed its name while setting in monitor mode. Autoselected"
 	arr["SPANISH",21]="Esta interfaz ha cambiado su nombre al ponerla en modo monitor. Se ha seleccionado automáticamente"
@@ -1366,6 +1647,9 @@ function initialize_language_strings() {
 	arr["TURKISH",21]="Arayüz, monitör moduna girerken adını değiştirdi. Otomatik olarak seçildi"
 	arr["ARABIC",21]="تلقائيًا monitor mode غيرت الواجهة اسمها أثناء الإعداد في وضع"
 	arr["CHINESE",21]="在监听模式下，接口名称已变更。自动重新选择"
+	arr["NORSK",21]="Grensesnittet endret navn mens det var i monitor mode. Autovalgt"
+	arr["SVENSKAA",21]="Gränssnittet bytte namn när det var i monitor mode. Autovald"
+	arr["DANSK",21]="Interfacet ændrede sit navn, mens det var i monitor mode. Autovalgt"
 
 	arr["ENGLISH",22]="Monitor mode now is set on \${current_iface_on_messages}"
 	arr["SPANISH",22]="Se ha puesto el modo monitor en \${current_iface_on_messages}"
@@ -1380,6 +1664,9 @@ function initialize_language_strings() {
 	arr["TURKISH",22]="İzleme modu açıldı \${current_iface_on_messages}"
 	arr["ARABIC",22]="managed mode على \${current_iface_on_messages} الآن"
 	arr["CHINESE",22]="监听接口现在已经设置为 \${current_iface_on_messages}"
+	arr["NORSK",22]="Monitormodus er nå satt på \${current_iface_on_messages}"
+	arr["SVENSKAA",22]="Monitor mode är nu aktiverat på \${current_iface_on_messages}"
+	arr["DANSK",22]="Monitor mode er nu aktiveret på \${current_iface_on_messages}"
 
 	arr["ENGLISH",23]="There is a problem with the selected interface. Redirecting you to script exit"
 	arr["SPANISH",23]="Hay un problema con la interfaz seleccionada. Redirigiendo a la salida del script"
@@ -1394,6 +1681,9 @@ function initialize_language_strings() {
 	arr["TURKISH",23]="Seçilen arayüz ile ilgili bir problem oluştu. Yazılımdan çıkışa yönlendiriliyorsunuz"
 	arr["ARABIC",23]="توجد مشكلة في الواجهة المحددة. إعادة توجيهك إلى الخروج من البرنامج"
 	arr["CHINESE",23]="所选择的接口有问题。您将被重定向到脚本出口"
+	arr["NORSK",23]="Det er et problem med det valgte grensesnittet. Omdirigerer deg til skriptavslutning"
+	arr["SVENSKAA",23]="Det finns ett problem med det valda gränssnittet. Omdirigerar dig till skriptutgång"
+	arr["DANSK",23]="Der er et problem med den valgte grænseflade. Omdirigerer dig til scriptafslutning"
 
 	arr["ENGLISH",24]="Select an interface to work with:"
 	arr["SPANISH",24]="Selecciona una interfaz para trabajar con ella:"
@@ -1408,7 +1698,10 @@ function initialize_language_strings() {
 	arr["TURKISH",24]="Çalışmak için bir arayüz seçiniz:"
 	arr["ARABIC",24]=":حدد واجهة للعمل بها"
 	arr["CHINESE",24]="请选择要使用的网络接口:"
-
+	arr["NORSK",24]="Velg et grensesnitt å arbeide med"
+	arr["SVENSKAA",24]="Välj ett gränssnitt att arbeta med:"
+	arr["DANSK",24]="Vælg en grænseflade at arbejde med:"
+	
 	arr["ENGLISH",25]="Set channel (1-14):"
 	arr["SPANISH",25]="Selecciona un canal (1-14):"
 	arr["FRENCH",25]="Sélectionnez un canal (1-14):"
@@ -1422,6 +1715,9 @@ function initialize_language_strings() {
 	arr["TURKISH",25]="Kanal ayarlayınız (1-14):"
 	arr["ARABIC",25]=":(1-14) ضبط القناة"
 	arr["CHINESE",25]="设置信道 (1-14):"
+	arr["NORSK",25]="Still inn kanal(1-14):"
+	arr["SVENSKAA",25]=" Ställ in kanal(1-14):"
+	arr["DANSK",25]="Indstil kanal (1-14):"
 
 	arr["ENGLISH",26]="Channel set to \${normal_color}\${channel}"
 	arr["SPANISH",26]="Canal elegido \${normal_color}\${channel}"
@@ -1436,6 +1732,9 @@ function initialize_language_strings() {
 	arr["TURKISH",26]="Kanal şu şekilde ayarlandı \${normal_color}\${channel}"
 	arr["ARABIC",26]="\${normal_color}\${channel}\${blue_color} القناة المختارة\${normal_color}"
 	arr["CHINESE",26]="信道设置为 \${normal_color}\${channel}"
+	arr["NORSK",26]="Kanal instilt  på \${normal_color}\${channel} \${normal_color}\${channel}"
+	arr["SVENSKAA",26]="Kanal inställd på \${normal_color}\${channel}"
+	arr["DANSK",26]="Kanal indstillet til \${normal_color}\${kanal}"
 
 	arr["ENGLISH",27]="Type target BSSID (example: 00:11:22:33:44:55):"
 	arr["SPANISH",27]="Escribe el BSSID objetivo (ejemplo: 00:11:22:33:44:55):"
@@ -1450,6 +1749,9 @@ function initialize_language_strings() {
 	arr["TURKISH",27]="Hedef türü BSSID (example: 00:11:22:33:44:55):"
 	arr["ARABIC",27]=":(00:11:22:33:44:55:الهدف (مثال BSSID اكتب"
 	arr["CHINESE",27]="请输入目标的 BSSID (例如: 00:11:22:33:44:55):"
+	arr["NORSK",27]="Skriv inn mål BSSID (exempel: 00:11:22:33:44:55):"
+	arr["SVENSKAA",27]="Skriv mål BSSID(exempel: 00:11:22:33:44:55):"
+	arr["DANSK",27]="Indtast mål BSSID(exempel: 00:11:22:33:44:55):"
 
 	arr["ENGLISH",28]="BSSID set to \${normal_color}\${bssid}"
 	arr["SPANISH",28]="BSSID elegido \${normal_color}\${bssid}"
@@ -1464,6 +1766,9 @@ function initialize_language_strings() {
 	arr["TURKISH",28]="BSSID şu şekilde ayarlandı \${normal_color}\${bssid}"
 	arr["ARABIC",28]="\${normal_color}\${bssid}\${blue_color} المختار BSSID\${normal_color}"
 	arr["CHINESE",28]="BSSID 设置为 \${normal_color}\${bssid}"
+	arr["NORSK",28]="BSSID valgt \${normal_color}\${bssid}"
+	arr["SVENSKAA",28]="BSSID valt \${normal_color}\${bssid}"
+	arr["DANSK",28]="BSSID valgt \${normal_color}\${bssid}"
 
 	arr["ENGLISH",29]="Type target ESSID:"
 	arr["SPANISH",29]="Escribe el ESSID objetivo:"
@@ -1478,6 +1783,9 @@ function initialize_language_strings() {
 	arr["TURKISH",29]="Hedef türü ESSID:"
 	arr["ARABIC",29]=":الهدف ESSID اكتب"
 	arr["CHINESE",29]="请输入目标的 ESSID:"
+	arr["NORSK",29]="Skriv inn mål BSSID":
+	arr["SVENSKAA",29]="Skriv mål BSSID:"
+	arr["DANSK",29]="Indtast mål BSSID:"
 
 	arr["ENGLISH",30]="\${blue_color}You haven't selected any target or you have selected a hidden network ESSID. This could be because you scanned few time or maybe the selected network has a hidden ESSID. These kind of networks will show their real ESSID only if a client connects while scanning and that could require so much time. If you already know the real ESSID of this target, it can be set manually. \${green_color}Do you want to set ESSID manually for this target network? \${normal_color}\${visual_choice}"
 	arr["SPANISH",30]="\${blue_color}No tienes seleccionado ningún objetivo o has seleccionado un ESSID de red oculta. Esto podría deberse a que escaneste poco tiempo o quizás la red seleccionada tiene el ESSID oculto. Este tipo de redes mostrarán su ESSID real sólo si un cliente se conecta mientras escaneas pero eso podría requerir mucho tiempo. Si ya conoces el ESSID real de este objetivo, puedes configurarlo manualmente. \${green_color}¿Quieres configurar el ESSID manualmente para esta red objetivo? \${normal_color}\${visual_choice}"
@@ -1492,6 +1800,9 @@ function initialize_language_strings() {
 	arr["TURKISH",30]="\${blue_color}Herhangi bir hedef seçmediniz veya gizli bir ağ ESSID'si seçtiniz. Bunun nedeni birkaç kez tarama yapmış olmanız veya seçilen ağın gizli bir ESSID'ye sahip olması olabilir. Bu tür ağlar gerçek ESSID'lerini yalnızca bir istemci tarama sırasında bağlanırsa gösterir ve bu çok fazla zaman gerektirir. Bu hedefin gerçek ESSID'sini zaten biliyorsanız manuel olarak ayarlanabilir. \${green_color}Bu hedef ağ için ESSID'yi manuel olarak ayarlamak ister misiniz? \${normal_color}\${visual_choice}"
 	arr["ARABIC",30]="\${normal_color}\${visual_choice} \${green_color}لهذة الشبكة يدوياً؟ ESSIDهل تريد ادخال ال\${blue_color} .الحقيقي لشبكة, يمكن تحديدها يدوياً ESSIDلحقيقي اذا اتصل العميل في خلال الفحص فقط و هذا قد يستغرق وقت طويل. اذا كنت تعلم ال ESSIDمخفى. هذا النوع من الشباكات سيظهر ال ESSIDلشبكة مختفيه. هذا قد يكون لانك لم تفحص لفترة كافية او اخترت شبكة ب ESSID لم يتم تحديد اي هدف او تم تحديد\${normal_color}"
 	arr["CHINESE",30]="\${blue_color}您尚未选择任何目标或您选择了隐藏网络的 ESSID。这可能是因为您扫描的次数过少, 或所选网络可能具有隐藏 ESSID。此类网络仅当连接它时才会显示其真实的 ESSID。如果您已经知道该目标的真实 ESSID, 则可以手动设置。 \${green_color}您要为此目标网络手动设置 ESSID 吗? \${normal_color}\${visual_choice}"
+	arr["NORSK",30]="\${blue_color}Du har ikke valgt noe mål, eller du har valgt en skjult nettverks-ESSID. Dette kan være fordi du skannet noen ganger, eller kanskje det valgte nettverket har en skjult ESSID. Denne typen nettverk vil vise sin virkelige ESSID bare hvis en klient kobler seg til mens den skanner, og det kan kreve så mye tid. Hvis du allerede kjenner den virkelige ESSID til dette målet, kan den angis manuelt. \${green_color}Vil du angi ESSID manuelt for dette målnettverket? \${normal_farge}\${visual_choice}"
+	arr["SVENSKAA",30]="\${blue_color}Du har inte valt något mål eller så har du valt ett dolt nätverks-ESSID.Detta kan bero på att du skannade några gånger eller att det valda nätverket har ett dolt ESSID. Den här typen av nätverk visar sitt riktiga ESSID endast om en klient ansluter under skanning och det kan ta så mycket tid. Om du redan vet det verkliga ESSID för detta mål kan det ställas in manuellt. \${green_color}Vill du ställa in ESSID manuellt för detta målnätverk? \${normal_color}\${visual_choice}"
+	arr["DANSK",30]="\${blue_color}Du har ikke valgt noget mål, eller du har valgt et skjult netværks-ESSID. Dette kan skyldes, at du har scannet et par gange, eller måske har det valgte netværk et skjult ESSID. Denne slags netværk vil kun vise deres rigtige ESSID, hvis en klient opretter forbindelse under scanning, og det kan kræve så meget tid. Hvis du allerede kender det rigtige ESSID for dette mål, kan det indstilles manuelt. \${green_color}Vil du indstille ESSID manuelt for dette målnetværk? \${normal_farve}\${visual_choice}"
 
 	arr["ENGLISH",31]="ESSID set to \${normal_color}\${essid}"
 	arr["SPANISH",31]="ESSID elegido \${normal_color}\${essid}"
@@ -1506,6 +1817,9 @@ function initialize_language_strings() {
 	arr["TURKISH",31]="ESSID şu şekilde ayarlandı \${normal_color}\${essid}"
 	arr["ARABIC",31]="\${normal_color}\${essid}\${blue_color} المختار ESSID\${normal_color}"
 	arr["CHINESE",31]="ESSID 设置为 \${normal_color}\${essid}"
+	arr["NORSK",31]="ESSID valgt \${normal_color}\${essid}"
+	arr["SVENSKAA",31]="ESSID valt \${normal_color}\${essid}"
+	arr["DANSK",31]="ESSID valgt \${normal_color}\${essid}"
 
 	arr["ENGLISH",32]="All parameters set"
 	arr["SPANISH",32]="Todos los parámetros están listos"
@@ -1520,6 +1834,9 @@ function initialize_language_strings() {
 	arr["TURKISH",32]="Tüm parametreler ayalandı"
 	arr["ARABIC",32]="جميع المعلمات جاهزة"
 	arr["CHINESE",32]="所有参数设置完毕"
+	arr["NORSK",32]="Alle parametere er satt"
+	arr["SVENSKAA",32]="Alla parametrar inställda"
+	arr["DANSK",32]="Alle parametre indstillet"
 
 	arr["ENGLISH",33]="Starting attack. When started, press [Ctrl+C] to stop..."
 	arr["SPANISH",33]="Comenzando ataque. Una vez empezado, pulse [Ctrl+C] para pararlo..."
@@ -1534,6 +1851,9 @@ function initialize_language_strings() {
 	arr["TURKISH",33]="Saldırı başlıyor. Başladıktan sonra, durdurmak için [Ctrl+C] basınız..."
 	arr["ARABIC",33]="...للإيقاف [Ctrl+C] بدء الهجوم. عند البدء ، اضغط على"
 	arr["CHINESE",33]="开始攻击。按[Ctrl+C] 停止..."
+	arr["NORSK",33]="Starter angrep. Når du har startet, trykk [Ctrl+C] for å stoppe..."
+	arr["SVENSKAA",33]="Startar attack. När du har startat, tryck [Ctrl+C] för att stoppa..."
+	arr["DANSK",33]="Starter angreb. Når du er startet,tryk [Ctrl+C] for at stoppe..."
 
 	arr["ENGLISH",34]="Selected interface \${current_iface_on_messages} is in monitor mode. Attack can be performed"
 	arr["SPANISH",34]="La interfaz seleccionada \${current_iface_on_messages} está en modo monitor. El ataque se puede realizar"
@@ -1548,6 +1868,9 @@ function initialize_language_strings() {
 	arr["TURKISH",34]="Seçilen arayüz \${current_iface_on_messages} izleme modunda. Saldırı yapılabilir"
 	arr["ARABIC",34]="يمكن تنفيذ الهجوم .monitor mode في وضع \${current_iface_on_messages} الواجهة المحددة"
 	arr["CHINESE",34]="所选接口 \${current_iface_on_messages} 已处于监听模式。可以进行攻击"
+    arr["NORSK",34]="Valgte grensesnittet \${current_iface_on_messages} er i monitor mode. Angrep kan utføres"
+	arr["SVENSKA",34]="Valt gränssnitt \${current_iface_on_messages} är i monitor mode. Attack kan utföras"
+	arr["DANSK",34]="Valgte grænseflade \${current_iface_on_messages} er i monitor mode. Angreb kan udføres"
 
 	arr["ENGLISH",35]="Deauthentication / Dissasociation \${mdk_command} attack chosen (monitor mode needed)"
 	arr["SPANISH",35]="Elegido ataque de Desautenticación / Desasociación \${mdk_command} (modo monitor requerido)"
@@ -1562,7 +1885,10 @@ function initialize_language_strings() {
 	arr["TURKISH",35]="Deauthentication / Dissasociation \${mdk_command} saldırısı seçildi (izleme modu gereklidir)"
 	arr["ARABIC",35]="(monitor mode يلزم وضع) \${mdk_command} Deauthentication / Dissasociation تم اختيار هجوم"
 	arr["CHINESE",35]="选择 \${mdk_command} amok 解除身份验证攻击 (需要监听Aireplay deauth 参数模式)"
-
+    arr["NORSK",35]="Avautentisering / dissosiasjon \${mdk_command} angrep valgt (monitor mode nødvendig)"
+	arr["SVENSKA",35]="Avautentisering/dissasociering \${mdk_command} attack vald (monitor mode krävs)"
+	arr["DANSK",35]="Deautentificering / Dissasociation \${mdk_command} angreb valgt (monitor mode påkrævet)"
+	
 	arr["ENGLISH",36]="Deauthentication aireplay attack chosen (monitor mode needed)"
 	arr["SPANISH",36]="Elegido ataque de Desautenticación aireplay (modo monitor requerido)"
 	arr["FRENCH",36]="L'attaque de Dés-authentification aireplay a été choisie (mode moniteur nécessaire)"
@@ -1576,6 +1902,9 @@ function initialize_language_strings() {
 	arr["TURKISH",36]="Deauthentication aireplay saldırısı seçildi (izleme modu gereklidir)"
 	arr["ARABIC",36]="(monitor mode يلزم وضع) Deauthentication aireplay تم اختيار هجوم"
 	arr["CHINESE",36]="选择 aireplay 解除身份验证攻击 (需要监听模式)"
+	arr["NORSK",36]="Avautentisering aireplay-angrep valgt (monitor mode nødvendig)"
+	arr["SVENSKAA",36]="Avautentisering aireplay attack vald (monitor mode behövs)"
+	arr["DANSK",36]="Deautentificering aireplay-angreb valgt (monitor mode nødvendig)"
 
 	arr["ENGLISH",37]="WIDS / WIPS / WDS Confusion attack chosen (monitor mode needed)"
 	arr["SPANISH",37]="Elegido ataque Confusion WIDS / WIPS / WDS (modo monitor requerido)"
@@ -1590,7 +1919,10 @@ function initialize_language_strings() {
 	arr["TURKISH",37]="WIDS / WIPS / WDS Confusion saldırısı seçildi (izleme modu gereklidir)"
 	arr["ARABIC",37]="(monitor mode يلزم وضع) WIDS / WIPS / WDS Confusion تم اختيار هجوم"
 	arr["CHINESE",37]="选择 WIDS / WIPS / WDS 混淆攻击 (需要监听模式)"
-
+	arr["NORSK",37]="WIDS / WIPS / WDS Forvirringsangrep valgt (monitor mode nødvendig)"
+	arr["SVENSKAA",37]="WIDS / WIPS / WDS Förvirringsattack valt (monitor mode behövs)"
+	arr["DANSK",37]="WIDS / WIPS / WDS Forvirringsangreb valgt (monitor mode påkrævet)"
+	
 	arr["ENGLISH",38]="Beacon flood attack chosen (monitor mode needed)"
 	arr["SPANISH",38]="Elegido ataque Beacon flood (modo monitor requerido)"
 	arr["FRENCH",38]="L'attaque Beacon flood a été choisie (mode moniteur nécessaire)"
@@ -1604,6 +1936,9 @@ function initialize_language_strings() {
 	arr["TURKISH",38]="Beacon flood saldırısı seçildi (izleme modu gereklidir)"
 	arr["ARABIC",38]="(monitor mode يلزم وضع) Beacon flood تم اختيار هجوم"
 	arr["CHINESE",38]="WiFi 信号信标伪造 DoS 攻击 (需要监听模式)"
+	arr["NORSK",38]="Beacon flood angrep valgt (monitor mode nødvendig)"
+	arr["SVENSKAA",38]="Beacon flood attack vald (monitor mode behövs)"
+	arr["DANSK",38]="Beacon flood angreb valgt (monitor mode påkrævet)"
 
 	arr["ENGLISH",39]="Auth DoS attack chosen (monitor mode needed)"
 	arr["SPANISH",39]="Elegido ataque Auth DoS (modo monitor requerido)"
@@ -1618,6 +1953,9 @@ function initialize_language_strings() {
 	arr["TURKISH",39]="Auth DoS saldırısı seçildi (izleme modu gereklidir)"
 	arr["ARABIC",39]="(monitor mode يلزم وضع) Auth DoS تم اختيار هجوم"
 	arr["CHINESE",39]="选择了身份验证 DoS 攻击 (需要监听模式)"
+	arr["NORSK",39]="Auth DoS angrep valgt (monitor mode nødvendig)"
+	arr["SVENSKAA",39]="Auth DoS-attack vald (monitor mode behövs)"
+	arr["DANSK",39]="Auth DoS-angreb valgt (monitor mode påkrævet)"
 
 	arr["ENGLISH",40]="Michael Shutdown (TKIP) attack chosen (monitor mode needed)"
 	arr["SPANISH",40]="Elegido ataque Michael Shutdown (TKIP) (modo monitor requerido)"
@@ -1632,6 +1970,9 @@ function initialize_language_strings() {
 	arr["TURKISH",40]="Michael Shutdown (TKIP) saldırısı seçildi (izleme modu gereklidir)"
 	arr["ARABIC",40]="(monitor mode يلزم وضع) Michael Shutdown (TKIP) تم اختيار هجوم"
 	arr["CHINESE",40]="选择了迈克尔关机 (TKIP) (需要监听模式)"
+	arr["NORSK",40]="Michael Shutdown (TKIP) angrep valgt (monitor mode nødvendig)"
+	arr["SVENSKAA",40]="Michael Shutdown (TKIP) attack vald (monitor mode behövs)"
+	arr["DANSK",40]="Michael Shutdown (TKIP) angreb valgt (monitor mode nødvendig)"
 
 	arr["ENGLISH",41]="No interface selected. You'll be redirected to select one"
 	arr["SPANISH",41]="No hay interfaz seleccionada. Serás redirigido para seleccionar una"
@@ -1646,6 +1987,9 @@ function initialize_language_strings() {
 	arr["TURKISH",41]="Hiçbir arayüz seçilmedi. Seçmeniz için yönlendiriliyorsunuz"
 	arr["ARABIC",41]="لم يتم تحديد واجهة. ستتم إعادة توجيهك لتحديد واحدة"
 	arr["CHINESE",41]="未选择接口。您将被重定向以选择一个网络接口"
+	arr["NORSK",41]="Ingen grensesnitt valgt. Du blir omdirigert for å velge en"
+	arr["SVENSKAA",41]="Inget gränssnitt valt. Du omdirigeras för  att välja en"
+	arr["DANSK",41]="Der er ikke valgt nogen grænseflade. Du vil blive omdirigeret for at vælge en"
 
 	arr["ENGLISH",42]="Interface \${pink_color}\${current_iface_on_messages}\${blue_color} selected. Mode: \${pink_color}\${ifacemode}\${normal_color}"
 	arr["SPANISH",42]="Interfaz \${pink_color}\${current_iface_on_messages}\${blue_color} seleccionada. Modo: \${pink_color}\${ifacemode}\${normal_color}"
@@ -1660,6 +2004,9 @@ function initialize_language_strings() {
 	arr["TURKISH",42]="Arayüz \${pink_color}\${current_iface_on_messages}\${blue_color} seçildi. Mod: \${pink_color}\${ifacemode}\${normal_color}"
 	arr["ARABIC",42]="\${pink_color}\${ifacemode}\${blue_color} :الوضع المختار \${pink_color}\${current_iface_on_messages}\${blue_color} تم تحديد الواجهة\${normal_color}"
 	arr["CHINESE",42]="已选择接口 \${pink_color}\${current_iface_on_messages}\${blue_color}。模式: \${pink_color}\${ifacemode}\${normal_color}"
+	arr["NORSK",42]=" Grensesnitt \${pink_color}\${current_iface_on_messages}\${blue_color} valgt. Mode: \${pink_color}\${ifacemode}\${normal_color}"
+	arr["SVENSKAA",42]="Gränssnitt \${pink_color}\${current_iface_on_messages}\${blue_color} valt. Mode: \${pink_color}\${ifacemode}\${normal_color}"
+	arr["DANSK",42]="Grænseflade \${pink_color}\${current_iface_on_messages}\${blue_color} valgt. Modo: \${pink_color}\${ifacemode}\${normal_color}"
 
 	arr["ENGLISH",43]="Selected BSSID: \${pink_color}\${bssid} \${brown_color}(\${selected_network_type_text})\${normal_color}"
 	arr["SPANISH",43]="BSSID seleccionado: \${pink_color}\${bssid} \${brown_color}(\${selected_network_type_text})\${normal_color}"
@@ -1674,7 +2021,10 @@ function initialize_language_strings() {
 	arr["TURKISH",43]="Seçildi BSSID: \${pink_color}\${bssid} \${brown_color}(\${selected_network_type_text})\${normal_color}"
 	arr["ARABIC",43]="\${brown_color}(\${selected_network_type_text}) \${pink_color}\${bssid}\${blue_color} :المختار BSSID\${normal_color}"
 	arr["CHINESE",43]="选中 AP 的 BSSID: \${pink_color}\${bssid} \${brown_color}(\${selected_network_type_text})\${normal_color}"
-
+	arr["NORSK",43]="Valgt BSSID: \${pink_color}\${bssid} \${brown_color}(\${selected_network_type_text})\${normal_color}"
+	arr["SVENSKAA",43]="Valt BSSID: \${pink_color}\${bssid} \${brown_color}(\${selected_network_type_text})\${normal_color}"
+	arr["DANSK",43]="Valgt BSSID: \${pink_color}\${bssid} \${brown_color}(\${selected_network_type_text})\${normal_color}"
+	
 	arr["ENGLISH",44]="Selected channel: \${pink_color}\${channel}\${normal_color}"
 	arr["SPANISH",44]="Canal seleccionado: \${pink_color}\${channel}\${normal_color}"
 	arr["FRENCH",44]="Canal sélectionné: \${pink_color}\${channel}\${normal_color}"
@@ -1688,6 +2038,9 @@ function initialize_language_strings() {
 	arr["TURKISH",44]="Seçilen kanal: \${pink_color}\${channel}\${normal_color}"
 	arr["ARABIC",44]="\${pink_color}\${channel}\${blue_color} :القناة المختارة\${normal_color}"
 	arr["CHINESE",44]="当前信道: \${pink_color}\${channel}\${normal_color}"
+	arr["NORSK",44]="Kanal valgt: \${pink_color}\${channel}\${normal_color}"
+	arr["SVENSKAA",44]="Kanal valt: \${pink_color}\${channel}\${normal_color}"
+	arr["DANSK",44]="Kanal valgt: \${pink_color}\${channel}\${normal_color}"
 
 	arr["ENGLISH",45]="Selected ESSID: \${pink_color}\${essid}\${blue_color} <- can't be used"
 	arr["SPANISH",45]="ESSID seleccionado: \${pink_color}\${essid}\${blue_color} <- no se puede usar"
@@ -1702,6 +2055,9 @@ function initialize_language_strings() {
 	arr["TURKISH",45]="Seçilen ESSID: \${pink_color}\${essid}\${blue_color} <- kullanılamaz"
 	arr["ARABIC",45]="لا يمكن استخدامه -> \${pink_color}\${essid}\${blue_color} :المختار ESSID"
 	arr["CHINESE",45]="选择的 ESSID: \${pink_color}\${essid}\${blue_color} <- 不能使用"
+	arr["NORSK",45]="ESSID valgt: \${pink_color}\${essid}\${blue_color} <- kan ikke brukes"
+	arr["SVENSKAA",45]="ESSID valt: \${pink_color}\${essid}\${blue_color} <- kan inte användas"
+	arr["DANSK",45]="ESSID valgt: \${pink_color}\${essid}\${blue_color} <- kan ikke bruges"
 
 	arr["ENGLISH",46]="Selected ESSID: \${pink_color}\${essid}\${normal_color}"
 	arr["SPANISH",46]="ESSID seleccionado: \${pink_color}\${essid}\${normal_color}"
@@ -1716,9 +2072,12 @@ function initialize_language_strings() {
 	arr["TURKISH",46]="Seçildi ESSID: \${pink_color}\${essid}\${normal_color}"
 	arr["ARABIC",46]="\${pink_color}\${essid}\${blue_color} :المختار ESSID\${normal_color}"
 	arr["CHINESE",46]="选中 AP 的 ESSID: \${pink_color}\${essid}\${normal_color}"
+	arr["NORSK",46]="ESSID valgt: \${pink_color}\${essid}\${normal_color}"
+	arr["SVENSKAA",46]="ESSID valt: \${pink_color}\${essid}\${normal_color}"
+	arr["DANSK",46]="ESSID valgt: \${pink_color}\${essid}\${normal_color}"
 
 	arr["ENGLISH",47]="Select an option from menu:"
-	arr["SPANISH",47]="Selecciona una opción del menú:"
+	arr["SPANISH",47]="Selecciona na opción del menú:"
 	arr["FRENCH",47]="Choisissez une des options du menu:"
 	arr["CATALAN",47]="Selecciona una opció del menú:"
 	arr["PORTUGUESE",47]="Selecione uma opção no menu:"
@@ -1730,6 +2089,9 @@ function initialize_language_strings() {
 	arr["TURKISH",47]="Menüden bir ayar seçiniz:"
 	arr["ARABIC",47]=":حدد خيارا من القائمة"
 	arr["CHINESE",47]="请从菜单中选择选项:"
+	arr["NORSK",47]="Velg et alternativ fra menyen:"
+	arr["SVENSKAA",47]="Välj ett alternativ från menyn:"
+	arr["DANSK",47]="Vælg en indstilling fra menuen:"
 
 	arr["ENGLISH",48]="1.  Select another network interface"
 	arr["SPANISH",48]="1.  Selecciona otra interfaz de red"
@@ -1744,6 +2106,9 @@ function initialize_language_strings() {
 	arr["TURKISH",48]="1.  Başka bir ağ arayüzü seç"
 	arr["ARABIC",48]="1.  حدد واجهة شبكة أخرى"
 	arr["CHINESE",48]="1.  选择另一个网络接口"
+	arr["NORSK",48]="1. Velg et annet nettverksgrensesnitt"
+	arr["SVENSKAA",48]="1. Välj ett annat nätverksgränssnitt" 
+	arr["DANSK",48]="1. Vælg en anden netværksgrænseflad "
 
 	arr["ENGLISH",49]="4.  Explore for targets (monitor mode needed)"
 	arr["SPANISH",49]="4.  Explorar para buscar objetivos (modo monitor requerido)"
@@ -1758,10 +2123,13 @@ function initialize_language_strings() {
 	arr["TURKISH",49]="4.  Hedefleri tara (izleme modu gereklidir)"
 	arr["ARABIC",49]="4.  (إلزامي monitor mode) اكتشاف الشبكات لاختيار الهدف"
 	arr["CHINESE",49]="4.  扫描目标 (需要监听模式)"
+	arr["NORSK",49]="4. Utforsk etter mål (monitor mode er nødvendig)"
+	arr["SVENSKAA",49]="4. Utforska efter mål (monitor mode behövs)"
+	arr["DANSK",49]="4. Udforsk efter mål (monitor mode påkrævet)"
 
 	arr["ENGLISH",50]="monitor mode needed for attacks"
 	arr["SPANISH",50]="modo monitor requerido en ataques"
-	arr["FRENCH",50]="modo moniteur obligatoire pour ces attaques"
+	arr["FRENCH",50]="modo moniteur obligatoire pour cesttaques"
 	arr["CATALAN",50]="mode monitor requerit per atacs"
 	arr["PORTUGUESE",50]="modo monitor necessário para ataques"
 	arr["RUSSIAN",50]="для атак необходим режим монитора"
@@ -1772,6 +2140,9 @@ function initialize_language_strings() {
 	arr["TURKISH",50]="saldırılar için izleme modu gereklidir"
 	arr["ARABIC",50]="مطلوب للهجمات monitor mode"
 	arr["CHINESE",50]="以下攻击需要监听模式"
+	arr["NORSK",50]="monitor mode nødvendig for angrep"
+	arr["SVENSKAA",50]="monitor mode behövs för attack"
+	arr["DANSK",50]="moitor mode nødvendige for angreb"
 
 	arr["ENGLISH",51]="5.  Deauth / disassoc amok \${mdk_command} attack"
 	arr["SPANISH",51]="5.  Ataque Deauth / Disassoc amok \${mdk_command}"
@@ -1786,6 +2157,9 @@ function initialize_language_strings() {
 	arr["TURKISH",51]="5.  Deauth / disassoc amok \${mdk_command} saldırısı"
 	arr["ARABIC",51]="5.  DeAuth / Disassoc amok \${mdk_command} هجوم"
 	arr["CHINESE",51]="5.  \${mdk_command} amok 解除身份验证攻击"
+	arr["NORSK",51]="5. Deauth / Disassoc amok \${mdk_command} angrep"
+	arr["SVENSKAA",51]="5. Deauth / Disassoc amok \${mdk_command} attack"
+	arr["DANSK",51]="5. Deauth / Disassoc amok \${mdk_command} angreb"
 
 	arr["ENGLISH",52]="6.  Deauth aireplay attack"
 	arr["SPANISH",52]="6.  Ataque Deauth aireplay"
@@ -1800,6 +2174,9 @@ function initialize_language_strings() {
 	arr["TURKISH",52]="6.  Deauth aireplay saldırısı"
 	arr["ARABIC",52]="6.  DeAuth aireplay هجوم"
 	arr["CHINESE",52]="6.  aireplay 解除身份验证攻击"
+	arr["NORSK",52]="6.  Deauth aireplay angrep"
+	arr["SVENSKAA",52]="6.  Deauth aireplay attack"
+	arr["DANSK",52]="6.  Deauth aireplay angreb"
 
 	arr["ENGLISH",53]="9.  WIDS / WIPS / WDS Confusion attack"
 	arr["SPANISH",53]="9.  Ataque WIDS / WIPS / WDS Confusion"
@@ -1814,6 +2191,9 @@ function initialize_language_strings() {
 	arr["TURKISH",53]="9.  WIDS / WIPS / WDS Confusion saldırısı"
 	arr["ARABIC",53]="9.  WIDS / WIPS / WDS Confusion هجوم"
 	arr["CHINESE",53]="9.  WIDS / WIPS / WDS 混淆攻击"
+	arr["NORSK",53]="WIDS / WIPS / WDS Forvirringsangrep"
+	arr["SVENSKAA",53]="WIDS / WIPS / WDS Förvirringsattack"
+	arr["DANSK",53]="WIDS / WIPS / WDS Forvirringsangreb"
 
 	arr["ENGLISH",54]="old \"obsolete/non very effective\" attacks"
 	arr["SPANISH",54]="antiguos ataques \"obsoletos/no muy efectivos\""
@@ -1828,6 +2208,9 @@ function initialize_language_strings() {
 	arr["TURKISH",54]="eski \"obsolete/non çok etkili\" saldırılar"
 	arr["ARABIC",54]="هجمات القديمة \"عفا عليها الزمن/ليست فعالة جدا\""
 	arr["CHINESE",54]="过时的 / 可能不是很有效的攻击"
+	arr["NORSK",54]="gammel\"foreldret/ikke meget effektive\" angrep"
+	arr["SVENSKAA",54]="gamla \"föråldrade/icke mycket effektiva\"attacker"
+	arr["DANSK",54]="gamle \"forældede/ikke meget effektive\" angreb"
 
 	arr["ENGLISH",55]="2.  Put interface in monitor mode"
 	arr["SPANISH",55]="2.  Poner la interfaz en modo monitor"
@@ -1842,6 +2225,9 @@ function initialize_language_strings() {
 	arr["TURKISH",55]="2.  Arayüzün izleme modunu aç"
 	arr["ARABIC",55]="2.  Monitor mode ضع الواجهة على"
 	arr["CHINESE",55]="2.  将当前接口设置为监听模式 (Monitor)"
+	arr["NORSK",55]="2. Sett grensesnittet i monitor mode"
+	arr["SVENSKAA",55]="2. Sätt gränssnittet i monitor mode"
+	arr["DANSK",55]="2. Sæt interface i monitor mode"
 
 	arr["ENGLISH",56]="3.  Put interface in managed mode"
 	arr["SPANISH",56]="3.  Poner la interfaz en modo managed"
@@ -1856,6 +2242,9 @@ function initialize_language_strings() {
 	arr["TURKISH",56]="3.  Arayüzün yönetici modunu aç"
 	arr["ARABIC",56]="3.  Managed mode ضع الواجهة على"
 	arr["CHINESE",56]="3.  将当前接口设置为管理模式 (Managed)"
+	arr["NORSK",56]="3.  Sett grensesnitt i managed mode"
+	arr["SVENSKAA",56]="3.  Sätt gränssnittet i managed mode"
+	arr["DANSK",56]="3.  Sæt grænseflade i managed mode"
 
 	arr["ENGLISH",57]="10. Enterprise attacks menu"
 	arr["SPANISH",57]="10. Menú de ataques Enterprise"
@@ -1870,6 +2259,9 @@ function initialize_language_strings() {
 	arr["TURKISH",57]="10. Enterprise saldırılar menüsü"
 	arr["ARABIC",57]="10. Entreprise قائمة هجمات"
 	arr["CHINESE",57]="10. 企业级加密攻击菜单"
+	arr["NORSK",57]="10. Entreprise angreps meny"
+	arr["SVENSKAA",57]="10. Enterprise attack menyn"
+	arr["DANSK",57]="10. Enterprise angrebs menu"
 
 	arr["ENGLISH",58]="9.  Polish"
 	arr["SPANISH",58]="9.  Polaco"
@@ -1884,6 +2276,9 @@ function initialize_language_strings() {
 	arr["TURKISH",58]="9.  Polish"
 	arr["ARABIC",58]="9.  البولندية"
 	arr["CHINESE",58]="9.  波兰语"
+	arr["NORSK",58]="9.  Norsk"
+	arr["SVENSKAA",58]="9.  Svenska"
+	arr["DANSK",58]="9.  Dansk"
 
 	arr["ENGLISH",59]="0.  Return to main menu"
 	arr["SPANISH",59]="0.  Volver al menú principal"
@@ -1898,6 +2293,9 @@ function initialize_language_strings() {
 	arr["TURKISH",59]="0.  Ana menüye dön"
 	arr["ARABIC",59]="0.  العودة إلى القائمة الرئيسية"
 	arr["CHINESE",59]="0.  返回主菜单"
+	arr["NORSK",59]="0. Gå tilbake til hovedmenyen"
+	arr["SVENSKAA",59]="0. Återgå till huvudmenyn"
+	arr["DANSK",59]="0. Vend tilbage til hovedmenuen"
 
 	arr["ENGLISH",60]="11. About & Credits / Sponsorship mentions"
 	arr["SPANISH",60]="11. Acerca de & Créditos / Menciones de patrocinadores"
@@ -1912,6 +2310,9 @@ function initialize_language_strings() {
 	arr["TURKISH",60]="11. Krediler ve Sponsorluk Hakkında"
 	arr["ARABIC",60]="11. فريق العمل برعاية"
 	arr["CHINESE",60]="11. 关于 & 鸣谢 / 赞助"
+	arr["NORSK",60]="11. Om & kreditter / sponsoromtaler"
+	arr["SVENSKAA",60]="11. Om & krediter / sponsoromnämnanden" 
+	arr["DANSK",60]="11. Om & Credits / Sponsoratomtaler"
 
 	arr["ENGLISH",61]="0.  Exit script"
 	arr["SPANISH",61]="0.  Salir del script"
@@ -1926,6 +2327,9 @@ function initialize_language_strings() {
 	arr["TURKISH",61]="0.  Yazılımdan çıkış yap"
 	arr["ARABIC",61]="0.  الخروج من البرنامج"
 	arr["CHINESE",61]="0.  退出脚本"
+    arr["NORSK",61]="0. Avslutt skriptet"
+	arr["SVENSKAA",61]="0. Avsluta skriptet"
+	arr["DANSK",61]="0. Afslut script"
 
 	arr["ENGLISH",62]="8.  Beacon flood attack"
 	arr["SPANISH",62]="8.  Ataque Beacon flood"
@@ -1940,6 +2344,9 @@ function initialize_language_strings() {
 	arr["TURKISH",62]="8.  Beacon flood saldırısı"
 	arr["ARABIC",62]="8.  Beacon flood هجوم"
 	arr["CHINESE",62]="8.  WiFi 信号信标伪造 DoS 攻击 (Beacon flood)"
+	arr["NORSK",62]="8.  Beacon flood angrep"
+	arr["SVENSKAA",62]="8.  Beacon flood attack"
+	arr["DANSK",62]="8.  Beacon flood angreb"
 
 	arr["ENGLISH",63]="7.  Auth DoS attack"
 	arr["SPANISH",63]="7.  Ataque Auth DoS"
@@ -1954,7 +2361,10 @@ function initialize_language_strings() {
 	arr["TURKISH",63]="7.  Auth DoS saldırısı"
 	arr["ARABIC",63]="7.  Auth DoS هجوم"
 	arr["CHINESE",63]="7.  身份验证 DoS 攻击 (Auth DoS)"
-
+	arr["NORSK",63]="7.  Auth DoS angrep"
+	arr["SVENSKAA",63]="7.  Auth Dos attack"
+	arr["DANSK",63]="7.  Auth DoS angreb"
+	
 	arr["ENGLISH",64]="10. Michael shutdown exploitation (TKIP) attack"
 	arr["SPANISH",64]="10. Ataque Michael shutdown exploitation (TKIP)"
 	arr["FRENCH",64]="10. Attaque Michael shutdown exploitation (TKIP)"
@@ -1968,6 +2378,9 @@ function initialize_language_strings() {
 	arr["TURKISH",64]="10. Michael shutdown exploitation (TKIP) saldırısı"
 	arr["ARABIC",64]="10. Michael shutdown exploitation (TKIP) هجوم"
 	arr["CHINESE",64]="10. 迈克尔关机 (TKIP) 攻击 (Michael shutdown exploitation) 仅针对 TKIP 加密的 WiFi 有效"
+	arr["NORSK",64]="10. Michael shutdown exploitation (TKIP) angrep"
+	arr["SVENSKAA",64]="10. Michael shutdown exploitation (TKIP) attack"
+	arr["DANSK",64]="10. Michael shutdown exploitation (TKIP) angreb"
 
 	arr["ENGLISH",65]="Exploring for targets option chosen (monitor mode needed)"
 	arr["SPANISH",65]="Elegida opción de exploración para buscar objetivos (modo monitor requerido)"
@@ -1982,6 +2395,9 @@ function initialize_language_strings() {
 	arr["TURKISH",65]="Hedef tarama modu seçildi (izleme modu gereklidir)"
 	arr["ARABIC",65]="(إلزامي monitor mode) تم تحديد خيار استكشاف الأهداف"
 	arr["CHINESE",65]="扫描目标并选择 (需要监听模式)"
+	arr["NORSK",65]="Alternativet utforsking etter mål valgt"
+	arr["SVENSKAA",65]="Alternativet utforskar efter mål valts"
+	arr["DANSK",65]="Alternativet udforskning efter mål valgt"
 
 	arr["ENGLISH",66]="Selected interface \${current_iface_on_messages} is in monitor mode. Exploration can be performed"
 	arr["SPANISH",66]="La interfaz seleccionada \${current_iface_on_messages} está en modo monitor. La exploración se puede realizar"
@@ -1996,6 +2412,9 @@ function initialize_language_strings() {
 	arr["TURKISH",66]="Seçilen arayüz \${current_iface_on_messages} izleme modunda. Tarama gerçekleştirilebilir"
 	arr["ARABIC",66]="يمكن إجراء الاستكشاف .monior mode في وضع \${current_iface_on_messages} الواجهة المختارة"
 	arr["CHINESE",66]="所选接口 \${current_iface_on_messages} 已处于监听模式。可以扫描目标"
+	arr["NORSK",66]="Det valgte grensesnittet \${current_iface_on_messages} er i monitor mode. Utforskning kan utføres"
+	arr["SVENSKAA",66]="Det valda gränssnittet \${current_iface_on_messages} är i monitor mode. Utforskning kan utföras"
+	arr["DANSK",66]="Den valgte grænseflade \${current_iface_on_messages} er i monitor mode. Udforskning kan udføres"
 
 	arr["ENGLISH",67]="WEP filter enabled in scan. When started, press [Ctrl+C] to stop..."
 	arr["SPANISH",67]="Filtro WEP activado en escaneo. Una vez empezado, pulse [Ctrl+C] para pararlo..."
@@ -2010,6 +2429,9 @@ function initialize_language_strings() {
 	arr["TURKISH",67]="WEP filtesi taraması etkin. Başladıktan sonra, durdurmak için [Ctrl+C] tuşlayınız..."
 	arr["ARABIC",67]="...للإيقاف [Ctrl+C] في المسح. عند البدء ، اضغط على WEP تم تفعيل مرشح"
 	arr["CHINESE",67]="扫描中启用了 WEP 过滤器。按 [Ctrl+C] 终止..."
+	arr["NORSK",67]="WEP-filter aktivert i skanning. Når du har startet, trykk [Ctrl+C] for å stoppe..."
+	arr["SVENSKAA",67]="WEP-filter aktiverat vid skanning. När du har startat, tryck på [Ctrl+C] för att stoppa..."
+	arr["DANSK",67]="WEP-filter aktiveret i scanning. Når du er startet, skal du trykke på [Ctrl+C] for at stoppe..."
 
 	arr["ENGLISH",68]="No networks found"
 	arr["SPANISH",68]="No se encontraron redes"
@@ -2024,6 +2446,9 @@ function initialize_language_strings() {
 	arr["TURKISH",68]="Herhangi bir ağ bulunamadı"
 	arr["ARABIC",68]="لم نعثر على أي شبكة"
 	arr["CHINESE",68]="未找到网络"
+	arr["NORSK",68]="Ingen nettverk funnet"
+	arr["SVENSKAA",68]="Inga nätverk hittades"
+	arr["DANSK",68]="Ingen netværk fundet"
 
 	arr["ENGLISH",69]="  N.         BSSID      CHANNEL  PWR   ENC    ESSID"
 	arr["SPANISH",69]="  N.         BSSID        CANAL  PWR   ENC    ESSID"
@@ -2038,6 +2463,9 @@ function initialize_language_strings() {
 	arr["TURKISH",69]="  N.         BSSID      KANAL  PWR   ENC    ESSID"
 	arr["ARABIC",69]="  N.         BSSID      CHANNEL  PWR   ENC    ESSID"
 	arr["CHINESE",69]=" 序号        BSSID        信道 信号强度 加密方式  ESSID"
+	arr["NORSK",69]="  N.         BSSID        CANAL  PWR   ENC    ESSID"
+	arr["SVENSKAA",69]="  N.         BSSID        CANAL  PWR   ENC    ESSID"
+	arr["DANSK",69]="  N.         BSSID        CANAL  PWR   ENC    ESSID"
 
 
 	arr["ENGLISH",70]="Only one target detected. Autoselected"
@@ -2053,6 +2481,9 @@ function initialize_language_strings() {
 	arr["TURKISH",70]="Sadece bir hedef tespit edildi. Otomatik olarak seçildi"
 	arr["ARABIC",70]="تم اكتشاف هدف واحد فقط. وقد تم الإختيار تلقائيا"
 	arr["CHINESE",70]="只检测到一个目标。自动选择"
+	arr["NORSK",70]="Kun ett mål er oppdaget. Autovalgt"
+	arr["SVENSKAA",70]="Endast ett mål upptäckts. Autovald"
+	arr["DANSK",70]="Kun ét mål blev fundet. Autovalgt"
 
 	arr["ENGLISH",71]="(*) Network with clients"
 	arr["SPANISH",71]="(*) Red con clientes"
@@ -2067,6 +2498,9 @@ function initialize_language_strings() {
 	arr["TURKISH",71]="(*) Ağ ile istemciler"
 	arr["ARABIC",71]="(*) شبكة مع زبناء"
 	arr["CHINESE",71]="(*) 有活动用户的无线网络"
+	arr["NORSK",71]="(*) Nettverk med klienter"
+	arr["SVENSKAA",71]="(*) Nätverk med kunder"
+	arr["DANSK",71]="(*) Netværk med klienter"
 
 	arr["ENGLISH",72]="Invalid target network was chosen"
 	arr["SPANISH",72]="Red objetivo elegida no válida"
@@ -2074,13 +2508,16 @@ function initialize_language_strings() {
 	arr["CATALAN",72]="Xarxa de destí seleccionada no vàlida"
 	arr["PORTUGUESE",72]="A rede escolhida é inválida"
 	arr["RUSSIAN",72]="Была выбрана неподходящая целевая сеть"
-	arr["GREEK",72]="Επιλέχθηκε άκυρο δίκτυο"
+	arr["GREEK",72]="Επιλέχθηκε άκυροδίκτυο"
 	arr["ITALIAN",72]="La rete scelta come obiettivo non è valida"
 	arr["POLISH",72]="Wybrano nieprawidłową sieć docelową"
 	arr["GERMAN",72]="ungültiges Zielnetzwerk ausgewählt"
 	arr["TURKISH",72]="Gerçersiz hedef ağ seçildi"
 	arr["ARABIC",72]="تم اختيار شبكة مستهدفة غير صالحة"
 	arr["CHINESE",72]="选择了无效的目标网络"
+	arr["NORSK",72]="Ugyldig målnettverk ble valgt"
+	arr["SVENSKAA",72]="Ogiltigt målnätverk har valts"
+	arr["DANSK",72]="Ugyldigt målnetværk blev valgt"
 
 	arr["ENGLISH",73]="airgeddon script \${normal_color}v\${airgeddon_version}\${blue_color} developed by:"
 	arr["SPANISH",73]="airgeddon script \${normal_color}v\${airgeddon_version}\${blue_color} programado por:"
@@ -2095,6 +2532,9 @@ function initialize_language_strings() {
 	arr["TURKISH",73]="airgeddon yazılımı \${normal_color}v\${airgeddon_version}\${blue_color} geliştiricisi:"
 	arr["ARABIC",73]=":بواسطة \${normal_color}v\${airgeddon_version}\${blue_color} تمت برمجة"
 	arr["CHINESE",73]="airgeddon 脚本 \${normal_color}v\${airgeddon_version}\${blue_color} 开发者:"
+	arr["NORSK",73]="airgeddon script \${normal_color}v\${airgeddon_version}\${blue_color} utviklet av:"
+	arr["SVENSKAA",73]="airgeddon script \${normal_color}v\${airgeddon_version}\${blue_color} utvecklad av:"
+	arr["DANSK",73]="airgeddon script \${normal_color}v\${airgeddon_version}\${blue_color} udviklet af:"
 
 	arr["ENGLISH",74]="This script is under GPLv3 (or later) License"
 	arr["SPANISH",74]="Este script está bajo Licencia GPLv3 (o posterior)"
@@ -2109,6 +2549,9 @@ function initialize_language_strings() {
 	arr["TURKISH",74]="Bu yazılım GPLv3 (ya da daha üstü) lisansı altındadır"
 	arr["ARABIC",74]="(أو أحدث) GPLv3 هذا البرنامج خاضع لترخيص"
 	arr["CHINESE",74]="此脚本遵循 GPLv3 (或更高版本) 的开源许可证"
+	arr["NORSK",74]="Dette skriptet er under GPLv3 (eller nyere) Lisens"
+	arr["SVENSKAA",74]="Detta skript är under GPLv3 (eller senare) Licens"
+	arr["DANSK",74]="Dette script er under GPLv3 (eller nyere) Licens"
 
 	arr["ENGLISH",75]="Thanks to the \"Spanish pentesting crew\", to the \"Wifislax Staff\", to the forums people who help me, my collaborators, translators and specially to kcdtv, xpz3 and xtonousou for beta testing and support received"
 	arr["SPANISH",75]="Gracias al \"Spanish pentesting crew\", al \"Wifislax Staff\", a la gente de los foros que me ayuda, a mis colaboradores, traductores y en especial a kcdtv, xpz3 y xtonousou por el beta testing y el apoyo recibido"
@@ -2123,6 +2566,9 @@ function initialize_language_strings() {
 	arr["TURKISH",75]="Teşekkürler \"Spanish pentesting crew\", to the \"Wifislax Staff\", to the forums people who help me, my collaborators, translators and specially to kcdtv, xpz3 and xtonousou for beta testing and support received"
 	arr["ARABIC",75]="لاختبارات المرحلة التجريبية و دعمه  xtonousou و xpz3 و  kcdtv  و الأشخاص في المنتديات الذين ساعدوني ، والمتعاونين معي ، والمترجمين وخاصةً  \"Wifislax Staff\"  و  \"Spanish pentesting crew\" نشكر"
 	arr["CHINESE",75]="感谢“西班牙渗透测试人员*”、“Wifislax 员工*”、论坛上帮助我的人、我的合作者、所有翻译人员，特别感谢 kcdtv、xpz3 和 xtonousou 的 beta 测试和支持"
+	arr["NORSK",75]="Takk til \"spansk pentesting crew\", til \"Wifislax Staff\", til forumfolkene som hjelper meg, mine samarbeidspartnere, oversettere og spesielt til kcdtv, xpz3 og xtonousou for beta testing og støtte mottatt"
+	arr["SVENSKAA",75]="Tack till \"spanska pentesting-teamet\", till \"Wifislax-personalen\", till forumpersonerna som hjälper mig, mina medarbetare, översättare och speciellt till kcdtv, xpz3 och xtonousou för beta testning och support mottagen"
+	arr["DANSK",75]="Tak til \"det spanske pentesting-hold\", til \"Wifislax-personalet\", til forumfolkene, der hjælper mig, mine samarbejdspartnere, oversættere og specielt til kcdtv, xpz3 og xtonousou for beta testning og støtte modtaget"
 
 	arr["ENGLISH",76]="Invalid menu option was chosen"
 	arr["SPANISH",76]="Opción del menú no válida"
@@ -2137,6 +2583,9 @@ function initialize_language_strings() {
 	arr["TURKISH",76]="Geçersiz bir menü seçildi"
 	arr["ARABIC",76]="اختيارغير صالح"
 	arr["CHINESE",76]="选择了无效的菜单选项"
+	arr["NORSK",76]="Ugyldig meny alternativ ble valgt"
+	arr["SVENSKAA",76]="Ogiltigt meny alternativ har valts"
+	arr["DANSK",76]="Ugyldig menu indstilling blev valgt"
 
 	arr["ENGLISH",77]="Invalid interface was chosen"
 	arr["SPANISH",77]="Interfaz no válida"
@@ -2151,6 +2600,9 @@ function initialize_language_strings() {
 	arr["TURKISH",77]="Geçersiz bir arayüz seçildi"
 	arr["ARABIC",77]="واجهة غير صالحة"
 	arr["CHINESE",77]="选择了无效的接口"
+	arr["NORSK",77]="Ugyldig grensesnitt ble valgt"
+	arr["SVENSKAA",77]="Ogiltigt gränssnitt valdes"
+	arr["DANSK",77]="Ugyldig grænseflade blev valgt"
 
 	arr["ENGLISH",78]="1.  Change language"
 	arr["SPANISH",78]="1.  Cambiar idioma"
@@ -2165,6 +2617,9 @@ function initialize_language_strings() {
 	arr["TURKISH",78]="1.  Dil değiştir"
 	arr["ARABIC",78]="1.  تغيير اللغة"
 	arr["CHINESE",78]="1.  更改语言"
+	arr["NORSK",78]="1.  Bytt språk"
+	arr["SVENSKAA",78]="1.  Byt språk"
+	arr["DANSK",78]="1.  Skift sprog"
 
 	arr["ENGLISH",79]="1.  English"
 	arr["SPANISH",79]="1.  Inglés"
@@ -2179,6 +2634,9 @@ function initialize_language_strings() {
 	arr["TURKISH",79]="1.  İngilizce"
 	arr["ARABIC",79]="1.  الإنجليزية"
 	arr["CHINESE",79]="1.  英语"
+	arr["NORSK",79]="1.  Engelsk"
+	arr["SVENSKAA",79]="1.  Engelska"
+	arr["DANSK",79]="1.  Engelsk"
 
 	arr["ENGLISH",80]="2.  Spanish"
 	arr["SPANISH",80]="2.  Español"
@@ -2193,6 +2651,9 @@ function initialize_language_strings() {
 	arr["TURKISH",80]="2.  İspanyolca"
 	arr["ARABIC",80]="2.  الإسبانية"
 	arr["CHINESE",80]="2.  西班牙语"
+	arr["NORSK",80]="2.  Spansk"
+	arr["SVENSKAA",80]="2.  Spanska"
+	arr["DANSK",80]="2.  Spansk"
 
 	arr["ENGLISH",81]="Select a language:"
 	arr["SPANISH",81]="Selecciona un idioma:"
@@ -2207,6 +2668,9 @@ function initialize_language_strings() {
 	arr["TURKISH",81]="Bir dil seçiniz:"
 	arr["ARABIC",81]=":اختر لغة"
 	arr["CHINESE",81]="请选择语言:"
+	arr["NORSK",81]="Velg et språk:"
+	arr["SVENSKAA",81]="Välj ett språk:"
+	arr["DANSK",81]="Vælg et sprog:"
 
 	arr["ENGLISH",82]="Invalid language was chosen"
 	arr["SPANISH",82]="Idioma no válido"
@@ -2221,6 +2685,9 @@ function initialize_language_strings() {
 	arr["TURKISH",82]="Yanlış bir dil seçildi"
 	arr["ARABIC",82]="لغة غير صحيحة"
 	arr["CHINESE",82]="选择了无效的语言，请重新输入"
+	arr["NORSK",82]="Ugyldig språk ble valgt"
+	arr["SVENSKAA",82]="Ogiltigt språk har valts"
+	arr["DANSK",82]="Ugyldigt sprog blev valgt"
 
 	arr["ENGLISH",83]="Language changed to English"
 	arr["SPANISH",83]="Idioma cambiado a Español"
@@ -2235,6 +2702,9 @@ function initialize_language_strings() {
 	arr["TURKISH",83]="Dil Türkçe olarak değiştirildi"
 	arr["ARABIC",83]="تغيرت اللغة إلى العربية"
 	arr["CHINESE",83]="当前语言已更改为简体中文"
+	arr["NORSK",83]="Språk endred til Norsk"
+	arr["SVENSKAA",83]="Språket ändrades till svenska"
+	arr["DANSK",83]="Sprog ændret til Dansk "
 
 	arr["ENGLISH",84]="Enterprise attacks menu"
 	arr["SPANISH",84]="Menú de ataques Enterprise"
@@ -2249,6 +2719,9 @@ function initialize_language_strings() {
 	arr["TURKISH",84]="Enterprise saldırı menüsü"
 	arr["ARABIC",84]="Entreprise قائمة هجمات"
 	arr["CHINESE",84]="企业级加密攻击菜单"
+	arr["NORSK",84]="Entreprise angeps meny"
+	arr["SVENSKA",84]="Enterprise attacker meny"
+	arr["DANSK",84]="Enterprise angreb menu"
 
 	arr["ENGLISH",85]="Contact us by mail, IRC, Discord, etc. More info here: \${normal_color}\${urlgithub_wiki}/Contact"
 	arr["SPANISH",85]="Contáctanos por mail, IRC, Discord, etc. Más información aquí: \${normal_color}\${urlgithub_wiki}/Contact"
@@ -2263,6 +2736,9 @@ function initialize_language_strings() {
 	arr["TURKISH",85]="E-posta, IRC, Discord, vb. ile ile bize ulaşın. Daha fazla bilgi için: \${normal_color}\${urlgithub_wiki}/Contact"
 	arr["ARABIC",85]="\${normal_color}\${urlgithub_wiki}/Contact \${pink_color}:إلخ. مزيد من المعلومات هنا:  ، IRC ، Discord ، اتصل بنا عن طريق البريد"
 	arr["CHINESE",85]="通过邮件、IRC、Discord 等方式联系我们。更多信息在这里: \${normal_color}\${urlgithub_wiki}/Contact"
+	arr["NORSK",85]="Kontakt oss på mail, IRC, Discord, etc. Mer info her: \${normal_color}\${urlgithub_wiki}/Contact"
+	arr["SVENSKA",85]="Kontakta oss via mail, IRC, Discord, etc. Mer info här: \${normal_color}\${urlgithub_wiki}/Contact"
+	arr["DANSK",85]="Kontakt os via mail, IRC, Discord osv. Mere info her: \${normal_color}\${urlgithub_wiki}/Contact"
 
 	arr["ENGLISH",86]="Welcome"
 	arr["SPANISH",86]="Bienvenid@"
@@ -2277,6 +2753,9 @@ function initialize_language_strings() {
 	arr["TURKISH",86]="Hoşgeldiniz"
 	arr["ARABIC",86]="مرحبا"
 	arr["CHINESE",86]="欢迎"
+	arr["NORSK",86]="Velkommen"
+	arr["SVENSKA",86]="Välkommen"
+	arr["DANSK",86]="Velkommen"
 
 	arr["ENGLISH",87]="Change language"
 	arr["SPANISH",87]="Cambiar idioma"
@@ -2291,6 +2770,9 @@ function initialize_language_strings() {
 	arr["TURKISH",87]="Dili Değiştir"
 	arr["ARABIC",87]="تغيير اللغة"
 	arr["CHINESE",87]="设置语言"
+	arr["NORSK",87]="Bytt språk"
+	arr["SVENSKA",87]="Byt språk"
+	arr["DANSK",87]="Skift sprog"
 
 	arr["ENGLISH",88]="Interface selection"
 	arr["SPANISH",88]="Selección de interfaz"
@@ -2305,6 +2787,9 @@ function initialize_language_strings() {
 	arr["TURKISH",88]="Arayüz seçimi"
 	arr["ARABIC",88]="اختيار الواجهة"
 	arr["CHINESE",88]="接口选择菜单"
+	arr["NORSK",88]="Grensesnitt valg"
+	arr["SVENSKA",88]="Gränssnitt val"
+	arr["DANSK",88]="Grænseflade val"
 
 	arr["ENGLISH",89]="\${mdk_command} amok action"
 	arr["SPANISH",89]="Acción \${mdk_command} amok"
@@ -2319,6 +2804,9 @@ function initialize_language_strings() {
 	arr["TURKISH",89]="\${mdk_command} amok etkisi"
 	arr["ARABIC",89]="\${mdk_command} amok فعل"
 	arr["CHINESE",89]="\${mdk_command} amok 行动"
+	arr["NORSK",89]="Handling \${mdk_command} amok"
+	arr["SVENSKA",89]="Handling \${mdk_command} amok"
+	arr["DANSK",89]="Handling \${mdk_command} amok"
 
 	arr["ENGLISH",90]="Aireplay deauth action"
 	arr["SPANISH",90]="Acción aireplay deauth"
@@ -2333,6 +2821,9 @@ function initialize_language_strings() {
 	arr["TURKISH",90]="Aireplay deauth etkisi"
 	arr["ARABIC",90]="Aireplay deauth فعل"
 	arr["CHINESE",90]="Aireplay 解除身份验证行动"
+	arr["NORSK",90]="Aireplay deauth handling"
+	arr["SVENSKA",90]="Aireplay deauth handling"
+	arr["DANSK",90]="Aireplay deauth handling"
 
 	arr["ENGLISH",91]="WIDS / WIPS / WDS confusion action"
 	arr["SPANISH",91]="Acción WIDS / WIPS / WDS confusion"
@@ -2347,6 +2838,9 @@ function initialize_language_strings() {
 	arr["TURKISH",91]="WIDS / WIPS / WDS confusion etkisi"
 	arr["ARABIC",91]="WIDS / WIPS / WDS confusion فعل"
 	arr["CHINESE",91]="WIDS / WIPS / WDS 混淆行动"
+	arr["NORSK",91]="WIDS / WIPS / WDS forvirrings handling"
+	arr["SVENSKA",91]="WIDS/WIPS/WDS förvirrings handling"
+	arr["DANSK",91]="WIDS/WIPS/WDS forvirrings handling"
 
 	arr["ENGLISH",92]="Beacon flood action"
 	arr["SPANISH",92]="Acción Beacon flood"
@@ -2361,6 +2855,9 @@ function initialize_language_strings() {
 	arr["TURKISH",92]="Beacon flood etkisi"
 	arr["ARABIC",92]="Beacon flood فعل"
 	arr["CHINESE",92]="WiFi 信号信标伪造 DoS 行动"
+	arr["NORSK",92]="Beacon flood angrep"
+	arr["SVENSKA",92]="Beacon flood attack"
+	arr["DANSK",92]="Beacon flood angreb"
 
 	arr["ENGLISH",93]="Auth DoS action"
 	arr["SPANISH",93]="Acción Auth DoS"
@@ -2375,6 +2872,9 @@ function initialize_language_strings() {
 	arr["TURKISH",93]="Auth DoS etkisi"
 	arr["ARABIC",93]="Auth DoS فعل"
 	arr["CHINESE",93]="授权 DoS 行动"
+	arr["NORSK",93]="Auth DoS handling"
+	arr["SVENSKA",93]="Auth DoS handling"
+	arr["DANSK",93]="Auth DoS handling"
 
 	arr["ENGLISH",94]="Michael Shutdown action"
 	arr["SPANISH",94]="Acción Michael Shutdown"
@@ -2389,6 +2889,9 @@ function initialize_language_strings() {
 	arr["TURKISH",94]="Michael Shutdown etkisi"
 	arr["ARABIC",94]="Michael Shutdown فعل"
 	arr["CHINESE",94]=" 迈克尔关机 (TKIP) 行动"
+	arr["NORSK",94]="Michael Shutdown handling"
+	arr["SVENSKA",94]="Michael Shutdown handling"
+	arr["DANSK",94]="Michael Shutdown handling"
 
 	arr["ENGLISH",95]="\${mdk_command} amok parameters"
 	arr["SPANISH",95]="Parámetros \${mdk_command} amok"
@@ -2403,6 +2906,9 @@ function initialize_language_strings() {
 	arr["TURKISH",95]="\${mdk_command} amok parametreleri"
 	arr["ARABIC",95]="\${mdk_command} amok معايير"
 	arr["CHINESE",95]="\${mdk_command} amok 攻击参数"
+	arr["NORSK",95]="\${mdk_command} amok parameter"
+	arr["SVENSKA",95]="\${mdk_command} amok parametrar"
+	arr["DANSK",95]="\${mdk_command} amok parametre"
 
 	arr["ENGLISH",96]="Aireplay deauth parameters"
 	arr["SPANISH",96]="Parámetros Aireplay deauth"
@@ -2417,6 +2923,9 @@ function initialize_language_strings() {
 	arr["TURKISH",96]="Aireplay deauth parametreleri"
 	arr["ARABIC",96]="Aireplay deauth معايير"
 	arr["CHINESE",96]="Aireplay 参数"
+	arr["NORSK",96]="Aireplay deauth parameter"
+	arr["SVENSKA",96]="Aireplay deauth parametrar"
+	arr["DANSK",96]="Aireplay deauth parametre"
 
 	arr["ENGLISH",97]="WIDS / WIPS / WDS parameters"
 	arr["SPANISH",97]="Parámetros WIDS / WIPS / WDS"
@@ -2431,6 +2940,9 @@ function initialize_language_strings() {
 	arr["TURKISH",97]="WIDS / WIPS / WDS parametreleri"
 	arr["ARABIC",97]="WIDS / WIPS / WDS معايير"
 	arr["CHINESE",97]="WIDS / WIPS / WDS 参数"
+	arr["NORSK",97]="WIDS / WIPS / WDS parameter"
+	arr["SVENSKA",97]="WIDS / WIPS / WDS parametrar"
+	arr["DANSK",97]="WIDS / WIPS / WDS parametre"
 
 	arr["ENGLISH",98]="Beacon flood parameters"
 	arr["SPANISH",98]="Parámetros Beacon flood"
@@ -2445,6 +2957,9 @@ function initialize_language_strings() {
 	arr["TURKISH",98]="Beacon flood parametreleri"
 	arr["ARABIC",98]="Beacon flood معايير"
 	arr["CHINESE",98]="WiFi 信号信标伪造 DoS 攻击"
+	arr["NORSK",98]="Beacon flood parameter"
+	arr["SVENSKA",98]="Beacon flood parametrar"
+	arr["DANSK",98]="Beacon flood parametre"
 
 	arr["ENGLISH",99]="Auth DoS parameters"
 	arr["SPANISH",99]="Parámetros Auth DoS"
@@ -2459,6 +2974,9 @@ function initialize_language_strings() {
 	arr["TURKISH",99]="Auth DoS parametreleri"
 	arr["ARABIC",99]="Auth DoS معايير"
 	arr["CHINESE",99]="身份验证 DoS 参数"
+	rr["NORSK",99]="Auth DoS prarameter"
+	arr["SVENSKA",99]="Auth DoS parametrar"
+	arr["DANSK",99]="Auth DoS parametre"
 
 	arr["ENGLISH",100]="Michael Shutdown parameters"
 	arr["SPANISH",100]="Parámetros Michael Shutdown"
@@ -2473,8 +2991,11 @@ function initialize_language_strings() {
 	arr["TURKISH",100]="Michael Shutdown parametreleri"
 	arr["ARABIC",100]="Michael Shutdown معايير"
 	arr["CHINESE",100]="迈克尔关机 (TKIP) 参数"
+	arr["NORSK",100]="Michael Shutdown parameter"
+	arr["SVENSKA",100]="Michael parametrar"
+	arr["DANSK",100]="Michael parametre"
 
-	arr["ENGLISH",101]="airgeddon ${normal_color}v${airgeddon_version}${green_color_title} main menu"
+    arr["ENGLISH",101]="airgeddon ${normal_color}v${airgeddon_version}${green_color_title} main menu"
 	arr["SPANISH",101]="Menú principal airgeddon ${normal_color}v${airgeddon_version}${green_color_title}"
 	arr["FRENCH",101]="Menu principal d'airgeddon ${normal_color}v${airgeddon_version}${green_color_title}"
 	arr["CATALAN",101]="Menú principal airgeddon ${normal_color}v${airgeddon_version}${green_color_title}"
@@ -2487,7 +3008,10 @@ function initialize_language_strings() {
 	arr["TURKISH",101]="airgeddon ${normal_color}v${airgeddon_version}${green_color_title} ana menü"
 	arr["ARABIC",101]="القائمة الرئيسية ${normal_color}v${airgeddon_version}${green_color_title} airgeddon"
 	arr["CHINESE",101]="airgeddon ${normal_color}v${airgeddon_version}${green_color_title} 主菜单"
-
+    arr["NORSK",101]="airgeddon hoved meny ${normal_color}v${airgeddon_version}${green_color_title}"
+	arr["SVENSKA",101]="airgeddon huvud menyn ${normal_color}v${airgeddon_version}${green_color_title}"
+	arr["DANSK",101]="airgeddon hoved menu ${normal_color}v${airgeddon_version}${green_color_title}"
+	
 	arr["ENGLISH",102]="DoS attacks menu"
 	arr["SPANISH",102]="Menú ataques DoS"
 	arr["FRENCH",102]="Menu des attaques DoS"
@@ -2501,6 +3025,9 @@ function initialize_language_strings() {
 	arr["TURKISH",102]="DoS saldırı menüsü"
 	arr["ARABIC",102]="DoS قائمة هجمات"
 	arr["CHINESE",102]="DoS 攻击菜单"
+	arr["NORSK",102]="DoS angreps meny"
+	arr["SVENSKA",102]="DoS attack menyn"
+	arr["DANSK",102]="DoS angrebs menu"
 
 	arr["ENGLISH",103]="Exploring for targets"
 	arr["SPANISH",103]="Explorar para buscar objetivos"
@@ -2515,6 +3042,9 @@ function initialize_language_strings() {
 	arr["TURKISH",103]="Hedefler taranıyor"
 	arr["ARABIC",103]="تصفح للعثور على الأهداف"
 	arr["CHINESE",103]="扫描目标"
+	arr["NORSK",103]="Utforsker etter mål"
+	arr["SVENSKA",103]="Utforskar efter mål"
+	arr["DANSK",103]="Udforsker efter mål"
 
 	arr["ENGLISH",104]="Select target"
 	arr["SPANISH",104]="Seleccionar objetivo"
@@ -2529,6 +3059,9 @@ function initialize_language_strings() {
 	arr["TURKISH",104]="Hedef seçiniz"
 	arr["ARABIC",104]="حدد هدف"
 	arr["CHINESE",104]="选择目标"
+	arr["NORSK",104]="Velg mål"
+	arr["SVENSKA",104]="Välj mål"
+	arr["DANSK",104]="Vælg mål"
 
 	arr["ENGLISH",105]="About & Credits"
 	arr["SPANISH",105]="Acerca de & Créditos"
@@ -2543,6 +3076,9 @@ function initialize_language_strings() {
 	arr["TURKISH",105]="Hakkımızda & Güven"
 	arr["ARABIC",105]="بشأن ومنسوبات"
 	arr["CHINESE",105]="关于 & 鸣谢 / 赞助"
+	arr["NORSK",105]="Om & Kreditt"
+	arr["SVENSKA",105]="Om & Kredit"
+	arr["DANSK",105]="Om & Kredit"
 
 	arr["ENGLISH",106]="Exiting"
 	arr["SPANISH",106]="Saliendo"
@@ -2557,6 +3093,9 @@ function initialize_language_strings() {
 	arr["TURKISH",106]="Çıkış yapılıyor"
 	arr["ARABIC",106]="الخروج من البرنامج"
 	arr["CHINESE",106]="正在退出"
+	arr["NORSK",106]="Avslutter"
+	arr["SVENSKA",106]="Avslutar"
+	arr["DANSK",106]="Afslutter"
 
 	arr["ENGLISH",107]="Join the project at \${normal_color}\${urlgithub}"
 	arr["SPANISH",107]="Únete al proyecto en \${normal_color}\${urlgithub}"
@@ -2571,6 +3110,9 @@ function initialize_language_strings() {
 	arr["TURKISH",107]="Projeye buradan katılın \${normal_color}\${urlgithub}"
 	arr["ARABIC",107]="\${normal_color}\${urlgithub}\${pink_color} انضم إلى المشروع على"
 	arr["CHINESE",107]="在 \${normal_color}\${urlgithub} 加入项目"
+	arr["NORSK",107]="Delta i projektet på \${normal_color}\${urlgithub}"
+	arr["SVENSKA",107]="Delta i projektet på \${normal_color}\${urlgithub}"
+	arr["DANSK",107]="Deltag i projektet på \${normal_color}\${urlgithub}"
 
 	arr["ENGLISH",108]="Let's check if you have installed what script needs"
 	arr["SPANISH",108]="Vamos a chequear si tienes instalado lo que el script requiere"
@@ -2585,6 +3127,9 @@ function initialize_language_strings() {
 	arr["TURKISH",108]="Hadi yazılımın ihtiyacı olan diğer yazılımları kontrol edelim"
 	arr["ARABIC",108]="دعنا نتحقق مما إذا كنت قد قمت بتثبيت ما يحتاجه البرنامج"
 	arr["CHINESE",108]="让我们检查一下你是否已经安装了脚本需要的软件包"
+	arr["NORSK",108]="La oss sjekke om du har installert det skriptet som trenger"
+	arr["SVENSKA",108]="Låt oss kontrollera om du har installerat det skript som behöve"
+	arr["DANSK",108]="Lad os tjekke, om du har installeret det script, der skal bruges"
 
 	arr["ENGLISH",109]="Essential tools: checking..."
 	arr["SPANISH",109]="Herramientas esenciales: comprobando..."
@@ -2599,6 +3144,9 @@ function initialize_language_strings() {
 	arr["TURKISH",109]="Temel araçlar: kontrol ediliyor..."
 	arr["ARABIC",109]="...التحقق من وجود الأدوات اللازمة"
 	arr["CHINESE",109]="必备工具: 检查中..."
+	arr["NORSK",109]="Viktige verktøy: kontroll..."
+	arr["SVENSKA",109]="Viktiga verktyg: kontroll..."
+	arr["DANSK",109]="Væsentlige værktøjer: kontrol.."
 
 	arr["ENGLISH",110]="Your distro has all necessary essential tools. Script can continue..."
 	arr["SPANISH",110]="Tu distro tiene todas las herramientas esenciales necesarias. El script puede continuar..."
@@ -2613,6 +3161,9 @@ function initialize_language_strings() {
 	arr["TURKISH",110]="Senin dağıtımın tüm gerekli temel araçları barındırıyor. Yazılım devam edebilir..."
 	arr["ARABIC",110]="...الأدوات الأساسية اللازمة للتشغيل السليم للبرنامج كلها موجودة في نظامك. يمكن أن يستمر البرنامج"
 	arr["CHINESE",110]="您的发行版已经安装了所有的脚本必备工具。脚本可以继续..."
+	arr["NORSK",110]="Distroen din har alle nødvendige verktøy. Skriptet kan fortsette..."
+	arr["SVENSKA",110]="Din distro har alla nödvändiga verktyg. Skriptet kan fortsätta..."
+	arr["DANSK",110]="Din distro har alle nødvendige essentielle værktøjer. Scriptet kan fortsætte..."
 
 	arr["ENGLISH",111]="You need to install some essential tools before running this script"
 	arr["SPANISH",111]="Necesitas instalar algunas herramientas esenciales antes de lanzar este script"
@@ -2627,7 +3178,10 @@ function initialize_language_strings() {
 	arr["TURKISH",111]="Bu yazılımı çalıştırmadan önce bazı temel araçları yüklemeniz gerekmektedir"
 	arr["ARABIC",111]="تحتاج إلى تثبيت بعض الأدوات الأساسية قبل تشغيل هذا البرنامج"
 	arr["CHINESE",111]="在运行此脚本之前，您需要安装一些必要的工具"
-
+	arr["NORSK",111]="Du må installere noen viktige verktøy før du kjører dette skriptet"
+	arr["SVENSKA",111]="Du måste installera några viktiga verktyg innan du kör det här skriptet"
+	arr["DANSK",111]="Du skal installere nogle vigtige værktøjer, før du kører dette script"
+ 
 	arr["ENGLISH",112]="WPA/WPA2 Enterprise networks are commonly used in corporate environments. They use a Radius server for authentication and unlike conventional networks require more elements for authentication, not just a password. They may require username, password and occasionally a certificate"
 	arr["SPANISH",112]="Las redes WPA/WPA2 Enterprise suelen configurarse en entornos corporativos. Utilizan un servidor Radius para la autenticación y a diferencia de las redes convencionales requieren más elementos para la autenticación, no solo una contraseña. Pueden requerir usuario y contraseña además de un certificado"
 	arr["FRENCH",112]="Les réseaux WPA/WPA2 Enterprise sont généralement configurés sur environnements d'entreprise. Ils utilisent un serveur Radius pour l'authentification et, contrairement aux réseaux conventionnels, ont besoin de plus éléments pour l'authentification, pas seulement un mot de passe. Ils peuvent exiger un nom d'utilisateur et un mot de passe en plus d'un certificat"
@@ -2641,8 +3195,11 @@ function initialize_language_strings() {
 	arr["TURKISH",112]="WPA/WPA2 Enterprise ağlar, şirket ortamlarında yaygın olarak kullanılır. Kimlik doğrulaması için bir Radius sunucu kullanıyorlar ve geleneksel ağların aksine, yalnızca bir şifre değil, kimlik doğrulama için daha fazla öğe gerekiyor. Kullanıcı adı, şifre ve bazen sertifika isteyebilirler"
 	arr["ARABIC",112]="للمصادقة وعلى عكس الشبكات التقليدية تتطلب عناصر أكثر للمصادقة ، وليس مجرد كلمة مرور. قد يطلبون اسم مستخدم وكلمة مرور وأحيانًا شهادة Radius بشكل شائع في بيئات الشركات. يستخدمون خادم WPA/WPA2 Entreprise تستخدم شبكات"
 	arr["CHINESE",112]="WPA/WPA2 企业级加密的网络通常用于企业环境。他们使用 Radius 服务器进行身份验证，与传统加密方式的网络不同，它们需要更多元素进行身份验证，而不仅仅是密码，可能还需要用户名等凭据，有时还需要证书"
-
-	arr["ENGLISH",113]="3.  French"
+	arr["NORSK",112]="WPA/WPA2 Enterprise-nettverk brukes ofte i bedriftsmiljøer. De bruker en Radius-server for autentisering og krever i motsetning til konvensjonelle nettverk flere elementer for autentisering, ikke bare et passord. De kan kreve brukernavn, passord og noen ganger et sertifikat"
+	arr["SVENSKA",112]="WPA/WPA2 Enterprise-nätverk används ofta i företagsmiljöer. De använder en Radius-server för autentisering och till skillnad från konventionella nätverk kräver de fler element för autentisering, inte bara ett lösenord. De kan kräva användarnamn, lösenord och ibland ett certifikat"
+	arr["DANSK",112]="WPA/WPA2 Enterprise-netværk er almindeligt anvendt i virksomhedsmiljøer. De bruger en Radius-server til godkendelse og kræver i modsætning til konventionelle netværk flere elementer til godkendelse, ikke kun en adgangskode. De kan kræve brugernavn, adgangskode og nogle gange et certifikat"
+	
+    arr["ENGLISH",113]="3.  French"
 	arr["SPANISH",113]="3.  Francés"
 	arr["FRENCH",113]="3.  Français"
 	arr["CATALAN",113]="3.  Francès"
@@ -2655,6 +3212,9 @@ function initialize_language_strings() {
 	arr["TURKISH",113]="3.  Fransızca"
 	arr["ARABIC",113]="3.  الفرنسية"
 	arr["CHINESE",113]="3.  法语"
+	arr["NORSK",113]="3.  Fransk"
+	arr["SVENSKA",113]="3.  Franska"
+	arr["DANSK",113]="3.  Fransk"
 
 	arr["ENGLISH",114]="Use it only on your own networks!!"
 	arr["SPANISH",114]="Utilízalo solo en tus propias redes!!"
@@ -2669,6 +3229,9 @@ function initialize_language_strings() {
 	arr["TURKISH",114]="Sadece kendi ağlarında kullan!!"
 	arr["ARABIC",114]="!!استخدامه فقط على شبكة الخاصة بك"
 	arr["CHINESE",114]="请仅在您自己的网络上使用它！！"
+	arr["NORSK",114]="Bruk den kun på dine egne nettverk!!"
+	arr["SVENSKA",114]="Använd den bara på dina egna nätverk!!"
+	arr["DANSK",114]="Brug det kun på dine egne netværk!!"
 
 	arr["ENGLISH",115]="Press [Enter] key to continue..."
 	arr["SPANISH",115]="Pulsa la tecla [Enter] para continuar..."
@@ -2683,6 +3246,9 @@ function initialize_language_strings() {
 	arr["TURKISH",115]="Devam etmek için [Enter] tuşlayınız..."
 	arr["ARABIC",115]="...للمتابعة [Enter] اضغط على مفتاح"
 	arr["CHINESE",115]="按 [Enter] 键继续..."
+	arr["NORSK",115]="Trykk på [Enter]-tasten for å fortsette..."
+	arr["SVENSKA",115]="Tryck på [Enter] för att fortsätta..."
+	arr["DANSK",115]="Tryk på [Enter]-tasten for at fortsætte..."
 
 	arr["ENGLISH",116]="4.  Catalan"
 	arr["SPANISH",116]="4.  Catalán"
@@ -2697,6 +3263,9 @@ function initialize_language_strings() {
 	arr["TURKISH",116]="4.  Katalan"
 	arr["ARABIC",116]="4.  الكاتالونية"
 	arr["CHINESE",116]="4.  加泰罗尼亚语"
+	arr["NORSK",116]="4.  Katalansk"
+	arr["SVENSKA",116]="4.  Katalanska"
+	arr["DANSK",116]="4.  Catalansk"
 
 	arr["ENGLISH",117]="smooth mode, disconnect on capture"
 	arr["SPANISH",117]="modo smooth, desconectar tras capturar"
@@ -2711,6 +3280,9 @@ function initialize_language_strings() {
 	arr["TURKISH",117]="smooth mod, yakalamadan sonra bağlantıyı keser"
 	arr["ARABIC",117]="قطع الاتصال عند الالتقاط ،smooth mode وضع"
 	arr["CHINESE",117]="平滑模式，捕获密码或哈希时断开连接"
+	arr["NORSK",117]="smoot mode kobler fra ved fangst"
+	arr["SVENSKA",117]="smoot mode kopplar från ved fangst"
+	arr["DANSK",117]="smoot mode kobler fra ved fangst"
 
 	arr["ENGLISH",118]="4.  DoS attacks menu"
 	arr["SPANISH",118]="4.  Menú de ataques DoS"
@@ -2725,6 +3297,9 @@ function initialize_language_strings() {
 	arr["TURKISH",118]="4.  DoS attacks menüsü"
 	arr["ARABIC",118]="4.  DoS قائمة هجمات"
 	arr["CHINESE",118]="4.  DoS 攻击菜单"
+	arr["NORSK",118]="4.  DoS angreps meny"
+	arr["SVENSKA",118]="4.  DoS attack meny"
+	arr["DANSK",118]="4.  DoS angrebs menu"
 
 	arr["ENGLISH",119]="5.  Handshake/PMKID/Decloaking tools menu"
 	arr["SPANISH",119]="5.  Menú de herramientas Handshake/PMKID/Decloaking"
@@ -2739,6 +3314,9 @@ function initialize_language_strings() {
 	arr["TURKISH",119]="5.  Handshake/PMKID/Decloaking araçları menüsü"
 	arr["ARABIC",119]="5.  Handshake/PMKID/Decloaking قائمة أدوات"
 	arr["CHINESE",119]="5.  Handshake/PMKID/Decloaking 工具菜单"
+	arr["NORSK",119]="5.  Handshake/PMKID/Decloaking verktøys meny"
+	arr["SVENSKA",119]="5.  Handshake/PMKID/Decloaking verktygs meny"
+	arr["DANSK",119]="5.  Handshake/PMKID/Decloaking værktøjs menu"
 
 	arr["ENGLISH",120]="Handshake/PMKID/Decloaking tools menu"
 	arr["SPANISH",120]="Menú de herramientas Handshake/PMKID/Decloaking"
@@ -2753,7 +3331,10 @@ function initialize_language_strings() {
 	arr["TURKISH",120]="Handshake/PMKID/Decloaking araçları menüsü"
 	arr["ARABIC",120]="Handshake/PMKID/Decloaking قائمة أدوات"
 	arr["CHINESE",120]="Handshake/PMKID/Decloaking 工具菜单"
-
+	arr["NORSK",120]="5.Handshake/PMKID/Decloaking verktøys meny"
+	arr["SVENSKA",120]="5.Handshake/PMKID/Decloaking verktygs meny"
+	arr["DANSK",120]="5.Handshake/PMKID/Decloaking værktøjs menu"
+	
 	arr["ENGLISH",121]="6.  Capture Handshake"
 	arr["SPANISH",121]="6.  Capturar Handshake"
 	arr["FRENCH",121]="6.  Capture du Handshake"
@@ -2767,6 +3348,9 @@ function initialize_language_strings() {
 	arr["TURKISH",121]="6.  Handshake yakala"
 	arr["ARABIC",121]="6.  Handshake التقاط"
 	arr["CHINESE",121]="6.  捕捉握手包"
+	arr["NORSK",121]="6.  Fange Handshake"
+	arr["SVENSKA",121]="6.  Fånga Handshake"
+	arr["DANSK",121]="6.  Fange Handshake"
 
 	arr["ENGLISH",122]="7.  Clean/optimize Handshake file"
 	arr["SPANISH",122]="7.  Limpiar/optimizar fichero de Handshake"
@@ -2781,6 +3365,9 @@ function initialize_language_strings() {
 	arr["TURKISH",122]="7.  Handshake dosyalarını Temizle/Optimize et"
 	arr["ARABIC",122]="7.  Handshake تنظيف/تحسين ملف"
 	arr["CHINESE",122]="7.  清理/优化握手包文件"
+	arr["NORSK",122]="7.  Rens/optimaliser Handshake fil"
+	arr["SVENSKA",122]="7.  Rensa/optimera Handshake fil"
+	arr["DANSK",122]="7.  Rens/optimaliser Handshake fil"
 
 	arr["ENGLISH",123]="If the password for the wifi network is obtained with the WPS attack, you should decide where to save it. \${green_color}Type the path to store the file or press [Enter] to accept the default proposal \${normal_color}[\${wps_potpath}]"
 	arr["SPANISH",123]="Si se consigue la contraseña de la red wifi con el ataque WPS, hay que decidir donde guardarla. \${green_color}Escribe la ruta donde guardaremos el fichero o pulsa [Enter] para aceptar la propuesta por defecto \${normal_color}[\${wps_potpath}]"
@@ -2795,6 +3382,9 @@ function initialize_language_strings() {
 	arr["TURKISH",123]="Eğer wifi şifresini WPS saldırısı yöntemi ile elde ettiyseniz, nereye kaydedileceğini belirlemelisiniz. \${green_color}Dizin yolu girin veya [Enter] tuşuna varsayılan yere kaydedin. \${normal_color}[\${wps_potpath}]"
 	arr["ARABIC",123]="\${normal_color}[\${wps_potpath}] \${green_color}لقبول الاقتراح [Enter] اكتب الطريق لتخزين الملف أو اضغط على \${blue_color}  .فيجب أن تقرر مكان حفظها ،WPS  بهجوم wifi إذا تم الحصول على كلمة المرور الخاصة بشبكة"
 	arr["CHINESE",123]="如果 wifi 网络的密码是通过 WPS 攻击获得的，您应该决定将其保存在何处。 \${green_color}键入存储文件的路径或按 [Enter] 接受默认建议 \${normal_color}[\${wps_potpath}]"
+	arr["NORSK",123]="Hvis passordet for wifi nettverket oppnås med WPS angrepet, bør du bestemme hvor du vil lagre det. \${green_color}Skriv inn banen for å lagre filen eller trykk [Enter] for å godta standardforslaget \${normal_color}[\${wps_potpath"
+	arr["SVENSKA",123]="Om lösenordet för wifi nätverket erhålls med WPS attacken bör du bestämma var du vill spara det. \${green_color}Skriv sökvägen för att lagra filen eller tryck på [Retur] för att acceptera standardförslaget \${normal_color}[\${wps_potpath}"
+	arr["DANSK",123]="Hvis adgangskoden til wifi netværket opnås med WPS angrebet, bør du beslutte, hvor du vil gemme den. \${green_color}Skriv stien for at gemme filen, eller tryk på [Enter] for at acceptere standardforslaget \${normal_color}[\${wps_potpath}]"
 
 	arr["ENGLISH",124]="monitor mode needed for capturing"
 	arr["SPANISH",124]="modo monitor requerido en captura"
@@ -2809,6 +3399,9 @@ function initialize_language_strings() {
 	arr["TURKISH",124]="yakalamak için izleme modu gereklidir"
 	arr["ARABIC",124]="لازم لالتقاط monitor mode وضع"
 	arr["CHINESE",124]="抓包需要监听模式"
+	arr["NORSK",124]="monitor mode nødvendig for fangst"
+	arr["SVENSKA",124]="monitor mode behövs för att fånga"
+	arr["DANSK",124]="monitor mode nødvendig for at fange"
 
 	arr["ENGLISH",125]="There is no valid target network selected. You'll be redirected to select one"
 	arr["SPANISH",125]="No hay una red objetivo válida seleccionada. Serás redirigido para seleccionar una"
@@ -2823,6 +3416,9 @@ function initialize_language_strings() {
 	arr["TURKISH",125]="Geçerli bir hedef ağ seçilmedi. Seçmek için yönlendiriliyorsunuz"
 	arr["ARABIC",125]="لم يتم تحديد شبكة مستهدفة صالحة. ستتم إعادة توجيهك لتحديد واحدة"
 	arr["CHINESE",125]="没有选择有效的目标网络。您需要选择一个"
+	arr["NORSK",125]="Det er ikke valgt noe gyldig målnettverk. Du blir omdirigert for å velge en"
+	arr["SVENSKA",125]="Inget giltigt målnätverk har valts. Du omdirigeras för att välja en"
+	arr["DANSK",125]="Der er ikke valgt noget gyldigt målnetværk. Du vil blive omdirigeret for å vælge en"
 
 	arr["ENGLISH",126]="You have a valid WPA, WPA2 or WPA2/WPA3 in \"Mixed mode\" target network selected. Script can continue..."
 	arr["SPANISH",126]="Tienes una red objetivo WPA, WPA2 o WPA2/WPA3 en \"Mixed mode\" válida seleccionada. El script puede continuar..."
@@ -2837,6 +3433,9 @@ function initialize_language_strings() {
 	arr["TURKISH",126]="Geçerli bir \"Mixed mode\" da WPA, WPA2 veya WPA2/WPA3 hedef ağı seçtiniz. Yazılım devam edebilir..."
 	arr["ARABIC",126]="...يمكن أن يستمرالبرنامج .\"Mixed mode\" صالح فى WPA2/WPA3 أو WPA2 و WPA يوجد "
 	arr["CHINESE",126]="您在“混合模式”目标中选择了有效的 WPA、WPA2 或 WPA2/WPA3 加密方式的无线网络。脚本可以继续..."
+	arr["NORSK",126]="Du har ett gyldig WPA, WPA2 eller WPA2/WPA3 i \"Mixed mode\" målnettverk. Skriptet kan fortsette..."
+	arr["SVENSKA",126]="Du har ett giltigt WPA, WPA2 eller WPA2/WPA3 i \"Mixed mode\" målnätverk. Skriptet kan fortsätta..."
+	arr["DANSK",126]="Du har et gyldigt WPA, WPA2 eller WPA2/WPA3 i \"Mixed mode\" målnetværk. Scriptet kan fortsætte...."
 
 	arr["ENGLISH",127]="The natural order to proceed in this menu is usually: 1-Select wifi card 2-Put it in monitor mode 3-Select target network 4-Capture Handshake/PMKID"
 	arr["SPANISH",127]="El orden natural para proceder en este menú suele ser: 1-Elige tarjeta wifi 2-Ponla en modo monitor 3-Elige red objetivo 4-Captura Handshake/PMKID"
@@ -2851,6 +3450,9 @@ function initialize_language_strings() {
 	arr["TURKISH",127]="Normal olarak izlemeniz gereken yol: 1-Wifi kartı seç 2-İzleme modunu aç 3-Hedef ağ seç 4-Handshake yakala"
 	arr["ARABIC",127]="Handshake/PMKID عادة ما يكون الترتيب الطبيعي للمتابعة في هذه القائمة هو: 1- حدد بطاقة  الويفي  2- تنشيط وضع المراقبة 3- اختيار شبكة مستهدفة 4- التقاط"
 	arr["CHINESE",127]="在此菜单中进行的自然顺序通常是: 1-选择无线网络接口 2-将其置于监听模式 3-选择目标网络 4-捕获握手包/PMKID"
+	arr["NORSK",127]="Den naturlige rekkefølgen for å fortsette i denne menyen er vanligvis: 1-Velg wifi kort 2-Sett det i monitor mode 3-Velg målnettverk 4-Capture Handshake/PMKID"
+	arr["SVENSKA",127]="Den naturliga ordningen att fortsätta i den här menyn är vanligtvis: 1-Välj wifi kort 2-Sätt det i monitor mode 3-Välj målnätverk 4-Fånga Handshake/PMKID"
+	arr["DANSK",127]="Den naturlige rækkefølge for at fortsætte i denne menu er normalt: 1-Vælg wifi kort 2-Sæt det i monitor mode 3-Vælg målnetværk 4-Capture Handshake/PMKID"
 
 	arr["ENGLISH",128]="Select a wifi card to work in order to be able to do more actions than with an ethernet interface"
 	arr["SPANISH",128]="Selecciona una interfaz wifi para poder realizar más acciones que con una interfaz ethernet"
@@ -2865,6 +3467,9 @@ function initialize_language_strings() {
 	arr["TURKISH",128]="Bir ethernet arabiriminden daha fazla işlem yapabilmek için çalışmak üzere bir wifi kartı seçin"
 	arr["ARABIC",128]="حدد بطاقة wifi للعمل من أجل أن تكون قادرًا على القيام بإجراءات أكثر من استخدام واجهة ethernet"
 	arr["CHINESE",128]="请选择要使用的 wifi 网卡，以便能够执行比使用有线网络 (以太网) 接口更多的操作"
+	arr["NORSK",128]="Velg et wifi-kort for å kunne gjøre flere handlinger enn med et Ethernet grensesnitt"
+	arr["SVENSKA",128]="Velg et wifi-kort för att kunna göra flera hanterare än med et Ethernet gränssnitt"
+	arr["DANSK",128]="Velg et wifi-kort for at kunne gøre flere handlinger end med et Ethernet grænsesnit"
 
 	arr["ENGLISH",129]="The natural order to proceed in this menu is usually: 1-Select wifi card 2-Put it in monitor mode 3-Select target network 4-Start attack"
 	arr["SPANISH",129]="El orden natural para proceder en este menú suele ser: 1-Elige tarjeta wifi 2-Ponla en modo monitor 3-Elige red objetivo 4-Comienza el ataque"
@@ -2879,7 +3484,10 @@ function initialize_language_strings() {
 	arr["TURKISH",129]="Bu menüde devam etmek için genellikle şu yol izlenir: 1-Wifi kartı seçmi 2-İzleme modunu açma 3-Hedef ağ seçme 4-Saldırıya başlama"
 	arr["ARABIC",129]="عادة ما يكون الترتيب الطبيعي للمتابعة في هذه القائمة هو: 1- حدد بطاقة الويفي  2- تنشيط وضع المراقبة 3- اختيار شبكة مستهدفة 4- بدء الهجوم"
 	arr["CHINESE",129]="在此菜单中进行的攻击准备顺序通常是: 1-选择 wifi 网卡 2-将其置于监控模式 3-选择目标网络 4-进入本菜单开始攻击"
-
+    arr["NORSK",129]="Den naturlige rekkefølgen for å fortsette i denne menyen er vanligvis: 1-Velg wifi kort 2-Sett det i monitor mode 3-Velg målnettverk 4-Start angrep"
+	arr["SVENSKA",129]="Den naturliga ordningen att fortsätta i den här menyn är vanligtvis: 1-Välj wifi kort 2-Sätt det i monitor mode 3-Välj målnätverk 4-Starta attack"
+	arr["DANSK",129]="Den naturlige rækkefølge for at fortsætte i denne menu er normalt: 1-Vælg wifi kort 2-Sæt det i monitor mode 3-Vælg målnetværk 4-Start angreb"
+	
 	arr["ENGLISH",130]="Remember to select a target network with clients to capture Handshake"
 	arr["SPANISH",130]="Recuerda seleccionar una red objetivo con clientes para capturar el Handshake"
 	arr["FRENCH",130]="Rappelez-vous de sélectionner un réseau cible avec un/des client(s) connecté(s) pour pouvoir capturer un Handshake"
@@ -2893,6 +3501,9 @@ function initialize_language_strings() {
 	arr["TURKISH",130]="Handshake'i yakalamak için istemcilerle bir hedef ağ seçmeyi unutmayın"
 	arr["ARABIC",130]="Handshake تذكر تحديد شبكة مستهدفة مع الزبناء لالتقاط"
 	arr["CHINESE",130]="记得选择一个有客户端连接的无线网络来捕获握手包"
+	arr["NORSK",130]="Husk å velge et målnettverk med klienter for å fange Handshake"
+	arr["SVENSKA",130]="Kom ihåg att välja ett målnätverk med klienter för att fånga Handshake"
+	arr["DANSK",130]="Husk at vælge et målnetværk med klienter til at fange Handshake"
 
 	arr["ENGLISH",131]="Not all attacks affect all access points. If an attack is not working against an access point, choose another one :)"
 	arr["SPANISH",131]="No todos los ataques afectan a todos los puntos de acceso. Si un ataque no funciona contra un punto de acceso, elige otro :)"
@@ -2907,6 +3518,9 @@ function initialize_language_strings() {
 	arr["TURKISH",131]="Tüm saldırılar tüm erişim noktalarını etkilemez. Bir saldırı bir erişim noktasına karşı çalışmıyorsa, başka birini seçin :)"
 	arr["ARABIC",131]="(: لا تؤثر جميع الهجمات على جميع نقاط الوصول. إذا كان الهجوم لا يعمل ضد نقطة وصول ، فاختر نقطة أخرى"
 	arr["CHINESE",131]="有的攻击方式可能对部分 AP 不起作用。如果效果未达预期，请选择另一个 :)"
+	arr["NORSK",131]="Alle angrep påvirker ikke alle adgangspunkter. Hvis et angrep ikke virker mot ett adgangspunkt, velg et andet :)"
+	arr["SVENSKA",131]="Alla attacker påverkar inte alla åtkomstpunkter. Om en attack inte fungerar mot en åtkomstpunkt, välj en annan :)"
+	arr["DANSK",131]="Alle angreb påvirker ikke alle adgangspunkter. Hvis et angreb ikke virker mod et adgangspunkt, skal du vælge et andet:)"
 
 	arr["ENGLISH",132]="Cleaning a Handshake file is recommended only for big size files. It's better to have a backup, sometimes file can be corrupted while cleaning it"
 	arr["SPANISH",132]="Limpiar un fichero de Handshake se recomienda solo para ficheros grandes. Es mejor hacer una copia de seguridad antes, a veces el fichero se puede corromper al limpiarlo"
@@ -2921,6 +3535,9 @@ function initialize_language_strings() {
 	arr["TURKISH",132]="Bir Handshake dosyasının temizlenmesi yalnızca büyük boyutlu dosyalar için önerilir. Bir yedeğin olması daha iyidir, bazen dosya temizlenirken bozulabilir"
 	arr["ARABIC",132]="فقط للملفات كبيرة الحجم. من الأفضل أن يكون لديك نسخة احتياطية ، في بعض الأحيان يمكن أن يتلف الملف أثناء تنظيفه Handshake يوصى بتنظيف ملف"
 	arr["CHINESE",132]="建议仅清理较大的握手包文件。而且最好有一个备份，有时文件可能会在清理时损坏"
+	arr["NORSK",132]="Rengjøring av en Handshake-fil anbefales kun for store filer. Det er bedre å ha en sikkerhetskopi, noen ganger kan filen bli ødelagt mens du renser den"
+	arr["SVENSKA",132]="Rengöring av en handskakningsfil rekommenderas endast för stora filer. Det är bättre att ha en säkerhetskopia, ibland kan filen skadas när den rengörs"
+	arr["DANSK",132]="Rengøring af en Handshake-fil anbefales kun til store filer. Det er bedre at have en sikkerhedskopi, nogle gange kan filen blive ødelagt, mens den renses"
 
 	arr["ENGLISH",133]="If you select a target network with hidden ESSID, you can't use it, but you can perform BSSID based attacks to that network"
 	arr["SPANISH",133]="Si seleccionas una red objetivo con el ESSID oculto, no podrás usarlo, pero puedes hacer ataques basados en BSSID sobre esa red"
@@ -2935,6 +3552,9 @@ function initialize_language_strings() {
 	arr["TURKISH",133]="Gizli ESSID ile bir hedef ağ seçerseniz, bunu kullanamazsınız, ancak bu ağa BSSID tabanlı saldırılar gerçekleştirebilirsiniz"
 	arr["ARABIC",133]="على تلك الشبكة BSSID فلا يمكنك استخدامها ، ولكن يمكنك تنفيذ هجمات تستند على ESSID إذا قمت بتحديد شبكة مستهدفة باستخدام"
 	arr["CHINESE",133]="如果你选择一个隐藏了 ESSID 的目标网络，你将无法使用它，但你可以对该网络执行基于 BSSID 的攻击"
+	arr["NORSK",133]="Hvis du velger et målnettverk med skjult ESSID, kan du ikke bruke det, men du kan utføre BSSID baserte angrep på det nettverket"
+	arr["SVENSKA",133]="Om du väljer ett målnätverk med dolt ESSID kan du inte använda det, men du kan utföra BSSID baserade attacker mot det nätverket"
+	arr["DANSK",133]="Hvis du vælger et målnetværk med skjult ESSID, kan du ikke bruge det, men du kan udføre BSSID baserede angreb på det netværk"
 
 	arr["ENGLISH",134]="If your Linux is a virtual machine, it is normal that the integrated wifi cards are detected as ethernet. You will need an external usb wifi card. More info at this link: \${normal_color}\${urlgithub_wiki}/FAQ%20&%20Troubleshooting#why-is-my-integrated-wifi-card-detected-as-an-ethernet-interface-in-a-virtual-machine"
 	arr["SPANISH",134]="Si tu Linux es una máquina virtual, es normal que las tarjetas wifi integradas sean detectadas como ethernet. Necesitarás una tarjeta wifi externa usb. Más info en este enlace: \${normal_color}\${urlgithub_wiki}/FAQ%20&%20Troubleshooting#why-is-my-integrated-wifi-card-detected-as-an-ethernet-interface-in-a-virtual-machine"
@@ -2949,6 +3569,9 @@ function initialize_language_strings() {
 	arr["TURKISH",134]="Eğer Linux'unuz sanal makine ise entegre wifi kartlarının ethernet olarak algılanması normaldir. Harici bir usb wifi kartına ihtiyacınız olacak. Daha fazla bilgiyi bu bağlantıda bulabilirsiniz: \${normal_color}\${urlgithub_wiki}/FAQ%20&%20Troubleshooting#why-is-my-integrated-wifi-card-detected-as-an-ethernet-interface-in-a-virtual-machine"
 	arr["ARABIC",134]=" \${normal_color}\${urlgithub_wiki}/FAQ%20&%20Troubleshooting#why-is-my-integrated-wifi-card-detected-as-an-ethernet-interface-in-a-virtual-machine \${pink_color}:خارجيه. للمزيد من المعلومات Wifi سوف تحتاج إلى بطاقة .ethernet علي انها Wifi الخاص بك افتراضي, فمن الطبيعي ان يتم اكتشاف بطاقة ال Linux إذا كان نظام ال\${normal_color}"
 	arr["CHINESE",134]="如果你的Linux发行版正运行在虚拟化环境，则物理机的无线 wifi 网卡被检测为以太网卡是正常的。此时您可能需要一个外部 USB 无线网卡。更多信息请访问此链接：\${normal_color}\${urlgithub_wiki}/FAQ%20&%20Troubleshooting#why-is-my-integrated-wifi-card-detected-as-an-ethernet-interface-in-a-virtual-machine"
+	arr["NORSK",134]="Hvis din Linux er en virtuell maskin, er det normalt at de integrerte wifi kortene oppdages som Ethernet. Du trenger et eksternt usb wifi kort. Mer info på denne linken: \${normal_color}\${urlgithub_wiki}/FAQ%20&%20Troubleshooting#why-is-my-integrated-wifi-card-detected-as-an-ethernet-interface-in-a-virtual-machine"
+	arr["SVENSKA",134]="Om din Linux är en virtuell maskin är det normalt att de integrerade wifi korten identifieras som ethernet. Du behöver ett externt usb wifi kort. Mer info på denna länk: \${normal_color}\${urlgithub_wiki}/FAQ%20&%20Troubleshooting#why-is-my-integrated-wifi-card-detected-as-an-ethernet-interface-in-a-virtual-machine"
+	arr["DANSK",134]="Hvis din Linux er en virtuel maskine, er det normalt, at de integrerede wifi kort detekteres som ethernet. Du skal bruge et eksternt usb wifi kort. Mere info på dette link: \${normal_color}\${urlgithub_wiki}/FAQ%20&%20Troubleshooting#why-is-my-integrated-wifi-card-detected-as-an-ethernet-interface-in-a-virtual-machine"
 
 	arr["ENGLISH",135]="Type of encryption: \${pink_color}\${enc}\${normal_color}"
 	arr["SPANISH",135]="Tipo de encriptado: \${pink_color}\${enc}\${normal_color}"
@@ -2963,6 +3586,9 @@ function initialize_language_strings() {
 	arr["TURKISH",135]="Şifreleme tipi: \${pink_color}\${enc}\${normal_color}"
 	arr["ARABIC",135]="\${pink_color}\${enc}\${blue_color} :نوع التشفير\${normal_color}"
 	arr["CHINESE",135]="加密类型: \${pink_color}\${enc}\${normal_color}"
+	arr["NORSK",135]="Type kryptering: \${pink_color}\${enc}\${normal_color}"
+	arr["SVENSKA",135]="Typ av kryptering: \${pink_color}\${enc}\${normal_color}"
+	arr["DANSK",135]="Type af kryptering: \${pink_color}\${enc}\${normal_color}"
 
 	arr["ENGLISH",136]="Only some networks are vulnerable to PMKID capturing. For this they must have activated roaming features like 802.11r"
 	arr["SPANISH",136]="Solo algunas redes son vulnerables a la captura de un paquete que contenga un PMKID. Para ello han de tener activadas características de roaming como el 802.11r"
@@ -2977,6 +3603,9 @@ function initialize_language_strings() {
 	arr["TURKISH",136]="Sadece bazı ağlar bir PMKID içeren bir paket yakalamak için savunmasız. 802.11r özellikleri roaming için etkinleştirilmiş olmalı"
 	arr["ARABIC",136]="802.11r لهذا يجب أن يكونوا قد قاموا بتنشيط ميزات التجوال مثل .PMKID بعض الشبكات فقط هي عرضة لالتقاط"
 	arr["CHINESE",136]="只有一些网络容易捕获到 PMKID。前提是它们已经激活了 802.11r 等漫游功能"
+	arr["NORSK",136]="Bare noen nettverk er sårbare for PMKID-fangst. For dette må de ha aktivert roaming-funksjoner som f.eks 802.11r"
+	arr["SVENSKA",136]="Endast vissa nätverk är sårbara för PMKID-fångst. För detta måste de ha aktiverat roamingfunktioner som t.ex 802.11r"
+	arr["DANSK",136]="Kun nogle netværk er sårbare over for PMKID-optagelse. Til dette skal de have aktiveret roaming-funktioner som f.eks 802.11r"
 
 	arr["ENGLISH",137]="The selected network is invalid. To get a Handshake, encryption type of target network should be WPA, WPA2 or WPA2/WPA3 in \"Mixed mode\""
 	arr["SPANISH",137]="La red seleccionada no es válida. Para obtener un Handshake, el tipo de encriptación de la red objetivo debe ser WPA, WPA2 o WPA2/WPA3 en \"Mixed mode\""
@@ -2991,6 +3620,9 @@ function initialize_language_strings() {
 	arr["TURKISH",137]="Seçilen ağ geçersiz. Bir Handshake almak için, şifreleme türünün hedef ağ \"Mixed mode\" da  WPA, WPA2 veya WPA2/WPA3 olmalıdır"
 	arr["ARABIC",137]="\"Mixed mode\" في WPA2/WPA3 أو WPA2 و WPA الشبكة المحددة غير صالحة. للحصول على المصافحة ، يجب أن يكون نوع التشفير للشبكة المستهدفة هو"
 	arr["CHINESE",137]="所选网络无效。要捕获握手包，目标无线网络的加密类型应 WPA、WPA2 或“混合模式”下的 WPA2/WPA3"
+	arr["NORSK",137]="Det valgte nettverket er ugyldig. For å få et Handshake, bør krypteringstypen målnettverk være WPA, eller WPA2 i WPA2/WPA3 i \"Mixed mode\""
+	arr["SVENSKA",137]="Det valda nätverket är ogiltigt. För att få en Handshake, bör krypteringstyp av målnätverk vara WPA, WPA2 eller WPA2/WPA3 i \"Mixed mode\""
+	arr["DANSK",137]="Det valgte netværk er ugyldigt. For at få et Handshake, skal krypteringstypen for målnetværket være WPA, WPA2 eller WPA2/WPA3 i \"Mixed mode\""
 
 	arr["ENGLISH",138]="Attack for Handshake"
 	arr["SPANISH",138]="Ataque para Handshake"
@@ -3005,6 +3637,9 @@ function initialize_language_strings() {
 	arr["TURKISH",138]="Saldırı için Handshake"
 	arr["ARABIC",138]="Handshake هجوم للحصول على"
 	arr["CHINESE",138]="握手包攻击"
+	arr["NORSK",138]="Angrep for Handshake"
+	arr["SVENSKA",138]="Attak for Handshake"
+	arr["DANSK",138]="Angeb for Handshake"
 
 	arr["ENGLISH",139]="1.  Deauth / disassoc amok \${mdk_command} attack"
 	arr["SPANISH",139]="1.  Ataque Deauth / Disassoc amok \${mdk_command}"
@@ -3019,6 +3654,9 @@ function initialize_language_strings() {
 	arr["TURKISH",139]="1.  Deauth / disassoc amok \${mdk_command} saldırısı"
 	arr["ARABIC",139]="1.  Deauth / disassoc amok \${mdk_command} هجوم"
 	arr["CHINESE",139]="1.  Deauth / disassoc amok \${mdk_command} 攻击"
+	arr["NORSK",139]="1.  Angrep Deauth / Disassoc amok \${mdk_command}"
+	arr["SVENSKA",139]="1.  Attack Deauth / Disassoc amok \${mdk_command}"
+	arr["DANSK",139]="1.  Angrep Deauth / Disassoc amok \${mdk_command}"
 
 	arr["ENGLISH",140]="2.  Deauth aireplay attack"
 	arr["SPANISH",140]="2.  Ataque Deauth aireplay"
@@ -3033,6 +3671,9 @@ function initialize_language_strings() {
 	arr["TURKISH",140]="2.  Deauth aireplay saldırısı"
 	arr["ARABIC",140]="2.  DeAuth aireplay هجوم"
 	arr["CHINESE",140]="2.  Deauth aireplay 攻击"
+	arr["NORSK",140]="2.  Deauth aireplay angrep"
+	arr["SVENSKA",140]="2.  Deauth aireplay attack"
+	arr["DANSK",140]="2.  Deauth aireplay angreb"
 
 	arr["ENGLISH",141]="3.  Auth DoS attack"
 	arr["SPANISH",141]="3.  Ataque Auth DoS"
@@ -3047,6 +3688,9 @@ function initialize_language_strings() {
 	arr["TURKISH",141]="3.  Auth DoS saldırısı"
 	arr["ARABIC",141]="3.  Auth DoS هجوم"
 	arr["CHINESE",141]="3.  身份验证 DoS 攻击 (Auth DoS)"
+	arr["NORSK",141]="3.  Auth DoS angrep"
+	arr["SVENSKA",141]="3.  Auth Dos attack"
+	arr["DANSK",141]="3.  Auth DoS angreb"
 
 	arr["ENGLISH",142]="If the Handshake doesn't appear after an attack, try again or change the type of attack"
 	arr["SPANISH",142]="Si tras un ataque el Handshake no aparece, vuelve a intentarlo o cambia de ataque hasta conseguirlo"
@@ -3061,6 +3705,9 @@ function initialize_language_strings() {
 	arr["TURKISH",142]="Eğer handshake başarısız olduysa, başka bir saldırı yöntemi deneyin"
 	arr["ARABIC",142]="بعد هجوم ، فحاول مرة أخرى أو قم بتغيير نوع الهجوم Handshake إذا لم يظهر"
 	arr["CHINESE",142]="如果攻击无线网络中的客户端后没有捕获到握手包，请重试或更改攻击类型"
+	arr["NORSK",142]="Hvis Handshak ikke vises etter et angrep,  så prøv igjen eller skift angreps typen"
+	arr["SVENSKA",142]="Om Handshake inte visas efter en attack, försök igen eller ändra typen av attack"
+	arr["DANSK",142]="Hvis håndtrykket ikke vises efter et angreb, så prøv igen eller skift angrebstypen"
 
 	arr["ENGLISH",143]="Two windows will be opened. One with the Handshake capturer and other with the attack to force clients to reconnect"
 	arr["SPANISH",143]="Se abrirán dos ventanas. Una con el capturador del Handshake y otra con el ataque para expulsar a los clientes y forzarles a reconectar"
@@ -3075,6 +3722,9 @@ function initialize_language_strings() {
 	arr["TURKISH",143]="Eğer Handshake bir saldırıdan sonra görünmezse, tekrar deneyin veya saldırı türünü değiştirin"
 	arr["ARABIC",143]="والأخرى مع الهجوم لإجبار العملاء على إعادة الاتصال Handshake سيتم فتح نافذتين. واحدة مع آسر"
 	arr["CHINESE",143]="脚本将打开两个窗口。一个用于捕获握手包，另一个攻击无线网络中的客户端迫使其重新连接以便于脚本捕获握手包"
+	arr["NORSK",143]="To vinduer åpnes. En med Handshake fangeren og en annen med angrepet for å tvinge klienter til å koble til på nytt"
+	arr["SVENSKA",143]="Två fönster kommer att öppnas. En med Handske fångaren och en annan med attacken för att tvinga klienter att återansluta"
+	arr["DANSK",143]="To vinduer åbnes. Den ene med Handshake fangeren og den anden med angrebet for at tvinge klienter til at oprette forbindelse igen"
 
 	arr["ENGLISH",144]="Don't close any window manually, script will do when needed. In about \${timeout} seconds maximum you'll know if you've got the Handshake"
 	arr["SPANISH",144]="No cierres manualmente ninguna ventana, el script lo hará cuando proceda. En unos \${timeout} segundos como máximo sabrás si conseguiste el Handshake"
@@ -3089,6 +3739,9 @@ function initialize_language_strings() {
 	arr["TURKISH",144]="Herhangi bir pencereyi elle kapatmayın, yazılım gerektiğinde yapacaktır. Yaklaşık \${timeout} saniye içinde, Handshake'e sahip olup olmadığınızı bileceksiniz"
 	arr["ARABIC",144]="Handshake ثانية كحد أقصى ستعرف ما إذا كنت قد حصلت على \${timeout} لا تغلق أي نافذة يدويًا ، فسيقوم البرنامج بذلك عند الحاجة. في غضون"
 	arr["CHINESE",144]="请不要手动关闭任何窗口，脚本会在需要时自动关闭。在大约 \${timeout} 秒内，您将知道是否已经捕获握手包"
+	arr["NORSK",144]="Ikke lukk noe vindu manuelt, skriptet vil gjøre det når det trengs. Om maksimalt \${timeout} sekunder vil du vite om du har håndtrykket"
+	arr["SVENSKA",144]="Stäng inte något fönster manuellt, skriptet fungerar när det behövs. Om maximalt \${timeout} sekunder kommer du att veta om du har handskakninge"
+	arr["DANSK",144]="Luk ikke noget vindue manuelt, script vil gøre det, når det er nødvendigt. Om maksimalt \${timeout} sekunder ved du, om du har en Handshake"
 
 	arr["ENGLISH",145]="\${blue_color}Your wifi card supports the 5Ghz band but your \"wash\" version included in reaver package (v\${reaver_version}) is not able to scan both bands at once. To use dual-band scan feature you must have at least version v\${minimum_wash_dualscan_version} so you have to make a choice. \${green_color}Do you want to scan the 5Ghz band? \${pink_color}(If you answer no (\"n\"), 2.4Ghz band will be scanned) \${normal_color}\${visual_choice}"
 	arr["SPANISH",145]="\${blue_color}Tu tarjeta wifi soporta la banda de los 5Ghz pero tu versión de \"wash\" incluido en el paquete reaver (v\${reaver_version}) no es capaz de escanear ambas bandas a la vez. Para utilizar el escaneo dual debes tener al menos la versión v\${minimum_wash_dualscan_version} por lo que has de elegir. \${green_color}¿Deseas escanear en la banda de los 5Ghz? \${pink_color}(Si respondes que no (\"n\"), se escaneará la banda de 2.4Ghz) \${normal_color}\${visual_choice}"
@@ -3103,6 +3756,9 @@ function initialize_language_strings() {
 	arr["TURKISH",145]="\${blue_color}Wifi kartınız 5Ghz destekliyor fakat \"wash\" versiyonunuz iki bandı aynı anda taramayı desteklemiyor. İkili band taramayı yapabilmek için en son versiyona v\${minimum_wash_dualscan_version} sahip olmanız gerekiyor. \${green_color}5Ghz band taramayı istiyor musunuz? \${pink_color}(Eğer cevabınız hayır ise (\"n\"), 2.4Ghz band taranacak) \${normal_color}\${visual_choice}"
 	arr["ARABIC",145]="\${normal_color}\${visual_choice} \${pink_color}(فسيتم فحص نطاق 2.4 جيجا هرتز ، (\"n\") إذا أجبت بـ لا( ، \${green_color}هل تريد مسح نطاق 5 جيجاهرتز؟ \${blue_color}.لذلك عليك أن تختار .v\${minimum_wash_dualscan_version} غير قادر على فحص كلا النطاقين في وقت واحد. لاستخدام ميزة المسح ثنائي النطاق ، يجب أن يكون لديك على (v\${reaver_version}) المتضمن في حزمة \"wash \" نطاق 5 جيجا هرتز ولكن إصدار wifi تتحمل بطاقة\${normal_color}"
 	arr["CHINESE",145]="\${blue_color}您的 wifi 网卡支持 5Ghz 频段，但 reaver 包中包含的 \"wash\" 版本 (v\${reaver_version}) 无法同时扫描两个频段。要使用双频扫描功能，您的版本必须至少为 v\${minimum_wash_dualscan_version}，因此您必须做出选择。\${green_color}您要扫描5Ghz频段吗？ \${pink_color}(如果您回答否 (\"n\")，将扫描 2.4Ghz 频段) \${normal_color}\${visual_choice}"
+	arr["NORSK",145]="\${blue_color}Wifi-kortet ditt støtter 5Ghz-båndet, men \"wash\" versjonen inkludert i reaver-pakken (v\${reaver_version}) kan ikke skanne begge båndene samtidig. For å bruke dual-band scan-funksjonen må du ha minst versjon v\${minimum_wash_dualscan_version}, så du må ta et valg. \${green_color}Vil du skanne 5Ghz-båndet? \${pink_color}(Hvis du svarer nei (\"n\"), vil 2,4Ghz-båndet bli skannet) \${normal_color}\${visual_choice}"
+	arr["SVENSKA",145]="\${blue_color}Ditt wifi-kort stöder 5Ghz-bandet men din \"wash\" version som ingår i reaver-paketet (v\${reaver_version}) kan inte skanna båda banden samtidigt. För att använda dubbelbandsskanningsfunktionen måste du ha minst version v\${minimum_wash_dualscan_version} så du måste göra ett val. \${green_color}Vill du skanna 5Ghz-bandet? \${pink_color}(Om du svarar nej (\"n\"), skannas 2,4Ghz-bandet) \${normal_color}\${visual_choice}"
+	arr["DANSK",145]="\${blue_color}Dit wifi-kort understøtter 5Ghz-båndet, men din \"wash\" version inkluderet i reaver-pakken (v\${reaver_version}) er ikke i stand til at scanne begge bånd på én gang. For at bruge dual-band scanningsfunktionen skal du som minimum have version v\${minimum_wash_dualscan_version}, så du skal træffe et valg. \${green_color}Vil du scanne 5Ghz-båndet? \${pink_color}(Hvis du svarer nej (\"n\"), vil 2,4Ghz-båndet blive scannet) \${normal_color}\${visual_choice}"
 
 	arr["ENGLISH",146]="It seems we failed... try it again, choose another attack or increase the timeout"
 	arr["SPANISH",146]="Parece que no lo hemos conseguido... inténtalo de nuevo, elige otro ataque o incrementa el timeout"
@@ -3117,6 +3773,9 @@ function initialize_language_strings() {
 	arr["TURKISH",146]="Başarısız görünüyoruz... tekrar deneyin, başka bir saldırı seçin veya zaman aşımını artırın"
 	arr["ARABIC",146]="يبدو أننا فشلنا ... حاول مرة أخرى ، اختر هجومًا آخر أو قم بزيادة المهلة"
 	arr["CHINESE",146]="看来我们失败了... 再试一次！选择另一种攻击方式或增加等待时间"
+	arr["NORSK",146]="Det ser ut til at vi mislyktes... prøv igjen, velg et annet angrep eller øk tidsavbrudde"
+	arr["SVENSKA",146]="Det verkar som om vi misslyckades... försök igen, välj en annan attack eller öka timeouten"
+	arr["DANSK",146]="Det ser ud til, at vi mislykkedes... prøv det igen, vælg et andet angreb, eller øg timeoutet"
 
 	arr["ENGLISH",147]="0.  Return to Handshake/PMKID/Decloak tools menu"
 	arr["SPANISH",147]="0.  Volver al menú de herramientas Handshake/PMKID/Decloak"
@@ -3131,6 +3790,9 @@ function initialize_language_strings() {
 	arr["TURKISH",147]="0.  Handshake/PMKID/Decloak menüsüne geri dön"
 	arr["ARABIC",147]=" 0.  Handshake/PMKID/Decloak ارجع إلى قائمة أدوات"
 	arr["CHINESE",147]="0.  返回 Handshake/PMKID/Decloak 工具菜单"
+	arr["NORSK",147]="0.  Gå tilbake til Handshake/PMKID/Decloak meny"
+	arr["SVENSKA",147]="0.  Återgå till Handshake/PMKID/Decloak meny"
+	arr["DANSK",147]="0.  Vend tilbage til Handshake/PMKID/Decloak menu"
 
 	arr["ENGLISH",148]="Type the path to store the file or press [Enter] to accept the default proposal \${normal_color}[\${handshakepath}]"
 	arr["SPANISH",148]="Escribe la ruta donde guardaremos el fichero o pulsa [Enter] para aceptar la propuesta por defecto \${normal_color}[\${handshakepath}]"
@@ -3145,6 +3807,9 @@ function initialize_language_strings() {
 	arr["TURKISH",148]="Dosyayı depolamak için yolu yazın veya varsayılan teklifi kabul etmek için [Enter] tuşuna basın \${normal_color}[\${handshakepath}]"
 	arr["ARABIC",148]="\${normal_color}[\${handshakepath}]\${green_color} لقبول المقترح [Enter] اكتب المسار حيث نقوم بتخزين ملف أو اضغط"
 	arr["CHINESE",148]="输入文件的存储路径或按 [Enter] 接受默认建议 \${normal_color}[\${handshakepath}]"
+	arr["NORSK",148]="Skriv inn banen for å lagre filen eller trykk [Enter] for å godta standardforslaget \${normal_color}[\${handshakepath}]"
+	arr["SVENSKA",148]="Skriv sökvägen för att lagra filen eller tryck på [Enter] för att acceptera standardförslaget \${normal_color}[\${handshakepath}]"
+	arr["DANSK",148]="Indtast stien for at gemme filen, eller tryk på [Enter] for at acceptere standardforslaget \${normal_color}[\${handshakepath}]"
 
 	arr["ENGLISH",149]="Handshake file generated successfully at [\${normal_color}\${enteredpath}\${blue_color}]"
 	arr["SPANISH",149]="Fichero de Handshake generado con éxito en [\${normal_color}\${enteredpath}\${blue_color}]"
@@ -3159,6 +3824,9 @@ function initialize_language_strings() {
 	arr["TURKISH",149]="Handshake dosyası şu hedefte başarıyla oluşturuldu [\${normal_color}\${enteredpath}\${blue_color}]"
 	arr["ARABIC",149]="[\${normal_color}\${enteredpath}\${blue_color}] بنجاح في Handshake تم إنشاء ملف"
 	arr["CHINESE",149]="在 [\${normal_color}\${enteredpath}\${blue_color}] 成功生成握手包文件"
+	arr["NORSK",149]="Handshake-fil ble generert vellykket på [\${normal_color}\${enteredpath}\${blue_color}]"
+	arr["SVENSKA",149]="Handskakningsfil genererades framgångsrikt på [\${normal_color}\${enteredpath}\${blue_color}]"
+	arr["DANSK",149]="Handshake-fil blev genereret med succes på [\${normal_color}\${enteredpath}\${blue_color}]"
 
 	arr["ENGLISH",150]="No captured Handshake file detected during this session..."
 	arr["SPANISH",150]="No se ha detectado ningún fichero de Handshake capturado en esta sesión..."
@@ -3173,6 +3841,9 @@ function initialize_language_strings() {
 	arr["TURKISH",150]="Bu oturumda hiçbir handshake dosyayı tespit edilmedi..."
 	arr["ARABIC",150]="...تم التقاطه أثناء هذه الدورة Handshake لم يتم اكتشاف ملف"
 	arr["CHINESE",150]="在此会话期间未检测到已捕获的握手包文件..."
+	arr["NORSK",150]="Handshake-fanget fil oppdaget under denne økten..."
+	arr["SVENSKA",150]="Handskakningsfångad fil upptäcktes under den här sessionen..."
+	arr["DANSK",150]="Handshake-fanget fil fundet under denne session..."
 
 	arr["ENGLISH",151]="Handshake captured file detected during this session [\${normal_color}\${enteredpath}\${blue_color}]"
 	arr["SPANISH",151]="Se ha detectado un fichero de Handshake capturado en esta sesión [\${normal_color}\${enteredpath}\${blue_color}]"
@@ -3187,6 +3858,9 @@ function initialize_language_strings() {
 	arr["TURKISH",151]="Bu oturum sırasında yakalanmış bir handshake dosyası tespit edildi [\${normal_color}\${enteredpath}\${blue_color}]"
 	arr["ARABIC",151]="[\${normal_color}\${enteredpath}\${blue_color}] لالدورة التي تم إجراؤها ويقع في Handshake تم اكتشاف ملف يحتوي على"
 	arr["CHINESE",151]="在此会话期间检测到的捕获的握手包文件 [\${normal_color}\${enteredpath}\${blue_color}]"
+	arr["NORSK",151]="Handshake-fanget fil oppdaget under denne økten \${normal_color}\${enteredpath}\${blue_color}]"
+	arr["SVENSKA",151]="Handshake-fångad fil upptäcktes under den här sessionen [\${normal_color}\${enteredpath}\${blue_color}]"
+	arr["DANSK",151]="Handshake-fanget fil fundet under denne session [\${normal_color}\${enteredpath}\${blue_color}]"
 
 	arr["ENGLISH",152]="Do you want to clean/optimize the Handshake captured file during this session? \${normal_color}\${visual_choice}"
 	arr["SPANISH",152]="¿Quieres limpiar/optimizar el fichero de Handshake capturado en esta sesión? \${normal_color}\${visual_choice}"
@@ -3201,6 +3875,9 @@ function initialize_language_strings() {
 	arr["TURKISH",152]="Handshake ele geçirilmiş dosyayı bu oturum sırasında temizlemek/optimize etmek ister misiniz? \${normal_color}\${visual_choice}"
 	arr["ARABIC",152]="\${normal_color}\${visual_choice} \${green_color}الذي تم التقاطه أثناء هذه الدورة؟ Handshake هل تريد تنظيف/تحسين ملف\${normal_color}"
 	arr["CHINESE",152]="您想在此会话期间清理/优化捕获的文件吗？\${normal_color}\${visual_choice}"
+	arr["NORSK",152]="Vil du rense/optimalisere Handshake-filen under denne økten? \${normal_color}\${visual_choice}"
+	arr["SVENSKA",152]="Vill du rensa/optimera den infångade Handshake-filen under denna session? \${normal_color}\${visual_choice}"
+	arr["DANSK",152]="Vil du rense/optimere den Handshake-fangede fil under denne session? \${normal_color}\${visual_choice}"
 
 	arr["ENGLISH",153]="File cleaned/optimized successfully"
 	arr["SPANISH",153]="Fichero limpiado/optimizado con éxito"
@@ -3215,6 +3892,9 @@ function initialize_language_strings() {
 	arr["TURKISH",153]="Dosya başarıyla temizlendi/optimize edildi"
 	arr["ARABIC",153]="تم تنظيف/تحسين الملف بنجاح"
 	arr["CHINESE",153]="文件清理/优化成功"
+	arr["NORSK",153]="Filen er renset/optimalisert med suksess"
+	arr["SVENSKA",153]="Filen rensades/optimerades framgångsrikt"
+	arr["DANSK",153]="Filen er blevet renset/optimeret med succes"
 
 	arr["ENGLISH",154]="Set path to file:"
 	arr["SPANISH",154]="Introduce la ruta al fichero:"
@@ -3229,6 +3909,9 @@ function initialize_language_strings() {
 	arr["TURKISH",154]="Path dizini girin:"
 	arr["ARABIC",154]=":تعيين المسار للملف"
 	arr["CHINESE",154]="设置文件路径:"
+	arr["NORSK",154]="Angi bane til fil:"
+	arr["SVENSKA",154]="Ange sökväg till filen:"
+	arr["DANSK",154]="Indstil stien til filen:"
 
 	arr["ENGLISH",155]="The directory exists but you didn't specify filename. It will be autogenerated [\${normal_color}\${suggested_filename}\${yellow_color}]"
 	arr["SPANISH",155]="El directorio existe pero no se especificó nombre de fichero. Se autogenerará [\${normal_color}\${suggested_filename}\${yellow_color}]"
@@ -3243,6 +3926,9 @@ function initialize_language_strings() {
 	arr["TURKISH",155]="Dizin var ancak dosya adı belirtmediniz. O otomatik üretilecek [\${normal_color}\${suggested_filename}\${yellow_color}]"
 	arr["ARABIC",155]="[\${normal_color}\${suggested_filename}\${yellow_color}] الملف موجود ولكنك لم تحدد اسمه. سيتم إنشاؤه تلقائيًا"
 	arr["CHINESE",155]="该目录存在但您没有指定文件名。它将自动生成 [\${normal_color}\${suggested_filename}\${yellow_color}]"
+	arr["NORSK",155]="Katalogen eksisterer, men du har ikke spesifisert filnavn. Den vil bli autogenerert [\${normal_color}\${suggested_filename}\${yellow_color}]"
+	arr["SVENSKA",155]="Katalogen finns men du har inte angett filnamn. Den kommer att genereras automatiskt [\${normal_color}\${suggested_filename}\${yellow_color}]"
+	arr["DANSK",155]="Vejviseren eksisterer, men du har ikke angivet filnavn. Det vil blive autogenereret [\${normal_color}\${suggested_filename}\${yellow_color}]"
 
 	arr["ENGLISH",156]="Directory does not exist"
 	arr["SPANISH",156]="El directorio no existe"
@@ -3257,6 +3943,9 @@ function initialize_language_strings() {
 	arr["TURKISH",156]="Dizn bulunamadı"
 	arr["ARABIC",156]="الملف غير موجود"
 	arr["CHINESE",156]="目录不存在"
+	arr["NORSK",156]="Katalog eksisterer ikke"
+	arr["SVENSKA",156]="Katalog finns inte"
+	arr["DANSK",156]="Vejviser eksisterer ikke"
 
 	arr["ENGLISH",157]="The path exists but you don't have write permissions"
 	arr["SPANISH",157]="La ruta existe pero no tienes permisos de escritura"
@@ -3271,6 +3960,9 @@ function initialize_language_strings() {
 	arr["TURKISH",157]="Path bulundu ama sizin yazma hakkınız yok"
 	arr["ARABIC",157]="المسار موجود ولكن ليس لديك تصاريح الكتابة"
 	arr["CHINESE",157]="该路径存在但您没有写权限"
+	arr["NORSK",157]="Banen finnes, men du har ikke skriverettigheter"
+	arr["SVENSKA",157]="Sökvägen finns men du har inte skrivbehörighet"
+	arr["DANSK",157]="Stien findes, men du har ikke skrivetilladelser"
 
 	arr["ENGLISH",158]="The path is valid and you have write permissions. Script can continue..."
 	arr["SPANISH",158]="La ruta es válida y tienes permisos de escritura. El script puede continuar..."
@@ -3285,6 +3977,9 @@ function initialize_language_strings() {
 	arr["TURKISH",158]="Path doğrulandı ve yazma hakkınız var. Yazılım devam edebilir..."
 	arr["ARABIC",158]="...المسار صالح ولديك الامتيازات اللازمة للكتابة. يمكن أن يستمر البرنامج"
 	arr["CHINESE",158]="该路径有效并且具有写入权限。脚本可以继续..."
+	arr["NORSK",158]="Banen er gyldig og du har skriverettigheter. Skriptet kan fortsette..."
+	arr["SVENSKA",158]="Sökvägen är giltig och du har skrivbehörighet. Skriptet kan fortsätta..."
+	arr["DANSK",158]="Stien er gyldig, og du har skriverettigheder. Scriptet kan fortsætte..."
 
 	arr["ENGLISH",159]="The file doesn't need to be cleaned/optimized"
 	arr["SPANISH",159]="El fichero no necesita ser limpiado/optimizado"
@@ -3299,6 +3994,9 @@ function initialize_language_strings() {
 	arr["TURKISH",159]="Dosyanın temizlenmeye/optimize edilmeye ihtiyacı yok"
 	arr["ARABIC",159]="لا يحتاج الملف إلى تنظيف/تحسين"
 	arr["CHINESE",159]="该文件不需要清理/优化"
+	arr["NORSK",159]="Filen trenger ikke å bli renset/optimalisert"
+	arr["SVENSKA",159]="Filen behöver inte rengöras/optimeras"
+	arr["DANSK",159]="Filen behøver ikke at blive renset/optimeret"
 
 	arr["ENGLISH",160]="No tasks to perform on exit"
 	arr["SPANISH",160]="No hay que realizar ninguna tarea a la salida"
@@ -3313,6 +4011,9 @@ function initialize_language_strings() {
 	arr["TURKISH",160]="Çıkışta gerçekleştirilecek görev yok"
 	arr["ARABIC",160]="لا توجد مهام للأداء عند الخروج"
 	arr["CHINESE",160]="退出时没有要执行的任务..."
+	arr["NORSK",160]="Ingen oppgaver å utføre ved utgang"
+	arr["SVENSKA",160]="Inga uppgifter att utföra vid utgång"
+	arr["DANSK",160]="Ingen opgaver at udføre ved udgang"
 
 	arr["ENGLISH",161]="File doesn't exist"
 	arr["SPANISH",161]="El fichero no existe"
@@ -3327,6 +4028,9 @@ function initialize_language_strings() {
 	arr["TURKISH",161]="Dosya bulunamadı"
 	arr["ARABIC",161]="الملف غير موجود"
 	arr["CHINESE",161]="文件不存在"
+	arr["NORSK",161]="Filen eksisterer ikke"
+	arr["SVENSKA",161]="Filen finns inte"
+	arr["DANSK",161]="Filen findes ikke"
 
 	arr["ENGLISH",162]="Congratulations!!"
 	arr["SPANISH",162]="Enhorabuena!!"
@@ -3341,6 +4045,9 @@ function initialize_language_strings() {
 	arr["TURKISH",162]="Tebrikler!!"
 	arr["ARABIC",162]="!!تهانينا"
 	arr["CHINESE",162]="恭喜！！"
+	arr["NORSK",162]="Gratulerer!!"
+	arr["SVENSKA",162]="Grattis!!"
+	arr["DANSK",162]="Tillykke!!"
 
 	arr["ENGLISH",163]="When airgeddon requests you to enter a path to a file either to use a dictionary, a Handshake or anything else, did you know that you can drag and drop the file over the airgeddon window? In this way you don't have to type the path manually"
 	arr["SPANISH",163]="Cuando airgeddon solicita que introduzcas una ruta a un fichero ya sea para utilizar un diccionario, un Handshake o cualquier otra cosa, ¿sabías que puedes arrastrar y soltar el fichero sobre la ventana de airgeddon? Así no tendrás que escribir la ruta manualmente"
@@ -3355,6 +4062,9 @@ function initialize_language_strings() {
 	arr["TURKISH",163]="airgeddon, bir sözlük, bir Handshake veya başka bir şey kullanmak için dosyaya bir yol girmenizi istediğinde, dosyayı airgeddon penceresinin üzerine sürükleyip bırakabileceğinizi biliyor muydunuz? Bu şekilde yolu elle yazmanız gerekmez"
 	arr["ARABIC",163]="؟ بهذه الطريقة لن تضطر إلى كتابة المسار يدويًاairgeddon إدخال مسار إلى ملف إما لاستخدام قاموس أو مصافحة أو أي شيء آخر ، هل تعلم أنه يمكنك سحب الملف وإفلاته فوق نافذة airgeddon عندما يطلب منك"
 	arr["CHINESE",163]="当 airgeddon 要求您输入文件路径以使用字典、握手包或其他任何文件时，您是否知道可以将文件拖放到 airgeddon 窗口上？这样您就不必手动输入路径"
+	arr["NORSK",163]="Når airgeddon ber deg om å angi en bane til en fil enten for å bruke en ordbok, et håndtrykk eller noe annet, visste du at du kan dra og slippe filen over airgeddon-vinduet? På denne måten trenger du ikke å skrive inn banen manuelt"
+	arr["SVENSKA",163]="När airgeddon ber dig att ange en sökväg till en fil antingen för att använda en ordbok, ett handslag eller något annat, visste du att du kan dra och släppa filen över airgeddon-fönstret? På så sätt behöver du inte skriva in sökvägen manuellt"
+	arr["DANSK",163]="Når airgeddon anmoder dig om at indtaste en sti til en fil enten for at bruge en ordbog, et håndtryk eller noget andet, vidste du så, at du kan trække og slippe filen over airgeddon-vinduet? På denne måde behøver du ikke indtaste stien manuelt"
 
 	arr["ENGLISH",164]="Cleaning temp files"
 	arr["SPANISH",164]="Limpiando archivos temporales"
@@ -3369,6 +4079,9 @@ function initialize_language_strings() {
 	arr["TURKISH",164]="Temp dosyaları temizleniyor"
 	arr["ARABIC",164]="تنظيف الملفات المؤقتة"
 	arr["CHINESE",164]="正在清理临时文件"
+	arr["NORSK",164]="Rengjøring av midlertidige filer"
+	arr["SVENSKA",164]="Rengöring av temporära filer"
+	arr["DANSK",164]="Rengøring af midlertidige filer"
 
 	arr["ENGLISH",165]="Checking if cleaning/restoring tasks are needed..."
 	arr["SPANISH",165]="Comprobando si hay que realizar tareas de limpieza/restauración..."
@@ -3383,6 +4096,9 @@ function initialize_language_strings() {
 	arr["TURKISH",165]="Temizlik/geri yükleme görevlerinin gerekli olup olmadığı denetleniyor..."
 	arr["ARABIC",165]="...التحقق مما إذا كانت مهام التنظيف/الاستعادة مطلوبة"
 	arr["CHINESE",165]="检查是否有需要清理 / 恢复的任务..."
+	arr["NORSK",165]="Sjekker om rengjørings/restaureringsoppgaver er nødvendig..."
+	arr["SVENSKA",165]="Kontrollera om rengöring/återställningsuppgifter behövs..."
+	arr["DANSK",165]="Tjek om der er behov for rengørings/gendannelsesopgaver..."
 
 	arr["ENGLISH",166]="Do you want to preserve monitor mode for your card on exit? \${normal_color}\${visual_choice}"
 	arr["SPANISH",166]="¿Deseas conservar el modo monitor de tu interfaz al salir? \${normal_color}\${visual_choice}"
@@ -3397,6 +4113,9 @@ function initialize_language_strings() {
 	arr["TURKISH",166]="Çıkışta kartınızın monitör modunu korumak istiyor musunuz? \${normal_color}\${visual_choice}"
 	arr["ARABIC",166]="\${normal_color}\${visual_choice} \${green_color}لبطاقتك عند الخروج؟ monitor mode هل تريد الاحتفاظ بوضع\${normal_color}"
 	arr["CHINESE",166]="您想在退出时为选择的网络接口保留监听模式吗？\${normal_color}\${visual_choice}"
+	arr["NORSK",166]="Vil du beholde monitor mode for kortet ditt ved utgang? \${normal_color}\${visual_choice}"
+	arr["SVENSKA",166]="Vill du behålla monitor mode för ditt kort vid utgång? \${normal_color}\${visual_choice}"
+	arr["DANSK",166]="Vil du bevare monitor mode for dit kort ved udgang? \${normal_color}\${visual_choice}"
 
 	arr["ENGLISH",167]="Setting your interface in managed mode"
 	arr["SPANISH",167]="Poniendo interfaz en modo managed"
@@ -3411,6 +4130,9 @@ function initialize_language_strings() {
 	arr["TURKISH",167]="Arayüzünüzün yönetici modu açılıyor"
 	arr["ARABIC",167]="managed mode ضبط واجهتك في وضع"
 	arr["CHINESE",167]="正在将接口设置为管理模式"
+	arr["NORSK",167]="Sette grensesnittet ditt i managed mode"
+	arr["SVENSKA",167]="Ställ in ditt gränssnitt i managed mode"
+	arr["DANSK",167]="Indstilling af din grænseflade i managed mode"
 
 	arr["ENGLISH",168]="Launching previously killed processes"
 	arr["SPANISH",168]="Arrancando procesos cerrados anteriormente"
@@ -3425,6 +4147,9 @@ function initialize_language_strings() {
 	arr["TURKISH",168]="Daha önce sonlandırılan görevler başlatılıyor"
 	arr["ARABIC",168]="إطلاق عمليات قتلت سابقًا"
 	arr["CHINESE",168]="启动先前终止的进程"
+	arr["NORSK",168]="Starter tidligere drepte prosesser"
+	arr["SVENSKA",168]="Startar tidigare dödade processer"
+	arr["DANSK",168]="Lancering af tidligere dræbte processer"
 
 	arr["ENGLISH",169]="6.  Offline WPA/WPA2 decrypt menu"
 	arr["SPANISH",169]="6.  Menú de descifrado WPA/WPA2 offline"
@@ -3439,6 +4164,9 @@ function initialize_language_strings() {
 	arr["TURKISH",169]="6.  Çevrimdışı WPA/WPA2 decrypt menüsü"
 	arr["ARABIC",169]="6.  غير المتصلة WPA/WPA2 اقائمة فك تشفير"
 	arr["CHINESE",169]="6.  离线 WPA/WPA2 捕获文件暴力破解菜单"
+	arr["NORSK",169]="6.  Frakoblet WPA/WPA2 dekrypteringsmeny"
+	arr["SVENSKA",169]="6. Offline WPA/WPA2 dekrypteringsmeny"
+	arr["DANSK",169]="6.  Offline WPA/WPA2 dekrypteringsmeny"
 
 	arr["ENGLISH",170]="Offline WPA/WPA2 decrypt menu"
 	arr["SPANISH",170]="Menú de descifrado WPA/WPA2 offline"
@@ -3453,6 +4181,9 @@ function initialize_language_strings() {
 	arr["TURKISH",170]="Çevrimdışı WPA/WPA2 decrypt menüsü"
 	arr["ARABIC",170]="غير المتصلة WPA/WPA2 اقائمة فك تشفير"
 	arr["CHINESE",170]="离线 WPA/WPA2 捕获文件暴力破解菜单"
+	arr["NORSK",170]="Frakoblet WPA/WPA2 dekrypteringsmeny"
+	arr["SVENSKA",170]="Offline WPA/WPA2 dekrypteringsmeny"
+	arr["DANSK",170]="Offline WPA/WPA2 dekrypteringsmeny"
 
 	arr["ENGLISH",171]="The key decrypt process is performed offline on a previously captured file"
 	arr["SPANISH",171]="El proceso de descifrado de las claves se realiza de manera offline sobre un fichero capturado previamente"
@@ -3467,6 +4198,9 @@ function initialize_language_strings() {
 	arr["TURKISH",171]="Anahtar şifre çözme işlemi daha önce yakalanan bir dosyada çevrimdışı gerçekleştirilir"
 	arr["ARABIC",171]="يتم تنفيذ عملية فك تشفير المفتاح في وضع عدم الاتصال على ملف تم التقاطه مسبقًا"
 	arr["CHINESE",171]="WiFi 密钥破解的过程是在先前捕获的文件上离线执行的"
+	arr["NORSK",171]="Nøkkel dekrypteringsprosessen utføres frakoblet på en tidligere fanget fil"
+	arr["SVENSKA",171]="Nyckel dekrypteringsprocessen utförs offline på en tidigare inhämtad fil"
+	arr["DANSK",171]="Nøgle dekrypteringsprocessen udføres offline på en tidligere fanget fil"
 
 	arr["ENGLISH",172]="1.  (aircrack) Dictionary attack against Handshake/PMKID capture file"
 	arr["SPANISH",172]="1.  (aircrack) Ataque de diccionario sobre fichero de captura Handshake/PMKID"
@@ -3481,6 +4215,9 @@ function initialize_language_strings() {
 	arr["TURKISH",172]="1.  (aircrack) Yakalanan Handshake/PMKID dosyasına sözlük saldırısı"
 	arr["ARABIC",172]="1.  Handshake/PMKID هجوم القاموس على ملف الالتقاط (aircrack)"
 	arr["CHINESE",172]="1.  (aircrack) 字典攻击 Handshake/PMKID 捕获文件"
+	arr["NORSK",172]="1.  (aircrack) Ordbok angrep mot Handshake/PMKID"
+	arr["SVENSKA",172]="1.  (aircrack) Ordbok attack mot Handshake/PMKID"
+	arr["DANSK",172]="1.  (aircrack) Ordbog angreb mod Handshake/PMKID"
 
 	arr["ENGLISH",173]="Selected capture file: \${pink_color}\${enteredpath}\${normal_color}"
 	arr["SPANISH",173]="Fichero de captura seleccionado: \${pink_color}\${enteredpath}\${normal_color}"
@@ -3495,6 +4232,9 @@ function initialize_language_strings() {
 	arr["TURKISH",173]="Seçilen yakalama dosyası: \${pink_color}\${enteredpath}\${normal_color}"
 	arr["ARABIC",173]="\${pink_color}\${enteredpath}\${blue_color} :اختيار ملف الالتقاط\${normal_color}"
 	arr["CHINESE",173]="已选择的捕获文件: \${pink_color}\${enteredpath}\${normal_color}"
+	arr["NORSK",173]="Valgt fangstfil: \${pink_color}\${enteredpath}\${normal_color}"
+	arr["SVENSKA",173]="Vald fångstfil: \${pink_color}\${enteredpath}\${normal_color}"
+	arr["DANSK",173]="Valgt optagelsesfil: \${pink_color}\${enteredpath}\${normal_color}"
 
 	arr["ENGLISH",174]="It seems you have an unsupported bettercap version to perform sslstrip. Use the old bettercap 1.x or use bettercap>=\${bettercap2_sslstrip_working_version}. Early versions of bettercap 2.x have known problems to perform sslstrip attacks. More info at Wiki: \${normal_color}\${urlgithub_wiki}/Bettercap%20Tips"
 	arr["SPANISH",174]="Parece que tienes una versión de bettercap no soportada para realizar sslstrip. Utiliza el antiguo bettercap 1.x o bien utiliza bettercap>=\${bettercap2_sslstrip_working_version}. Las primeras versiones de bettercap 2.x tienen problemas conocidos para realizar ataques sslstrip. Más info en el Wiki: \${normal_color}\${urlgithub_wiki}/Bettercap%20Tips"
@@ -3509,6 +4249,9 @@ function initialize_language_strings() {
 	arr["TURKISH",174]="Görünüşe göre sslstrip gerçekleştirmek için desteklenmeyen bir bettercap sürümünüz var. Eski bettercap 1.x'i veya bettercap>=\${bettercap2_sslstrip_working_version} seçeneğini kullanın. Bettercap 2.x'in ilk sürümlerinde, sslstrip saldırılarını gerçekleştirmek için bilinen sorunlar vardır. Wiki'de daha fazla bilgi: \${normal_color}\$ {urlgithub_wiki}/Bettercap%20Tips"
 	arr["ARABIC",174]="\${normal_color}\${urlgithub_wiki}/Bettercap%20Tips\${red_color} :مزيد من المعلومات على الويكي .sslstrip عرفت مشاكل أثناء تنفيذ هجمات bettercap 2.x الإصدارات القديمة من .bettercap>=\${bettercap2_sslstrip_working_version} أو استخدم bettercap 1.x استخدم الإصدارالقديم .sslstrip لا يسمح باستخدام bettercap يبدو أن لديك إصدار"
 	arr["CHINESE",174]="您似乎有一个不受支持的 bettercap 版本来执行 sslstrip。使用旧的 bettercap 1.x 或使用 bettercap>=\${bettercap2_sslstrip_working_version}。 bettercap 2.x 的早期版本在执行 sslstrip 攻击时存在已知问题。 Wiki 上的更多信息: \${normal_color}\${urlgithub_wiki}/Bettercap%20Tips"
+	arr["NORSK",174]="Det ser ut til at du har en bettercap versjon som ikke støttes for å utføre sslstrip. Bruk den gamle bettercap 1.x eller bruk bettercap>=\${bettercap2_sslstrip_working_version}. Tidlige versjoner av bettercap 2.x har kjente problemer med å utføre sslstrip-angrep. Mer informasjon på Wiki: \${normal_color}\${urlgithub_wiki}/Bettercap%20Tips"
+	arr["SVENSKA",174]="Det verkar som om du har en bettercap version som inte stöds för att utföra sslstrip. Använd den gamla bettercap 1.x eller använd bettercap>=\${bettercap2_sslstrip_working_version}. Tidiga versioner av bettercap 2.x har kända problem med att utföra sslstrip-attacker. Mer information på Wiki: \${normal_color}\${urlgithub_wiki}/Bettercap%20Tips"
+	arr["DANSK",174]="Det ser ud til, at du har en ikke understøttet bettercap version til at udføre sslstrip. Brug den gamle bettercap 1.x eller brug bettercap>=\${bettercap2_sslstrip_working_version}. Tidlige versioner af bettercap 2.x har kendte problemer med at udføre sslstrip-angreb. Mere info på Wiki: \${normal_color}\${urlgithub_wiki}/Bettercap%20Tips"
 
 	arr["ENGLISH",175]="2.  (aircrack + crunch) Bruteforce attack against Handshake/PMKID capture file"
 	arr["SPANISH",175]="2.  (aircrack + crunch) Ataque de fuerza bruta sobre fichero de captura Handshake/PMKID"
@@ -3523,6 +4266,9 @@ function initialize_language_strings() {
 	arr["TURKISH",175]="2.  (aircrack + crunch) Yakalanan Handshake/PMKID dosyasına karşı bruteforce saldırısı"
 	arr["ARABIC",175]="2.  Handshake/PMKID باستخدام ملف التقاط Bruteforce هجوم (aircrack + crunch)"
 	arr["CHINESE",175]="2.  (aircrack + crunch) 暴力破解 Handshake/PMKID 捕获文件"
+	arr["NORSK",175]="2.  (aircrack + crunch) Bruteforce-angrep mot Handshake/PMKID-fangstfil"
+	arr["SVENSKA",175]="2.  (aircrack + crunch) Bruteforce-attack mot Handshake/PMKID fångstfil"
+	arr["DANSK",175]="2.  (aircrack + crunch) Bruteforce-angreb mod Handshake/PMKID optagelsesfil"
 
 	arr["ENGLISH",176]="aircrack CPU, non GPU attacks"
 	arr["SPANISH",176]="ataques aircrack CPU, no GPU"
@@ -3537,6 +4283,9 @@ function initialize_language_strings() {
 	arr["TURKISH",176]="aircrack CPU, GPU olmayan saldırılar"
 	arr["ARABIC",176]="GPU وليس ، CPU ل aircrack هجمات"
 	arr["CHINESE",176]="aircrack CPU 破解"
+	arr["NORSK",176]="aircrack CPU, ikke GPU angrep"
+	arr["SVENSKA",176]="aircrack CPU, ej GPU attack"
+	arr["DANSK",176]="aircrack CPU, ikke GPU angreb"
 
 	arr["ENGLISH",177]="Selected captured file: \${pink_color}None\${normal_color}"
 	arr["SPANISH",177]="Fichero capturado seleccionado: \${pink_color}Ninguno\${normal_color}"
@@ -3551,6 +4300,9 @@ function initialize_language_strings() {
 	arr["TURKISH",177]="Seçilen yakalanmış dosya: \${pink_color}None\${normal_color}"
 	arr["ARABIC",177]="\${pink_color}None\${blue_color} :ملف الالتقاط المحدد\${normal_color}"
 	arr["CHINESE",177]="已选择的捕获文件: \${pink_color}None\${normal_color}"
+	arr["NORSK",177]="Valgt fanget fil: \${pink_color}Aucun\${normal_color}"
+	arr["SVENSKA",177]="Vald inspelad fil: \${pink_color}Ningú\${normal_color}"
+	arr["DANSK",177]="Valgt optaget fil: \${pink_color}Nenhum\${normal_color}"
 
 	arr["ENGLISH",178]="To decrypt the key of a WPA/WPA2 network, the capture file must contain a Handshake/PMKID"
 	arr["SPANISH",178]="Para descifrar la clave de una red WPA/WPA2, el fichero de captura debe contener un Handshake/PMKID"
@@ -3565,6 +4317,9 @@ function initialize_language_strings() {
 	arr["TURKISH",178]="WPA/WPA2 ağının şifresini çözmek için, yakalama dosyası bir Handshake/PMKID içermelidir"
 	arr["ARABIC",178]="Handshake/PMKID يجب أن يحتوي ملف الالتقاط على ، WPA/WPA2 لفك تشفير مفتاح شبكة"
 	arr["CHINESE",178]="要解密 WPA/WPA2 网络的密钥，捕获的文件必须包含 Handshake/PMKID"
+	arr["NORSK",178]="For å dekryptere nøkkelen til et WPA/WPA2-nettverk, må den fangete filen inneholde en Handshake/PMKID"
+	arr["SVENSKA",178]="För att dekryptera nyckeln till ett WPA/WPA2-nätverk måste fångstfilen innehålla ett Handshake/PMKID"
+	arr["DANSK",178]="For at dekryptere nøglen til et WPA/WPA2-netværk skal filen indeholde et Handshake/PMKID"
 
 	arr["ENGLISH",179]="Decrypting by bruteforce, it could pass hours, days, weeks or even months to take it depending on the complexity of the password and your processing speed"
 	arr["SPANISH",179]="Descifrando por fuerza bruta, podrían pasar horas, días, semanas o incluso meses hasta conseguirlo dependiendo de la complejidad de la contraseña y de tu velocidad de proceso"
