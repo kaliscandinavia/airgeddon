@@ -4334,9 +4334,9 @@ function initialize_language_strings() {
 	arr["TURKISH",179]="Bruteforce tarafından şifresini çözmek, şifrenin karmaşıklığına ve işlem hızınıza bağlı olarak bunu almak için saatler, günler, haftalar hatta aylar geçirebilir"
 	arr["ARABIC",179]="يمكن أن يمر ساعات أو أيام أو أسابيع أو حتى أشهر لأخذها اعتمادًا على مدى تعقيد كلمة المرور وسرعة المعالجة ،bruteforce فك التشفير عن طريق"
 	arr["CHINESE",179]="暴力破解密码可能需要数小时、数天、数周甚至数月才能完成，具体取决于密码的复杂程度和您设备的处理速度"
-    arr["NORSK",179]=""
-	arr["SVENSKA",179]=""
-	arr["DANSK",179]=""
+    arr["NORSK",179]="Dekryptering av bruteforce, kan det ta timer, dager, uker eller til og med måneder å ta det avhengig av kompleksiteten til passordet og behandlingshastigheten din"
+	arr["SVENSKA",179]="Dekrypterar med bruteforce, det kan ta timmar, dagar, veckor eller till och med månader att ta det beroende på lösenordets komplexitet och din bearbetningshastighet"
+	arr["DANSK",179]="Dekryptering med bruteforce kan det tage timer, dage, uger eller endda måneder at tage det afhængigt af kompleksiteten af ​​adgangskoden og din behandlingshastighed"
 
     arr["ENGLISH",180]="Enter the path of a dictionary file:"
 	arr["SPANISH",180]="Introduce la ruta de un fichero de diccionario:"
@@ -4351,7 +4351,10 @@ function initialize_language_strings() {
 	arr["TURKISH",180]="Dosya yolunu girin:"
 	arr["ARABIC",180]=":أدخل مسار ملف القاموس"
 	arr["CHINESE",180]="请输入字典文件的路径:"
-
+    arr["NORSK",180]="Skriv inn banen til en ordbokfil:"
+	arr["SVENSKA",180]="Ange sökvägen till en ordboksfil:"
+	arr["DANSK",180]="Indtast stien til en ordbogsfil:"
+ 
 	arr["ENGLISH",181]="The path to the dictionary file is valid. Script can continue..."
 	arr["SPANISH",181]="La ruta al fichero de diccionario es válida. El script puede continuar..."
 	arr["FRENCH",181]="Le chemin vers le fichier dictionnaire est valide. Le script peut continuer..."
@@ -4365,6 +4368,9 @@ function initialize_language_strings() {
 	arr["TURKISH",181]="Dosya yolu geçerli. Yazılım devam edebilir..."
 	arr["ARABIC",181]="...المسار إلى ملف القاموس صالح. البرنامج يمكن أن يستمر"
 	arr["CHINESE",181]="字典文件的路径有效。脚本可以继续..."
+    arr["NORSK",181]="Banen til ordbokfilen er gyldig. Skriptet kan fortsette..."
+	arr["SVENSKA",181]="Sökvägen till ordboksfilen är giltig. Skriptet kan fortsätta..."
+	arr["DANSK",181]="Stien til ordbogsfilen er gyldig. Scriptet kan fortsætte..."
 
 	arr["ENGLISH",182]="Selected dictionary file: \${pink_color}\${DICTIONARY}\${normal_color}"
 	arr["SPANISH",182]="Fichero de diccionario seleccionado: \${pink_color}\${DICTIONARY}\${normal_color}"
@@ -4379,6 +4385,9 @@ function initialize_language_strings() {
 	arr["TURKISH",182]="Seçilen sözlük dosyası: \${pink_color}\${DICTIONARY}\${normal_color}"
 	arr["ARABIC",182]="\${pink_color}\${DICTIONARY}\${blue_color} :ملف القاموس المحدد\${normal_color}"
 	arr["CHINESE",182]="已选择的字典文件: \${pink_color}\${DICTIONARY}\${normal_color}"
+    arr["NORSK",182]="Valgt ordbokfil: \${pink_color}\${DICTIONARY}\${normal_color}"
+	arr["SVENSKA",182]="Vald ordboksfil: \${pink_color}\${DICTIONARY}\${normal_color}"
+	arr["DANSK",182]="Valgt ordbogsfil: \${pink_color}\${DICTIONARY}\${normal_color}"
 
 	arr["ENGLISH",183]="You already have selected a dictionary file during this session [\${normal_color}\${DICTIONARY}\${blue_color}]"
 	arr["SPANISH",183]="Ya tienes seleccionado un fichero de diccionario en esta sesión [\${normal_color}\${DICTIONARY}\${blue_color}]"
@@ -4393,7 +4402,10 @@ function initialize_language_strings() {
 	arr["TURKISH",183]="Bu oturumda zaten sözlük dosyası seçtiniz [\${normal_color}\${DICTIONARY}\${blue_color}]"
 	arr["ARABIC",183]="[\${normal_color}\${DICTIONARY}\${blue_color}] لقد قمت بالفعل بتحديد ملف قاموس أثناء هذه الدورة"
 	arr["CHINESE",183]="您在此会话期间已经选择了字典文件 [\${normal_color}\${DICTIONARY}\${blue_color}]"
-
+    arr["NORSK",183]="Du har allerede valgt en ordbokfil under denne økten \${normal_color}\${DICTIONARY}\${blue_color}]"
+	arr["SVENSKA",183]="Du har redan valt en ordboksfil under den här sessionen [\${normal_color}\${DICTIONARY}\${blue_color}]"
+	arr["DANSK",183]="Du har allerede valgt en ordbogsfil under denne session [\${normal_color}\${DICTIONARY}\${blue_color}]"
+ 
 	arr["ENGLISH",184]="Do you want to use this already selected dictionary file? \${normal_color}\${visual_choice}"
 	arr["SPANISH",184]="¿Quieres utilizar este fichero de diccionario ya seleccionado? \${normal_color}\${visual_choice}"
 	arr["FRENCH",184]="Souhaitez vous utiliser le dictionnaire déjà sélectionné? \${normal_color}\${visual_choice}"
@@ -4407,6 +4419,9 @@ function initialize_language_strings() {
 	arr["TURKISH",184]="Seçilen sözlük dosyasını kullanmak istiyor musunuz? \${normal_color}\${visual_choice}"
 	arr["ARABIC",184]="\${normal_color}\${visual_choice} \${green_color}هل ترغب في استخدام القاموس المحدد بالفعل؟\${normal_color}"
 	arr["CHINESE",184]="您要使用这个已选择的字典文件吗？\${normal_color}\${visual_choice}"
+    arr["NORSK",184]="Vil du bruke denne allerede valgte ordbokfilen? \${normal_color}\${visual_choice}"
+	arr["SVENSKA",184]="Vill du använda denna redan valda ordboksfil? \${normal_color}\${visual_choice}"
+	arr["DANSK",184]="Vil du bruge denne allerede valgte ordbogsfil? \${normal_color}\${visual_choice}"
 
 	arr["ENGLISH",185]="Selected BSSID: \${pink_color}None\${normal_color}"
 	arr["SPANISH",185]="BSSID seleccionado: \${pink_color}Ninguno\${normal_color}"
@@ -4421,6 +4436,9 @@ function initialize_language_strings() {
 	arr["TURKISH",185]="Seçilen BSSID: \${pink_color}None\${normal_color}"
 	arr["ARABIC",185]="\${pink_color}None\${blue_color} :المختار BSSID\${normal_color}"
 	arr["CHINESE",185]="已选择的 BSSID: \${pink_color}None\${normal_color}"
+    arr["NORSK",185]="BSSID valgt: \${pink_lcolor}Aucun\${normal_color}"
+	arr["SVENSKA",185]="BSSID valdt: \${pink_color}Ningú\${normal_color}"
+	arr["DANSK",185]="BSSID valgt: \${pink_color}Nenhum\${normal_color}"
 
 	arr["ENGLISH",186]="You already have selected a capture file during this session [\${normal_color}\${enteredpath}\${blue_color}]"
 	arr["SPANISH",186]="Ya tienes seleccionado un fichero de captura en esta sesión [\${normal_color}\${enteredpath}\${blue_color}]"
