@@ -45,9 +45,9 @@ function initialize_language_strings() {
 	unknown_chipset["TURKISH"]="Bilinmeyen"
 	unknown_chipset["ARABIC"]="مجهول"
 	unknown_chipset["CHINESE"]="未知的"
-	unknown_chipset["NORSK"]="UKJENT"
-	unknown_chipset["SVENSKA"]="OKÄND"
-	unknown_chipset["DANSK"]="UKENDT"
+	unknown_chipset["NORSK"]="Ukjent"
+	unknown_chipset["SVENSKA"]=""Okänd
+	unknown_chipset["DANSK"]="Ukent"
 	unknown_chipsetvar="${unknown_chipset[${language}]}"
 
 	declare -A hintprefix
@@ -64,9 +64,9 @@ function initialize_language_strings() {
 	hintprefix["TURKISH"]="İpucu"
 	hintprefix["ARABIC"]="تلميح"
 	hintprefix["CHINESE"]="提示"
-	hintprefix["NORSK"]="HINT"
-	hintprefix["SVENSKA"]="ANTYDAN"
-	hintprefix["DANSK"]="ANTYDNING"
+	hintprefix["NORSK"]="Hint"
+	hintprefix["SVENSKA"]="Antydan"
+	hintprefix["DANSK"]=""Antydning
 	hintvar="${hintprefix[${language}]}"
 
 	declare -A optionaltool_needed
@@ -83,9 +83,9 @@ function initialize_language_strings() {
 	optionaltool_needed["TURKISH"]="Engellenen seçenek şunları gerektirir: "
 	optionaltool_needed["ARABIC"]=":خيار مغلق يتطلب"
 	optionaltool_needed["CHINESE"]="锁定选项，它需要:"
-	optionaltool_needed["NORSK"]="LÅST MULIGHET, TRENGER: "
-	optionaltool_needed["SVENSKA"]="LÅST MÖJLIGHET, BEHÖVS: "
-	optionaltool_needed["DANSK"]="LÅST MULIGHED, NØDVENDIG: "
+	optionaltool_needed["NORSK"]="Låst alternativ, den trenger: "
+	optionaltool_needed["SVENSKA"]="Låst alternativ, det behöver: "
+	optionaltool_needed["DANSK"]="Låst mulighed, den har brug for: "
 
 	declare -gA under_construction
 	under_construction["ENGLISH"]="under construction"
@@ -119,9 +119,9 @@ function initialize_language_strings() {
 	possible_package_names_text["TURKISH"]="Olası paket adı"
 	possible_package_names_text["ARABIC"]="اسم الحزمة المحتمل"
 	possible_package_names_text["CHINESE"]="可能的软件包名称"
-        possible_package_names_text["NORSK"]="mulig pakke navn"
-	possible_package_names_text["SVENSKA"]="möjligt paketnamn"
-	possible_package_names_text["DANSK"]="muligt pakkenavn"
+    possible_package_names_text["NORSK"]="Mulig pakke navn"
+	possible_package_names_text["SVENSKA"]="Möjligt paketnamn"
+	possible_package_names_text["DANSK"]="Muligt pakkenavn"
 
 	declare -gA disabled_text
 	disabled_text["ENGLISH"]="Disabled"
@@ -139,7 +139,7 @@ function initialize_language_strings() {
 	disabled_text["CHINESE"]="禁用"
 	disabled_text["NORSK"]="Deaktivert"
 	disabled_text["SVENSKA"]="Inaktiverad"
-	disabled_text["DANSK"]="Handicappet"
+	disabled_text["DANSK"]="Deaktiveret"
 
 	declare -gA reboot_required
 	reboot_required["ENGLISH"]="${red_color_slim} (reboot required)${normal_color}"
@@ -173,9 +173,9 @@ function initialize_language_strings() {
 	docker_image["TURKISH"]="${docker_based_distro} Docker image tabanlı"
 	docker_image["ARABIC"]="Docker ${docker_based_distro} الصورة مبنية على"
 	docker_image["CHINESE"]="${docker_based_distro} 基于 Docker 镜像"
-	docker_image["NORSK"]=" Docker bilde basert${docker_based_distro}"
-	docker_image["SVENSKA"]="Docker bildbaserad ${docker_based_distro}"
-	docker_image["DANSK"]="Docker billedbaseret ${docker_based_distro}"
+	docker_image["NORSK"]=" Docker bilde basert ${docker_based_distro}"
+	docker_image["SVENSKA"]="Docker bild baserad ${docker_based_distro}"
+	docker_image["DANSK"]="Docker billed baseret ${docker_based_distro}"
 
 	declare -gA et_misc_texts
 	et_misc_texts["ENGLISH",0]="Evil Twin AP Info"
@@ -260,8 +260,8 @@ function initialize_language_strings() {
 	et_misc_texts["ARABIC",4]="مع هذا الهجوم ، يجب عليك استخدام المتشمم لمحاولة الحصول على كلمات مرور الزبناء المتصلين بالشبكة"
 	et_misc_texts["CHINESE",4]="在这种攻击中，您必须使用外部嗅探器来尝试获取连接到网络的客户端密码"
     et_misc_texts["NORSK",4]="Ved dette angrepet må du bruke en ekstern sniffer for å prøve å få klient passord koblet til nettverket"
-	et_misc_texts["SVENSKA",4]="Vid denna attack måste du använda en fjärrsniffer för att försöka få klientlösenord anslutna till nätverket"
-	et_misc_texts["DANSK",4]="Ved dette angreb skal du bruge en ekstern sniffer for at forsøge at få klientadgangskoder forbundet til netværket"
+	et_misc_texts["SVENSKA",4]="Vid denna attack måste du använda en fjärrsniffer för att försöka få klient lösenord anslutna till nätverket"
+	et_misc_texts["DANSK",4]="Ved dette angreb skal du bruge en ekstern sniffer for at forsøge at få klient adgangskoder forbundet til netværket"
 	
 	et_misc_texts["ENGLISH",5]="On this attack, watch the sniffer's screen to see if a password appears"
 	et_misc_texts["SPANISH",5]="Con este ataque, estate atento a la pantalla del sniffer para ver si aparece alguna contraseña"
@@ -277,8 +277,8 @@ function initialize_language_strings() {
 	et_misc_texts["ARABIC",5]="تحقق أثناء الهجوم في شاشة المتشمم إذا تم التقاط كلمة مرور"
 	et_misc_texts["CHINESE",5]="在这次攻击中，观察嗅探器的屏幕以查看是否出现密码"
 	et_misc_texts["NORSK",5]="Ved dette angrepet, se snifferens skjerm for å se om et passord vises"
-	et_misc_texts["SVENSKA",5]="Vid denna attack, titta på snifferns skärm för att se om åtkomstkoden visas"
-	et_misc_texts["DANSK",5]="Ved dette angreb se snifferens skærm for at se, om der vises en adgangskode "
+	et_misc_texts["SVENSKA",5]="Vid denna attack, titta på snifferns skärm för att se om lösenordet visas"
+	et_misc_texts["DANSK",5]="Ved dette angreb se, snifferens skærm for at se om der vises en adgangskode "
 
 	et_misc_texts["ENGLISH",6]="On this attack, we'll wait for a network client to provide us the password for the wifi network in our captive portal"
 	et_misc_texts["SPANISH",6]="Con este ataque, esperaremos a que un cliente de la red nos provea de la contraseña de la red wifi en nuestro portal cautivo"
@@ -295,7 +295,7 @@ function initialize_language_strings() {
 	et_misc_texts["CHINESE",6]="在这次攻击中，我们将等待用户在我们的强制门户中为我们提供 wifi 网络的密码"
 	et_misc_texts["NORSK",6]="Ved dette angrepet venter vi på at en nettverksklient gir oss passordet for wifi nettverket i vår captive portal"
 	et_misc_texts["SVENSKA",6]="Vid den här attacken väntar vi på att en nätverksklient ger oss lösenordet för wifi nätverket i vår captive-portal"
-	et_misc_texts["DANSK",6]="Ved dette angreb venter vi på, at en netværksklient giver os adgangskoden til wifi netværket i vores captive portal"
+	et_misc_texts["DANSK",6]="Ved dette angreb venter vi på at en netværksklient giver os adgangskoden til wifi netværket i vores captive portal"
 
 	et_misc_texts["ENGLISH",7]="No clients connected yet"
 	et_misc_texts["SPANISH",7]="No hay clientes conectados aún"
@@ -446,9 +446,9 @@ function initialize_language_strings() {
 	et_misc_texts["TURKISH",15]="İnternet Portalı"
 	et_misc_texts["ARABIC",15]="بوابة الإنترنت"
 	et_misc_texts["CHINESE",15]="门户网站"
-	et_misc_texts["NORSK",15]="Internettportal"
-	et_misc_texts["SVENSKA",15]="Internetportal"
-	et_misc_texts["DANSK",15]="Internetportal"
+	et_misc_texts["NORSK",15]="Internet tportal"
+	et_misc_texts["SVENSKA",15]="Internet portal"
+	et_misc_texts["DANSK",15]="Internet portal"
 
 	et_misc_texts["ENGLISH",16]="The password must be at least 8 characters"
 	et_misc_texts["SPANISH",16]="La contraseña debe tener al menos 8 caracteres"
@@ -565,7 +565,7 @@ function initialize_language_strings() {
 	et_misc_texts["TURKISH",22]="Başarısız girişimlerde yakalanan şifreler"
 	et_misc_texts["ARABIC",22]="تم التقاط كلمات السر في المحاولات الفاشلة"
 	et_misc_texts["CHINESE",22]="尝试失败时捕获的密码"
-        et_misc_texts["NORSK",22]="Fanget passord ved mislykkede forsøk"
+    et_misc_texts["NORSK",22]="Fanget passord ved mislykkede forsøk"
 	et_misc_texts["SVENSKA",22]="Fångade lösenord vid misslyckade försök"
 	et_misc_texts["DANSK",22]="Indfangede adgangskode ved mislykkede forsøg"
 
@@ -652,7 +652,7 @@ function initialize_language_strings() {
 	et_misc_texts["CHINESE",27]="这次攻击有两个部分。观察嗅探器的屏幕以查看是否出现密码。您还可以在 ${white_color}${beef_control_panel_url}${pink_color} 打开 BeEF 控制面板，登录 (用户: ${white_color}beef${pink_color} / 密码: ${white_color}${beef_pass}${pink_color}) 并尝试控制客户端浏览器"
 	et_misc_texts["NORSK",27]="Dette angrepet hans har to deler. Se snifferens skjerm for å se om et passord vises. Du kan også åpne BeEF kontrollpanel på ${white_color}${beef_control_panel_url}${pink_color} , logg inn (user: ${white_color}beef${pink_color} / pass: ${white_color}${beef_pass}${pink_color}) og prøve å kontrollere klientens nettleser"
 	et_misc_texts["SVENSKA",27]="Denna attack har två delar. Titta på snifferns skärm för att se om ett lösenord visas. Du kan också öppna BeEF kontrollpanel på ${white_color}${beef_control_panel_url}${pink_color} , logga in (user: ${white_color}beef${pink_color} / pass: ${white_color}${beef_pass}${pink_color}) och försök kontrollera klientens webbläsare"
-	et_misc_texts["DANSK",27]="Dette angreb har to dele. Se snifferens skærm for at se, om der vises en adgangskode. Du kan også åbne BeEF kontrolpanel på ${white_color}${beef_control_panel_url}${pink_color} , log ind (user: ${white_color}beef${pink_color} / pass: ${white_color}${beef_pass}${pink_color}) og prøv at styre klientens browser"
+	et_misc_texts["DANSK",27]="Dette angreb har to dele. Se snifferens skærm for at se om der vises en adgangskode. Du kan også åbne BeEF kontrolpanel på ${white_color}${beef_control_panel_url}${pink_color} , log ind (user: ${white_color}beef${pink_color} / pass: ${white_color}${beef_pass}${pink_color}) og prøv at styre klientens browser"
 
 	et_misc_texts["ENGLISH",28]="Portal accessed"
 	et_misc_texts["SPANISH",28]="Accedió al portal"
@@ -823,7 +823,7 @@ function initialize_language_strings() {
 	wep_texts["ARABIC",4]=":بنجاح WEP تم فك تشفير مفتاح"
 	wep_texts["CHINESE",4]="WEP 密钥解密成功:"
 	wep_texts["NORSK",4]="WEP nøkklen ble dekrypteret med suksess:"
-	wep_texts["SVENSKA",4]="WEP nyckeln dekrypterades framgångsrikt:"
+	wep_texts["SVENSKA",4]="WEP nyckeln dekrypterades med suksess:"
 	wep_texts["DANSK",4]="WEP nøglen blev dekrypteret med succes:"
 
 	wep_texts["ENGLISH",5]="WEP AP Info"
@@ -1065,7 +1065,7 @@ function initialize_language_strings() {
 	enterprise_texts["TURKISH",0]="Enterprise Şeytani İkiz AP Bilgisi"
 	enterprise_texts["ARABIC",0]="Enterprise Evil Twin AP معلومات"
 	enterprise_texts["CHINESE",0]="企业级加密 邪恶双胞胎 AP 信息"
-        enterprise_texts["NORSK",2]="Enterprise Evil Twin AP Info"
+    enterprise_texts["NORSK",2]="Enterprise Evil Twin AP Info"
 	enterprise_texts["SVENSKAA",2]="Enterprise Evil Twin AP Info"
 	enterprise_texts["DANSK",2]="Enterprise Evil Twin AP Info"
 
@@ -1117,9 +1117,9 @@ function initialize_language_strings() {
 	enterprise_texts["TURKISH",3]="Bu saldırı ile, bir clientin sahte AP'deki Enterprise wifi ağı için bize bir hash veya şifre vermesini bekleyeceğiz. \"smooth\" modunu seçtiniz, böylece bir hash veya şifre yakalanır yakalanmaz saldırı duracaktır. Ana ekranda [Enter] tuşuna basarak da saldırıyı durdurabilirsiniz"
 	enterprise_texts["ARABIC",3]="[Enter] وبمجرد التقاط كلمة مرور أو تجزئة واحدة ، سيتم تفكيك الهجوم. يمكنك أيضًا إيقافه بالضغط على مفتاح \"smooth\" في نقطة الوصول المزيفة. لقد حددت الوضع Enterprise wifi في هذا الهجوم ، سننتظر حتى يقوم عميل الشبكة بتزويدنا بتجزئة أو كلمة مرور لشبكة"
 	enterprise_texts["CHINESE",3]="在这次攻击中，我们将等待网络客户端在我们的假 AP 中为我们提供企业级加密 wifi 网络的哈希值或密码。您选择了“平滑”模式，因此一旦捕获到某个密码或哈希值，攻击就会被解除。您也可以在主窗口按 [Enter] 键停止它"
-	enterprise_texts["NORSK",3]="Ved dette angrepet venter vi på at en nettverksklient gir oss en hash eller et passord for Enterprise wifi-nettverket i vår falske AP. Du valgte \"smooth\" modus, så så snart ett passord eller hash er fanget opp, vil angrepet bli demontert. Du kan også stoppe det ved å trykke på [Enter] tasten i hovedvinduet"
-    enterprise_texts["SVENSKAA",3]="Vid den här attacken väntar vi på att en nätverksklient ger oss en hash eller ett lösenord för Enterprise wifi-nätverk i vår falska AP. Du valde \"smooth\" läge, så så snart ett lösenord eller hash har registrerats kommer attacken att avvecklas. Du kan också stoppa det genom att trycka på [Enter] tangenten i huvudfönstret"
-	enterprise_texts["DANSK",3]="Ved dette angreb venter vi på, at en netværksklient giver os en hash eller en adgangskode til Enterprise wifi-netværket i vores falske AP. Du valgte tilstanden \"smooth\", mode så så snart én adgangskode eller hash er fanget vil angrebet blive afmonteret. Du kan også stoppe det ved at trykke på [Enter] tasten i hovedvinduet"
+	enterprise_texts["NORSK",3]="Ved dette angrepet, venter vi på at en nettverksklient gir oss en hash eller et passord for Enterprise wifi nettverket i vår falske AP. Du valgte \"smooth\" modus, så snart ett passord eller hash er fanget opp, vil angrepet bli demontert. Du kan også stoppe det ved å trykke på [Enter] tasten i hovedvinduet"
+    enterprise_texts["SVENSKAA",3]="Vid den här attacken, väntar vi på att en nätverksklient ger oss en hash eller ett lösenord för Enterprise wifi nätverk i vår falska AP. Du valde \"smooth\" läge, så snart ett lösenord eller hash har registrerats kommer attacken att avvecklas. Du kan också stoppa det genom att trycka på [Enter] tangenten i huvudfönstret"
+	enterprise_texts["DANSK",3]="Ved dette angreb, venter vi på at en netværksklient giver os en hash eller en adgangskode til Enterprise wifi netværket i vores falske AP. Du valgte tilstanden \"smooth\" mode, så snart én adgangskode eller hash er fanget vil angrebet blive afmonteret. Du kan også stoppe det ved at trykke på [Enter] tasten i hovedvinduet"
 	
 	enterprise_texts["ENGLISH",4]="On this attack, we'll wait for a network client to provide us a hash or a password for the Enterprise wifi network in our fake AP. You selected \"noisy\" mode, so the attack won't stop until you press [Enter] key on the main window"
 	enterprise_texts["SPANISH",4]="Con este ataque, esperaremos a que algún cliente nos de un hash o su contraseña de la red wifi Enterprise en nuestro AP falso. Has seleccionado el modo \"noisy\", por lo que el ataque no parará hasta que pulses la tecla [Enter] en la pantalla principal"
@@ -1134,9 +1134,9 @@ function initialize_language_strings() {
 	enterprise_texts["TURKISH",4]="Bu saldırı ile, bir clientin sahte AP'deki Enterprise wifi ağı için bize bir hash veya şifresini vermesini bekleyeceğiz. \"noisy\" modunu seçtiniz, bu yüzden ana ekranda [Enter] tuşuna basana kadar saldırı durmayacak"
 	enterprise_texts["ARABIC",4]="[Enter] وبمجرد التقاط كلمة مرور أو تجزئة واحدة ، سيتم تفكيك الهجوم. يمكنك أيضًا إيقافه بالضغط على مفتاح \"noisy\" في نقطة الوصول المزيفة. لقد حددت الوضع Enterprise wifi في هذا الهجوم ، سننتظر حتى يقوم عميل الشبكة بتزويدنا بتجزئة أو كلمة مرور لشبكة"
 	enterprise_texts["CHINESE",4]="在这次攻击中，我们将等待网络客户端在我们的假 AP 中为我们提供企业 wifi 网络的哈希值或密码。您选择了“嘈杂”模式，因此在您按下主窗口上的 [Enter] 键之前攻击都不会停止"
-	enterprise_texts["NORSK",4]="Ved dette angrepet venter vi på at en nettverksklient gir oss en hash eller et passord for Enterprise wifi nettverket i vår falske AP. Du valgte \"noisy\" modus, så angrepet stopper ikke før du trykker på [Enter] tasten i hovedvinduet"
-    enterprise_texts["SVENSKAA",4]="Vid den här attacken väntar vi på att en nätverksklient ger oss en hash eller ett lösenord för Enterprise wifi nätverk i vår falska AP. Du valde \"noisy\" läge, så attacken kommer inte att sluta förrän du trycker på [Enter] tangenten i huvudfönstret"
-    enterprise_texts["DANSK",4]="Ved dette angreb venter vi på at en netværksklient giver os en hash eller en adgangskode til Enterprise wifi netværket i vores falske AP. Du valgte \"noisy\" mode, så angrebet stopper ikke før du trykker på [Enter] tasten i hovedvinduet"
+	enterprise_texts["NORSK",4]="Ved dette angrepet, venter vi på at en nettverksklient gir oss en hash eller et passord for Enterprise wifi nettverket i vår falske AP. Du valgte \"noisy\" modus, så angrepet stopper ikke før du trykker på [Enter] tasten i hovedvinduet"
+    enterprise_texts["SVENSKAA",4]="Vid den här attacken, väntar vi på att en nätverksklient ger oss en hash eller ett lösenord för Enterprise wifi nätverk i vår falska AP. Du valde \"noisy\" läge, så attacken kommer inte att sluta förrän du trycker på [Enter] tangenten i huvudfönstret"
+    enterprise_texts["DANSK",4]="Ved dette angreb, venter vi på at en netværksklient giver os en hash eller en adgangskode til Enterprise wifi netværket i vores falske AP. Du valgte \"noisy\" mode, så angrebet stopper ikke før du trykker på [Enter] tasten i hovedvinduet"
 
 	enterprise_texts["ENGLISH",5]="Last captured user"
 	enterprise_texts["SPANISH",5]="Último usuario capturado"
@@ -1272,7 +1272,7 @@ function initialize_language_strings() {
 	footer_texts["ARABIC",0]="${urlgithub_wiki}/Contributing :نرحب بأي مبلغ مهما كان صغيرا (1 ، 2 ، 5 دولارات / يورو). مزيد من المعلومات والروابط المباشرة للقيام بذلك على  .(Bitcoin, Ethereum, Litecoin...) أو إرسال جزء بسيط من العملة المشفرة  PayPal (${mail})  إذا كنت قد استمتعت بالبرنامج ووجدته مفيدًا ، فيمكنك دعم المشروع من خلال التبرع. من خلال"
 	footer_texts["CHINESE",0]="如果您喜欢该脚本并发现它很有用，您可以通过捐赠来支持该项目。通过 PayPal (${mail}) 或一点加密货币来付款 (比特币、以太币、莱特币...) 。欢迎任何金额，无论金额多少 (1、2、5 ￥/$/€) 。更多信息和直接链接: ${urlgithub_wiki}/Contributing"
 	footer_texts["NORSK",0]="Hvis du likte manuset og fant det nyttig, kan du støtte prosjektet ved å gi en donasjon. Gjennom PayPal (${mail}) eller sende en brøkdel av kryptovaluta (Bitcoin, Ethereum, Litecoin...). Ethvert beløp, uansett hvor lite (1, 2, 5 $/€) er velkommen. Mer informasjon og direkte lenker for å gjøre det på: ${urlgithub_wiki}/Contributing"
-	footer_texts["SVENSKAA",0]="Om du gillade manuset och tyckte att det var användbart kan du stödja projektet genom att göra en donation. Genom PayPal (${mail}) eller skicka en bråkdel av kryptovalutan (Bitcoin, Ethereum, Litecoin...). Alla belopp, oavsett hur små (1, 2, 5 $/€) är välkomna. Mer information och direktlänkar för att göra det på: ${urlgithub_wiki}/Contributing"
+	footer_texts["SVENSKAA",0]="Om du gillade manuset och tyckte att det var användbart, kan du stödja projektet genom att göra en donation. Genom PayPal (${mail}) eller skicka en bråkdel av kryptovalutan (Bitcoin, Ethereum, Litecoin...). Alla belopp, oavsett hur små (1, 2, 5 $/€) är välkomna. Mer information och direktlänkar för att göra det på: ${urlgithub_wiki}/Contributing"
 	footer_texts["DANSK",0]="Hvis du kunne lide manuskriptet og fandt det nyttigt, kan du støtte projektet ved at give en donation. Gennem PayPal (${mail}) eller ved at sende en brøkdel af kryptovaluta (Bitcoin, Ethereum, Litecoin...). Ethvert beløb, uanset hvor lille (1, 2, 5 $/€) er velkomne. Flere oplysninger og direkte links til at gøre det på: ${urlgithub_wiki}/Contributing"
 
 	declare -gA arr
@@ -1306,9 +1306,9 @@ function initialize_language_strings() {
 	arr["TURKISH",1]="Bu arayüz \${current_iface_on_messages} wifi kart değildir. Yönetici modunu desteklemiyor"
 	arr["ARABIC",1]="Managed mode  لذلك فهي لا تتحمل الوضع  .wifi  ليست بطاقة  \${current_iface_on_messages} هذه الواجهة"
 	arr["CHINESE",1]="这个接口 \${current_iface_on_messages} 不是 wifi 网卡。它不支持管理模式"
-	arr["NORSK",1]="Dette grensesnittet \${current_iface_on_messages} er ikke et wifi-kort. Det støtter ikke managed mode"
-	arr["SVENSKAA",1]="Det här gränssnittet \${current_iface_on_messages} är inte ett wifi-kort. Det stöder inte managed mode"
-	arr["DANSK",1]="Denne grænseflade \${current_iface_on_messages} er ikke et wifi-kort. Det understøtter ikke managed mode"
+	arr["NORSK",1]="Dette grensesnittet \${current_iface_on_messages} er ikke et wifi kort. Det støtter ikke managed mode"
+	arr["SVENSKAA",1]="Det här gränssnittet \${current_iface_on_messages} är inte ett wifi kort. Det stöder inte managed mode"
+	arr["DANSK",1]="Denne grænseflade \${current_iface_on_messages} er ikke et wifi kort. Det understøtter ikke managed mode"
 	
 	arr["ENGLISH",2]="English O.S. language detected. Supported by script. Automatically changed"
 	arr["SPANISH",2]="Idioma Español del S.O. detectado. Soportado por el script. Se cambió automáticamente"
@@ -1376,7 +1376,7 @@ function initialize_language_strings() {
 	arr["CHINESE",5]="您的互联网连接似乎不稳定。该脚本无法连接到 GitHub 远程仓库。它会继续运行而不更新..."
     arr["NORSK",5]="Det ser ut til at internettforbindelsen din er ustabil. Skriptet kan ikke koble til repository. Det vil fortsette uten oppdatering..."
 	arr["SVENSKAA",5]="Det verkar som om din internetanslutning är instabil. Skriptet kan inte ansluta till arkivet. Det kommer att fortsätta utan uppdatering..."
-	arr["DANSK",5]="Det ser ud til at din internetforbindelse er ustabil. Scriptet kan ikke oprette forbindelse til lageret. Det fortsætter uden opdatering.."
+	arr["DANSK",5]="Det ser ud til at din internetforbindelse er ustabil. Scriptet kan ikke oprette forbindelse til lageret. Det fortsætter uden opdatering..."
 
 	arr["ENGLISH",6]="Welcome to airgeddon script \${normal_color}v\${airgeddon_version}"
 	arr["SPANISH",6]="Bienvenid@ a airgeddon script \${normal_color}v\${airgeddon_version}"
@@ -1408,9 +1408,9 @@ function initialize_language_strings() {
 	arr["TURKISH",7]="Bu yazılım sadece eğitim amaçlıdır. Akıllı olun çocuklar!"
 	arr["ARABIC",7]="!هذا البرنامج هو فقط لأغراض تعليمية. كونوا أولاد وبنات جيدين"
 	arr["CHINESE",7]="此脚本仅用于教育目的。请做个好孩子！"
-	arr["NORSK",7]="Dette skriptet er kun for pedagogiske formål.Vær gode gutter & jenter!"
-	arr["SVENSKAA",7]="Detta skript är endast för utbildningsändamål.Vær god drenge & piger!"
-	arr["DANSK",7]="Dette script er kun til undervisningsformål.Var snell pojke & tjej!"
+	arr["NORSK",7]="Dette skriptet er kun for pedagogiske formål.Vær gode gutter&jenter!"
+	arr["SVENSKAA",7]="Detta skript är endast för utbildningsändamål.Vær god drenge&piger!"
+	arr["DANSK",7]="Dette script er kun til undervisningsformål.Var snell pojke&tjej!"
 
 	arr["ENGLISH",8]="Known compatible distros with this script:"
 	arr["SPANISH",8]="Distros conocidas compatibles con este script:"
