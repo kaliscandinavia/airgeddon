@@ -4402,7 +4402,7 @@ function initialize_language_strings() {
 	arr["TURKISH",183]="Bu oturumda zaten sözlük dosyası seçtiniz [\${normal_color}\${DICTIONARY}\${blue_color}]"
 	arr["ARABIC",183]="[\${normal_color}\${DICTIONARY}\${blue_color}] لقد قمت بالفعل بتحديد ملف قاموس أثناء هذه الدورة"
 	arr["CHINESE",183]="您在此会话期间已经选择了字典文件 [\${normal_color}\${DICTIONARY}\${blue_color}]"
-    arr["NORSK",183]="Du har allerede valgt en ordbokfil under denne økten \${normal_color}\${DICTIONARY}\${blue_color}]"
+    arr["NORSK",183]="Du har allerede valgt en ordbokfil under denne økten [\${normal_color}\${DICTIONARY}\${blue_color}]"
 	arr["SVENSKA",183]="Du har redan valt en ordboksfil under den här sessionen [\${normal_color}\${DICTIONARY}\${blue_color}]"
 	arr["DANSK",183]="Du har allerede valgt en ordbogsfil under denne session [\${normal_color}\${DICTIONARY}\${blue_color}]"
  
@@ -4453,7 +4453,10 @@ function initialize_language_strings() {
 	arr["TURKISH",186]="Bu oturumda zaten bir yakalama dosyası seçtiniz [\${normal_color}\${enteredpath}\${blue_color}]"
 	arr["ARABIC",186]="[\${normal_color}\${enteredpath}\${blue_color}] لقد قمت بالفعل بتحديد ملف الالتقاط أثناء هذه الدورة"
 	arr["CHINESE",186]="您已经在此次脚本运行期间已经选择了一个捕获文件 [\${normal_color}\${enteredpath}\${blue_color}]"
-
+    arr["NORSK",186]="Du har allerede valgt en fangstfil under denne økten \${normal_color}\${enteredpath}\${blue_color}]"
+	arr["SVENSKA",186]="Du har redan valt en fångstfil under den här sessionen [\${normal_color}\${enteredpath}\${blue_color}]"
+	arr["DANSK",186]="Du har allerede valgt en optagelsesfil under denne session [\${normal_color}\${enteredpath}\${blue_color}]"
+ 
 	arr["ENGLISH",187]="Do you want to use this already selected capture file? \${normal_color}\${visual_choice}"
 	arr["SPANISH",187]="¿Quieres utilizar este fichero de captura ya seleccionado? \${normal_color}\${visual_choice}"
 	arr["FRENCH",187]="Souhaitez vous utiliser le fichier de capture déjà sélectionné? \${normal_color}\${visual_choice}"
@@ -4467,6 +4470,9 @@ function initialize_language_strings() {
 	arr["TURKISH",187]="Bu yakalama dosyasını kullanmak istiyor musunuz? \${normal_color}\${visual_choice}"
 	arr["ARABIC",187]="\${normal_color}\${visual_choice}\${green_color} هل تريد استخدام ملف الالتقاط المحدد بالفعل؟\${normal_color}"
 	arr["CHINESE",187]="您想使用这个已选择的捕获文件吗？\${normal_color}\${visual_choice}"
+    arr["NORSK",187]="Vil du bruke denne allerede valgte opptaksfilen? \${normal_color}\${visual_choice}"
+	arr["SVENSKA",187]="Vill du använda denna redan valda fångstfil? \${normal_color}\${visual_choice}"
+	arr["DANSK",187]="Vil du bruge denne allerede valgte optagelsesfil? \${normal_color}\${visual_choice}"
 
 	arr["ENGLISH",188]="Enter the path of a captured file:"
 	arr["SPANISH",188]="Introduce la ruta de un fichero de captura:"
@@ -4481,7 +4487,10 @@ function initialize_language_strings() {
 	arr["TURKISH",188]="Yakalama dosyasının yolunu girin:"
 	arr["ARABIC",188]=":أدخل المسار إلى ملف التقاط"
 	arr["CHINESE",188]="请输入捕获文件的路径:"
-
+    arr["NORSK",188]="Skriv inn banen til en fanget fil:"
+	arr["SVENSKA",188]="Ange sökvägen till en fångad fil:"
+	arr["DANSK",188]="Indtast stien til en optaget fil:"
+    
 	arr["ENGLISH",189]="The path to the capture file is valid. Script can continue..."
 	arr["SPANISH",189]="La ruta al fichero de captura es válida. El script puede continuar..."
 	arr["FRENCH",189]="Le chemin du fichier de capture est valide. Le script peut continuer..."
@@ -4495,7 +4504,10 @@ function initialize_language_strings() {
 	arr["TURKISH",189]="Yakalama dosyasının yolu doğru. Yazılım devam edebilir..."
 	arr["ARABIC",189]="...المسار إلى ملف الالتقاط صالح. البرنامج يمكن أن يستمر"
 	arr["CHINESE",189]="已找到有效的捕获文件。脚本可以继续..."
-
+    arr["NORSK",189]="Banen til fangstfilen er gyldig. Skriptet kan fortsette..."
+	arr["SVENSKA",189]="Sökvägen till fångstfilen är giltig. Skriptet kan fortsätta..."
+	arr["DANSK",189]="Stien til opsamlingsfilen er gyldig. Scriptet kan fortsætte..."
+    
 	arr["ENGLISH",190]="Starting decrypt. When started, press [Ctrl+C] to stop..."
 	arr["SPANISH",190]="Comenzando descifrado. Una vez empezado, pulse [Ctrl+C] para pararlo..."
 	arr["FRENCH",190]="Lancement du crack. Pressez [Ctrl+C] pour l'arrêter..."
@@ -4509,7 +4521,10 @@ function initialize_language_strings() {
 	arr["TURKISH",190]="Şifre çözme başlıyor. Başladıktan sonra, durdurmak için [Ctrl+C] basınız..."
 	arr["ARABIC",190]="...للإيقاف [Ctrl+C] بدء فك تشفير. عند البدء ، اضغط على"
 	arr["CHINESE",190]="准备开始暴破。启动后，按 [Ctrl+C] 停止..."
-
+    arr["NORSK",190]="Starter dekryptering. Når du har startet, trykk [Ctrl+C] for å stoppe..."
+	arr["SVENSKA",190]="Börjar dekryptera. När du har startat, tryck på [Ctrl+C] för att stoppa..."
+	arr["DANSK",190]="Starter dekryptering. Når du er startet, skal du trykke på [Ctrl+C] for at stoppe..."
+    
 	arr["ENGLISH",191]="\${blue_color}airgeddon can't find the directory path where you have BeEF installed. \${green_color}Do you want to enter it manually? \${normal_color}\${visual_choice}"
 	arr["SPANISH",191]="\${blue_color}airgeddon no ha podido encontrar la ruta del directorio donde tienes instalado BeEF. \${green_color}¿Quieres introducirla manualmente? \${normal_color}\${visual_choice}"
 	arr["FRENCH",191]="\${blue_color}airgeddon n'a pas trouvé le dossier qui contient BeEF. \${green_color}Voulez-vous l'indiquer manuellement? \${normal_color}\${visual_choice}"
@@ -4523,6 +4538,9 @@ function initialize_language_strings() {
 	arr["TURKISH",191]="\${blue_color}airgeddon BeEF yazılımının kurulu olduğu dizini bulamadı. \${green_color}Elle girmek ister misiniz? \${normal_color}\${visual_choice}"
 	arr["ARABIC",191]="\${normal_color}\${visual_choice} \${green_color}هل تريد إدخاله يدويًا؟\${blue_color}.BeEF من العثور على مسار الدليل حيث تم تثبيت airgeddon لم يتمكن\${normal_color}"
 	arr["CHINESE",191]="\${blue_color}airgeddon 找不到您 BeEF 的安装路径。 \${green_color}您要手动输入吗？\${normal_color}\${visual_choice}"
+    arr["NORSK",191]="\${blue_color}airgeddon finner ikke katalog banen der du har BeEF installert. \${green_color}Vil du legge det inn manuelt? \${normal_farge}\${visual_choice}"
+	arr["SVENSKA",191]="\${blue_color}airgeddon kan inte hitta katalog sökvägen där du har BeEF installerat. \${green_color}Vill du ange det manuellt? \${normal_color}\${visual_choice}"
+	arr["DANSK",191]="\${blue_color}airgeddon kan ikke finde mappestien, hvor du har BeEF installeret. \${green_color}Vil du indtaste det manuelt? \${normal_farve}\${visual_choice}"
 
 	arr["ENGLISH",192]="You already have selected a BSSID during this session and is present in capture file [\${normal_color}\${bssid}\${blue_color}]"
 	arr["SPANISH",192]="Ya tienes seleccionado un BSSID en esta sesión y está presente en el fichero de captura [\${normal_color}\${bssid}\${blue_color}]"
@@ -4537,7 +4555,10 @@ function initialize_language_strings() {
 	arr["TURKISH",192]="Bu oturum sırasında zaten bir BSSID seçtiniz ve yakalama dosyasında mevcut [\${normal_color}\${bssid}\${blue_color}]"
 	arr["ARABIC",192]="[\${normal_color}\${bssid}\${blue_color}] وموجود في ملف الالتقاط ،خلال هذه الدورة BSSIDلديك بالفعل اختيار"
 	arr["CHINESE",192]="您已经在此次脚本运行期间已经选择了一个 BSSID，并且存在于捕获文件中 [\${normal_color}\${bssid}\${blue_color}]"
-
+    arr["NORSK",192]="Du har allerede valgt en BSSID under denne økten og den er til stede i opptaksfilen [\${normal_color}\${bssid}\${blue_color}] "
+	arr["SVENSKA",192]="Du har redan valt ett BSSID under den här sessionen och det finns i inspelningsfilen [\${normal_color}\${bssid}\${blue_color}]"
+	arr["DANSK",192]="Du har allerede valgt et BSSID under denne session og det er til stede i optagelsesfilen [\${normal_color}\${bssid}\${blue_color}]"
+    
 	arr["ENGLISH",193]="Do you want to use this already selected BSSID? \${normal_color}\${visual_choice}"
 	arr["SPANISH",193]="¿Quieres utilizar este BSSID ya seleccionado? \${normal_color}\${visual_choice}"
 	arr["FRENCH",193]="Souhaitez vous utiliser le BSSID déjà sélectionné? \${normal_color}\${visual_choice}"
@@ -4551,8 +4572,11 @@ function initialize_language_strings() {
 	arr["TURKISH",193]="Seçilen BSSID ile devam etmek ister misiniz? \${normal_color}\${visual_choice}"
 	arr["ARABIC",193]="\${normal_color}\${visual_choice} \${green_color}المحدد بالفعل؟ BSSID هل تريد استخدام هذا\${normal_color}"
 	arr["CHINESE",193]="您想使用这个已经选择的 BSSID 吗？\${normal_color}\${visual_choice}"
-
-	arr["ENGLISH",194]="Enter the minimum length of the key to decrypt (\${minlength_text}-63):"
+    arr["NORSK",193]="Vil du bruke dette allerede valgte BSSID? \${normal_color}\${visual_choice}"
+	arr["SVENSKA",193]="Vill du använda detta redan valda BSSID? \${normal_color}\${visual_choice}"
+	arr["DANSK",193]="Vil du bruge dette allerede valgte BSSID? \${normal_color}\${visual_choice}"
+	
+    arr["ENGLISH",194]="Enter the minimum length of the key to decrypt (\${minlength_text}-63):"
 	arr["SPANISH",194]="Introduce la longitud mínima de la clave a descifrar (\${minlength_text}-63):"
 	arr["FRENCH",194]="Entrez la longueur minimale de la clef à cracker (\${minlength_text}-63):"
 	arr["CATALAN",194]="Introdueix la longitud mínima de la clau a desxifrar (\${minlength_text}-63):"
@@ -4565,6 +4589,9 @@ function initialize_language_strings() {
 	arr["TURKISH",194]="Şifreyi çözmek için anahtarın minimum uzunluğunu girin (\${minlength_text}-63):"
 	arr["ARABIC",194]="(\${minlength_text}-63): أدخل طول الحد الأدنى من مفتاح فك"
 	arr["CHINESE",194]="请输入要解密的密钥的最小长度 (\${minlength_text}-63):"
+    arr["NORSK",194]="Angi minimumslengden på nøkkelen som skal dekrypteres (\${minlength_text}-63):"
+	arr["SVENSKA",194]="Ange den minsta längden på nyckeln som ska dekrypteras (\${minlength_text}-63):"
+	arr["DANSK",194]="Indtast minimumlængden af ​​nøglen, der skal dekrypteres (\${minlength_text}-63):"
 
 	arr["ENGLISH",195]="Enter the maximum length of the key to decrypt (\${minlength}-63):"
 	arr["SPANISH",195]="Introduce la longitud máxima de la clave a descifrar (\${minlength}-63):"
@@ -4579,6 +4606,9 @@ function initialize_language_strings() {
 	arr["TURKISH",195]="Şifreyi çözmek için anahtarın maximum uzunluğunu girin (\${minlength}-63):"
 	arr["ARABIC",195]="(\${minlength}-63) :أدخل الحد الأقصى لطول مفتاح فك"
 	arr["CHINESE",195]="请输入要解密的密钥的最大长度 (\${minlength}-63):"
+    arr["NORSK",195]="Angi maksimal lengde på nøkkelen som skal dekrypteres (\${minlength}-63):"
+	arr["SVENSKA",195]="Ange den maximala längden på nyckeln som ska dekrypteras (\${minlength}-63):"
+	arr["DANSK",195]="Indtast den maksimale længde af nøglen, der skal dekrypteres (\${minlength}-63):"
 
 	arr["ENGLISH",196]="Select the character set to use:"
 	arr["SPANISH",196]="Selecciona el juego de caracteres a utilizar:"
@@ -4593,6 +4623,9 @@ function initialize_language_strings() {
 	arr["TURKISH",196]="Kullanılacak karakter kümesini seçin:"
 	arr["ARABIC",196]=":حدد مجموعة الأحرف المراد استخدامها"
 	arr["CHINESE",196]="请选择要使用的字符集:"
+    arr["NORSK",196]="Velg det tegnsettet som skal brukes:"
+	arr["SVENSKA",196]="Välj den teckenuppsättning som ska användas:"
+	arr["DANSK",196]="Vælg det tegnsæt, der skal bruges:"
 
 	arr["ENGLISH",197]="1.  Lowercase chars"
 	arr["SPANISH",197]="1.  Caracteres en minúsculas"
@@ -4607,6 +4640,10 @@ function initialize_language_strings() {
 	arr["TURKISH",197]="1.  Küçük harfli karakterler"
 	arr["ARABIC",197]="1.  أحرف صغيرة"
 	arr["CHINESE",197]="1.  小写字符"
+    arr["NORSK",197]="1. Små bokstaver"
+	arr["SVENSKA",197]="1. Små bokstäver"
+	arr["DANSK",197]="1. Små bokstäver"
+    
 
 	arr["ENGLISH",198]="2.  Uppercase chars"
 	arr["SPANISH",198]="2.  Caracteres en mayúsculas"
@@ -4621,6 +4658,9 @@ function initialize_language_strings() {
 	arr["TURKISH",198]="2.  Büyük harfli karakterler"
 	arr["ARABIC",198]="2.  أحرف كبيرة"
 	arr["CHINESE",198]="2.  大写字符"
+    arr["NORSK",198]="2. Store bokstaver"
+	arr["SVENSKA",198]="2. Stora bokstäver"
+	arr["DANSK",198]="2. Store bogstaver"
 
 	arr["ENGLISH",199]="3.  Numeric chars"
 	arr["SPANISH",199]="3.  Caracteres numéricos"
@@ -4635,6 +4675,9 @@ function initialize_language_strings() {
 	arr["TURKISH",199]="3.  Numerik karakterler"
 	arr["ARABIC",199]="3.  أرقام"
 	arr["CHINESE",199]="3.  数字字符"
+    arr["NORSK",199]="3.  Tall tegn"
+	arr["SVENSKA",199]="3.  Numeriska tecken"
+	arr["DANSK",199]="3.  Numeriske tegnsæt"
 
 	arr["ENGLISH",200]="4.  Symbol chars"
 	arr["SPANISH",200]="4.  Caracteres símbolos"
@@ -4649,6 +4692,9 @@ function initialize_language_strings() {
 	arr["TURKISH",200]="4.  Sembol karakterler"
 	arr["ARABIC",200]="4.  رموز"
 	arr["CHINESE",200]="4.  符号字符"
+    arr["NORSK",200]="4.  Symbol tegn"
+	arr["SVENSKA",200]="4.  Symbol tecken"
+	arr["DANSK",200]="4.  Symbol tegnsæt"
 
 	arr["ENGLISH",201]="5.  Lowercase + uppercase chars"
 	arr["SPANISH",201]="5.  Caracteres en minúsculas + mayúsculas"
@@ -4662,7 +4708,11 @@ function initialize_language_strings() {
 	arr["GERMAN",201]="5.  Zeichen in Klein- und Großbuchstaben"
 	arr["TURKISH",201]="5.  Küçük + büyük harfli karakterler"
 	arr["ARABIC",201]="5.  أحرف صغيرة + كبيرة"
-	arr["CHINESE",201]="5.  小写+大写字符"
+    arr["CHINESE",201]="5.  小写+大写字符"
+	arr["NORSK",201]="5.  Små + store bokstaver"
+	arr["SVENSKA",201]="5.  Små + stora bokstäver "
+	arr["DANSK",201]="5.  Små + store bogstaver"
+    
 
 	arr["ENGLISH",202]="6.  Lowercase + numeric chars"
 	arr["SPANISH",202]="6.  Caracteres en minúsculas + numéricos"
@@ -4677,6 +4727,9 @@ function initialize_language_strings() {
 	arr["TURKISH",202]="6.  Küçük harf + numerik karakterler"
 	arr["ARABIC",202]="6.  أحرف صغيرة + أرقام"
 	arr["CHINESE",202]="6.  小写+数字字符"
+    arr["NORSK",202]="6.  Små bokstaver + tall"
+	arr["SVENSKA",202]="6.  Små bokstäver + mumeriska tecken"
+	arr["DANSK",202]="6.   Små bogstaver + numeriske tegn"
 
 	arr["ENGLISH",203]="7.  Uppercase + numeric chars"
 	arr["SPANISH",203]="7.  Caracteres en mayúsculas + numéricos"
@@ -4691,6 +4744,9 @@ function initialize_language_strings() {
 	arr["TURKISH",203]="7.  Büyük harf + numerik karakterler"
 	arr["ARABIC",203]="7.  أحرف كبيرة + أرقام"
 	arr["CHINESE",203]="7.  大写+数字字符"
+    arr["NORSK",203]="7.  Store bokstaver + tall tegn"
+	arr["SVENSKA",203]="7.  Stora bokstäver + numersiska"
+	arr["DANSK",203]="7.   Store bogstaver + numeriske"
 
 	arr["ENGLISH",204]="8.  Symbol + numeric chars"
 	arr["SPANISH",204]="8.  Caracteres símbolos + numéricos"
@@ -4705,6 +4761,9 @@ function initialize_language_strings() {
 	arr["TURKISH",204]="8.  Sembol + numerik karakterler"
 	arr["ARABIC",204]="8.  رموز+ أرقام"
 	arr["CHINESE",204]="8.  符号+数字字符"
+    arr["NORSK",204]="8.  Symbol tegn + tall"
+	arr["SVENSKA",204]="8.  Symbol tecken + numeriska"
+	arr["DANSK",204]="8.   Symbol tegnsæt + numeriske"
 
 	arr["ENGLISH",205]="9.  Lowercase + uppercase + numeric chars"
 	arr["SPANISH",205]="9.  Caracteres en minúsculas + mayúsculas + numéricos"
