@@ -5187,10 +5187,9 @@ function initialize_language_strings() {
 	arr["TURKISH",229]="hashcat CPU/GPU saldırılar"
 	arr["ARABIC",229]="hashcat CPU/GPU هجمات"
 	arr["CHINESE",229]="hashcat CPU/GPU 破解"
-    arr["NORSK",229]="attaques hashcat CPU/GPU"
-	arr["SVENSKA",229]="hashcat CPU/GPU angrep"
-	arr["DANSK",229]="hashcat usando CPU/GPU attack"
-	arr["RUSSIAN",229]="hashcat CPU/GPU angreb"
+    arr["NORSK",229]="hashcat CPU/GPU angrep"
+	arr["SVENSKA",229]="hashcat CPU/GPU attack"
+	arr["DANSK",229]="hashcat CPU/GPU angrep"
 
 	arr["ENGLISH",230]="3.  (hashcat) Dictionary attack against Handshake capture file"
 	arr["SPANISH",230]="3.  (hashcat) Ataque de diccionario sobre fichero de captura Handshake"
