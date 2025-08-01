@@ -1,5 +1,5 @@
 #Enabled true / Disabled false - Auto update feature (it has no effect on development mode) - Default value true
-AIRGEDDON_AUTO_UPDATE=true
+AIRGEDDON_AUTO_UPDATE=false
 
 #Enabled true / Disabled false - Skip intro (it has no effect on development mode) - Default value false
 AIRGEDDON_SKIP_INTRO=false
@@ -38,7 +38,7 @@ AIRGEDDON_PLUGINS_ENABLED=true
 AIRGEDDON_DEVELOPMENT_MODE=false
 
 #Enabled true / Disabled false - Debug mode for development printing debug information - Default value false
-AIRGEDDON_DEBUG_MODE=false
+AIRGEDDON_DEBUG_MODE=true
 
 #Available values: xterm, tmux - Define the needed tool to be used for windows handling - Default value xterm
 AIRGEDDON_WINDOWS_HANDLING=xterm
